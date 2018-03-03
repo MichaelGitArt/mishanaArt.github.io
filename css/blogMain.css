@@ -1,0 +1,40 @@
+
+section{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.post{
+  padding: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+
+  min-width: 300px;
+  font: 18px Lucida Grande, sans-serif;
+  line-height: 25px;
+  
+
+
+}
+
+.post img{
+  margin: 0 auto;
+  
+}
+.post h1{
+  font-size: 26px;
+}
+
+
+body{
+  background: url(../images/winter3.jpg) fixed center center ; 
+  background-color:#182933;
+  background-size: cover;   
+  height: auto !important;
+  width: 100%;
+  min-width: 200px;}

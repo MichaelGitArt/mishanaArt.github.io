@@ -1,0 +1,50 @@
+
+@font-face {
+	font-family:"Gang of Three"; /* Гарнитура шрифта */
+	src: local("Gang of Three"), url(fonts/9549.ttf); /* Для остальных браузеров */
+	}
+
+
+
+
+
+
+
+
+
+body {
+  background: url(../images/winter1.jpg) fixed center center; 
+  background-color: rgba(0,0,0,.5);
+  background-size: cover; 
+  height: 1px;
+  min-height: 100%;
+  width: 1px;
+  width: 100%;
+  min-width: 200px;
+}
+ 
+.h01{
+	text-align: center;
+	display:block;
+	opacity: .3;
+	color: white;
+	font-size: 100px;
+	font-weight:;
+	font-family: "Split", Regular;
+	margin: 0 auto;
+
+	}
+
+section{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	
+	align-items: center;
+	height: 50%;
+	background: rgba(0,0,0, .4);
+	margin: 10px 20px;
+	overflow:  : hidden;
+	}
