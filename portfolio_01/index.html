@@ -28,12 +28,12 @@
 	<div class="wrapper">
 		<section>
 			<article>
-				<div class="elem1">
+				<form class="elem1">
 					<input type="text" class="input" placeholder="Enter your zip code">
 					<img src="images/someImg.jpg" alt="places">
 					<p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit.</p>
 					<input type="submit" class="dws-submit" value="PRESS ME">
-				</div>
+				</form>
 				<div class="container">
 					<div class="sec">
 						<img src="images/icon1.jpg" alt="" class="someImg1">
@@ -75,8 +75,12 @@
 			</div>
 		</article>
 		<article class="map">
+			<button class="map-hide">Показать форму заполнения</button>
+			<div id="map"></div>
 			<div class="map-circle">
-				<div>
+				<button class="map-open">Показать карту</button>
+				<form>
+					<div>
 					<input type="text" class="map-text-name input " placeholder="Name">
 				</div>
 				<div>
@@ -85,15 +89,18 @@
 				<div>
 					<textarea class="map-textbox" placeholder="Message"></textarea>
 				</div>
-				<div>
-					<input type="submit" class="map-button" value="OK">
+				<div class="map-button-wrap">
+					<input type="submit" class="map-button"  value="OK">
 				</div>
-			</div>
-		</article>
-	</section>
-	<footer>
+			</form>
+		</div>
+	</article>
+</section>
+<footer>
 		 © Copyright 2018 Css Author. mishana 
 	</footer>
+	  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEzbx19e_p-S4gaNXgz-lzYJ5c5fJRmak&callback=initMap"
+  	async defer></script>
 	<script src="js/js.js"></script>
 </body>
 </html>
