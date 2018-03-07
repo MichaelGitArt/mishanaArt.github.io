@@ -1,0 +1,318 @@
+body,
+html{
+	margin: 0;
+	padding: 0;
+}
+
+*{
+	outline: none;
+}
+
+body{
+	position: relative;
+	height: 1500px;
+}
+
+
+/*HEADER*/
+
+header{
+	min-height: 100px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	font-family: Arial,sans-serif;
+	padding: 5px 60px 65px;
+	background: rgba(45, 47, 55, .5)  0 0 no-repeat;
+	background-image: -webkit-linear-gradient(bottom, rgba(32, 34, 36, .5) 0%, rgba(32, 34, 36, .5) 100%),
+	url("../images/headerBg.jpg");
+
+	background-image: -o-linear-gradient(bottom, rgba(32, 34, 36, .5) 0%, rgba(32, 34, 36, .5) 100%),
+	url("../images/headerBg.jpg");
+
+	background-image: linear-gradient(bottom, rgba(32, 34, 36, .5) 0%, rgba(32, 34, 36, .5) 100%),
+	url("../images/headerBg.jpg");
+		-webkit-background-size: cover;
+	background-size: cover;
+}
+
+
+.nav-menu{
+	padding: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;	
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+
+}
+
+.menu-item{
+	margin: auto 0;
+	margin-left: ;
+}
+.menu-item:first-child{
+	margin-right: auto;
+}
+
+.menu-item a{
+	color: #fff;
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid #fff;
+	border-radius: 26px;
+}
+.menu-item:first-child a{
+	font-size: 24px;
+	padding: 10px 20px;
+}
+
+.header-text{
+	text-align: center;
+	padding: 180px 0 240px;
+	line-height: 30px;
+}
+
+
+header h1{
+	letter-spacing: 3px;
+	font-size: 35px;
+}
+
+.down{
+	text-align: center;
+	height: 40px;
+	width:  40px;
+	border-radius: 50%;
+	padding: 3px;
+	display: inline-block;
+	background-color: rgb(25, 189, 154);
+}
+
+.down img{
+	display: block;
+	margin: 10px 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	position: absolute;
+	bottom: 0;
+
+	text-align: center;
+	background: #44A36F;
+	padding: 10px;
+	font: 16px Arial,sans-serif;
+}
+
+  /*block midia */
+
+
+/* @media screen and (max-width: 400px) {
+	.blockWrap2{
+		margin-left: 30px;
+	}    
+} 
+ */
+/* End block midia */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
