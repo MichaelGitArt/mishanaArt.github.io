@@ -5,32 +5,118 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Second site</title>
-	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="allStyle.min.css" type="text/css">
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->	
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
 </head>
 <body>	
-	<header>
-		<ul class="nav-menu">
-			<li class="menu-item"><a href="#">Bouncy</a></li>
-			<li class="menu-item"><a href="#">розділ2</a></li>
-			<li class="menu-item"><a href="#">розділ3</a></li>
-			<li class="menu-item"><a href="#">розділ4</a></li>
-			<li class="menu-item"><a href="#">розділ5</a></li>
-			<li class="menu-item"><a href="#">розділ6</a></li>
-			<li class="menu-item"><a href="#">розділ7</a></li>
-			<li class="menu-item"><a href="#">розділ8</a></li>
-		</ul>
-		<div class="header-text">
-			<h1>We Are Code Cafe</h1>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <br> praesentium voluptatum</p>
+
+	<div id="sandwich">
+		<div class="sw_top"></div>
+		<div class="sw_bottom"></div>
+		<div class="sw_footer"></div>
+	</div>
+	<header id="header">		
+		<div class="menu-section">
+			<a href="#" class="main-item">Bouncy</a>
+			<section class="nav-menu">
+				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item">Hello</a>
+				<a href="javascript://0" onclick="slowScroll ('#about')"" class="menu-item">About</a>
+				<a href="#" class="menu-item">chapter1</a>
+				<a href="#" class="menu-item">chapter2</a>
+				<a href="#" class="menu-item">chapter3</a>
+				<a href="#" class="menu-item">chapter4</a>
+			</section>
 		</div>
-		<div class="down">
-			<img src="images/downImg.png" alt="down" width="16px" height="16px">
+
+		<div class="header-content-wrap">
+			<div class="header-text">		
+				<h1>We Are Code Cafe</h1>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <br> praesentium voluptatum</p>
+			</div>
+			<a href="javascript://0" onclick="slowScroll ('#goods')" class="down" >
+				<img src="images/downImg.png" alt="down" width="24px" height="14px">
+			</a>
 		</div>
 	</header>
+
+	<section id="goods" class="goods" >
+		<div class="goods-wrap">
+			<div class="info">
+				<h2>This is Bouncy</h2>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+				<a href="#" class="readMore" onclick="return false">Read more</a>
+			</div>
+			<img src="images/appleGoods.png" alt="goods" width='215px' height='350px'>
+		</div>
+	</section>
+	<article id="about">
+		<section class="details">
+			<div class="details-wrap">
+				<h2 class="h2">DetailS ABOUT BOUNCY</h2>
+				<p class="pPlus">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
+				<div class="about-images">
+					<div class='about-heart'>
+						<img src="images/heart.png" alt="heart">
+					</div>
+					<div class='about-mouse'>
+						<img src="images/mouse.png" alt="mouse">
+					</div>
+					<div class="about-lamp">
+						<img src="images/lamp.png" alt="lamp">
+					</div>
+				</div>					
+				<div class="about-textBlock">	
+				<h3>Creative ideas</h3>				
+					<p class='textBlock-p1' >At <span class="span-green">vero</span> eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+					 praesentium voluptatum deleniti atque corrupti quos dolores </p>
+					<p class='textBlock-p2' >At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
+					 atque <span class='span-gray'>corrupti quos</span> dolores et quas molestias excepturi sint occaecati cupiditate non <span class='span-green'>provident</span>, similique sunt in culpa qui officia 
+					deserunt mollitia animi, id <span class='span-gray'>laborum</span> et dolorum fuga. Et harum quidem r</p>
+				</div>
+			</div>
+		</section>
+		<section class="featured">
+			<div class="featured-wrap">
+				<h2 class="h2">Featured Projects</h2>
+				<p class="pPlus">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
+				</div>
+				<div class="featured-imagesBlock">
+					<div class="imageBlock">
+						<div class="imageBlock-text">some words</div>
+						<img src="images/featuredImg1.jpg" alt="">
+					</div>
+					<div class="imageBlock">
+						<div class="imageBlock-text">some words</div>
+						<img src="images/featuredImg2.jpg" alt="">
+					</div>
+					<div class="imageBlock">
+						<div class="imageBlock-text">some words</div>
+						<img src="images/featuredImg3.jpg" alt="">
+					</div>
+					<div class="imageBlock">
+						<div class="imageBlock-text">some words</div>
+						<img src="images/featuredImg4.jpg" alt="">
+					</div>
+				</div>
+				<div class="featured-more">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a href="" class="readMore">Submit now</a>
+				</div>
+		</section>
+	</article>
+
+
+
+
+
 	<footer>
 		© Copyright 2018 Css Author. mishana 
 	</footer>
