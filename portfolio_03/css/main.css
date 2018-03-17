@@ -93,6 +93,7 @@ header{
 	font-size: 16px;
 	background: #2f68fa;
 	padding: 15px;
+	cursor: pointer;
 }
 .button:hover{
 	background: #376ffb;

@@ -1,56 +1,20 @@
 'use strict'
 
 
-// Portfolio HOVER
-
-var works = document.querySelector(".works");
-console.log(works);
-
-
-// jQuery('.workBlock').hover(
-//     setTimeout(function () {   }, 500);
-//     setTimeout(function () { 		},);
-// );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Contact
 var contactBut = document.querySelector(".contact-info .button");
 
 contactBut.addEventListener("click", function(){
-	var allContacts = document.createElement("div");
+var allContacts = document.createElement("div");
+		allContacts.innerHTML = "<form name='modal-form'><p>Ответ вы получите в течении 12 часов.</p><div>	<input type='email' placeholder='Email'></div><div><input type='text' placeholder='Name'></div><div><input type='text' placeholder='Your message'></div><div><input type='button'></div><p>Допишу позже)</p></form><a href='https://vk.com/mishana2002'>VK</a>";
+ 
 
-
-
-	allContacts.innerHTML = "Мне лень писать модальное окно)\
-	 <br> Пишите сюда: <a href='https://telegram.me/keyper' target='_blank'>Telegram</a>\
-	 ли сюда: <a href='https://vk.com/mishana2002' target='_blank'>VK</a> ";
-	allContacts.className = "modalWin";
+	allContacts.className = "modal-window";
 
 
 	document.body.appendChild(allContacts);
+
+
 	allContacts.addEventListener("click", function(){
 		allContacts.parentNode.removeChild(allContacts);
 	});
@@ -105,7 +69,7 @@ function toggleMenu(){
 
 
 
-
+//functions
 function slowScroll (id) {
 	if(document.documentElement.clientWidth <= 550){
 		var offset = 55;
