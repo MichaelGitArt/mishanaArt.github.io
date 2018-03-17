@@ -18,19 +18,22 @@
 
 	
 	<!-- CSS links -->
-	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="allStyle.min.css" type="text/css">
 
 
 	<!-- Font links -->	
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>	
-	<div class="mobMenu">
+
+	<div id='mobMenu'>
+		<a href="javascript://0" class="menu-item mob-nav-item" onclick="slowScroll('#header')">Главная</a>
 		<div id="sandwich">
 			<div class="sw_top"></div>
 			<div class="sw_bottom"></div>
 			<div class="sw_footer"></div>
 		</div>
+
 	</div>
 	<div class="wrapper">
 		<header id='header'>
@@ -56,11 +59,41 @@
 		<section class="portf" id='portf'>
 			<h2>Портфолио</h2>
 			<div class="works">
-				<div class="workBlock"><img src="images/portfolio-item-1.png" alt="Nothing"></div>
-				<div class="workBlock"><img src="images/portfolio-item-2.png" alt="Nothing"></div>
-				<div class="workBlock"><img src="images/portfolio-item-3.png" alt="Nothing"></div>
-				<div class="workBlock"><img src="images/portfolio-item-2.png" alt="Nothing"></div>
-				<div class="workBlock"><img src="images/portfolio-item-3.png" alt="Nothing"></div>
+				<div class="workBlock">
+					<img src="images/portfolio-item-1.png" alt="Nothing">
+					<div class="work-info">
+						<h4>New work</h4>
+						<p>Lorem ipsum dolor sit amet, copsum dolor sit amet, copsum dolor sit amet, copsum dolor sit amet, consectetur adipisicing elit. Dolorem necessitatibus culpa quos.</p>
+					</div>		
+				</div>
+				<div class="workBlock">
+					<img src="images/portfolio-item-2.png" alt="Nothing">
+					<div class="work-info">
+						<h4>New work</h4>
+						<p>Lorem ipsum dolor sit amet, cpsum dolor sit amet, coipisicing elit. Dolorem necessitatibus culpa quos.</p>
+					</div>
+				</div>
+				<div class="workBlock">
+					<img src="images/portfolio-item-3.png" alt="Nothing">
+					<div class="work-info">
+						<h4>New work</h4>
+						<p>Lorem ipsum dicing elit. Dolorem necessitatibus culpa quos.</p>
+					</div>
+				</div>
+				<div class="workBlock">
+					<img src="images/portfolio-item-2.png" alt="Nothing">
+					<div class="work-info">
+						<h4>New work</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem necessitatibus culpa quos.</p>
+					</div>
+				</div>
+				<div class="workBlock">
+					<img src="images/portfolio-item-3.png" alt="Nothing">
+					<div class="work-info">
+						<h4>New work</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem necessitatibus culpa quos.</p>
+					</div>
+				</div>
 			</div>
 		</section>
 	</div>
