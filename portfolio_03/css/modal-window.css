@@ -1,39 +1,87 @@
 /*Modal windows*/
+
+
 .modal-window{
 	color: #fff;
 	position: fixed;
-	background: rgba(0, 204, 0, 1);
-	padding: 10px 20px;
+	background: #cccccc;
+	padding: 10px 20px 0px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-	font: 26px Arial,sans-serif;
-	box-shadow: 3px 6px 40px rgba(0,0,0,1);
-	z-index: 1000;
+	font: 20px Arial,sans-serif;
+	z-index: 9999;
 	display: flex;
 	flex-direction: column;
 }
 
-.modal-window form{
+.modal-window p {
+	margin: 10px;
+}
+
+.modal-form{
 	display: flex;
 	flex-direction: column;
-}
-
-
-.modal-window > *{
-	width: 300px;
+	width: 280px;
 	margin: 0 auto;
-	display: flex;
-	justify-content: center;
+	padding: 10px 10px 0;
 }
 
-.modal-window input{
-	margin: 0 auto;
+
+.modal-form > *{
+	outline: none;
+	transition: all .3s;
+	border: 2px solid rgba(0,0,0,0);
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	font: 18px Arial,sans-serif;
+	padding: 2px 2px 2px 5px;
 }
 
-.modal-window a{
-	color: #000;
-	font: 40px Arial,sans-serif;
-	border: 1px solid #000;
-	background: #fff;
+.modal-form > *:hover:not(.modal-button){
+	border: 2px solid #33ccff;
+
+}
+.modal-form > *:focus:not(.modal-button){
+	border: 2px solid #33ccff;
+}	
+
+.modal-email{
+	width: 280px;
+}
+.modal-name{
+	width: 180px;
+
+}
+.modal-message{
+	max-width: 300px;
+}
+
+.modal-button{
+	padding: 5px 0;
+	width: 130px;
+	background: #808080;
+	border: 4px solid rgba(0,0,0,0);
+
+}
+.modal-button:hover{
+	border: 4px solid #4d4d4d;
+}
+
+#close{
+	height: 40px;
+	position: relative;
+	top: -40px;
+	margin-left: auto;
+}
+
+#close.active .sw_top {
+	top: 15px;
+	right: 0px;
+	transform: rotate(140deg);
+}
+#close.active .sw_bottom {
+	top: 10px;
+	right: 0px;
+	transform: rotate(-140deg);
 }
