@@ -106,18 +106,22 @@ header{
 	cursor: pointer;
 	border: 1px solid #2f68fa;
 }
-.button:hover{
+ .button:hover{
 	background: rgba(255,255,255,0);
 	color: #2f68fa;
 }
+header .button:hover div{
+	transform: rotate(90deg);
+}
+header .button div{
+	transition: all .3s;
+}
+
 
 footer .button:hover{
 	background: rgba(255,255,255,.5);
 	color: #2f68fa;
 }
-
-
-
 
 
 header .button > *{
