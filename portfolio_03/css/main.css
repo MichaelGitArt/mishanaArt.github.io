@@ -107,9 +107,15 @@ header{
 	border: 1px solid #2f68fa;
 }
 .button:hover{
-	background: #fff;
+	background: rgba(255,255,255,0);
 	color: #2f68fa;
 }
+
+footer .button:hover{
+	background: rgba(255,255,255,.5);
+	color: #2f68fa;
+}
+
 
 
 
