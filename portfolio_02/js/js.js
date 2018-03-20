@@ -31,23 +31,6 @@ document.getElementsByClassName('mobMenu')[0].classList.toggle('active');
 }
 
 
-/*var fixedMenu = document.getElementsByClassName('nav-menu')[0];
-console.log(fixedMenu);
-
-if(window.pageYOffset > 50 && document.body.clientWidth > 820){
-	fixedMenu.classList.add('fixed');
-}else if(window.pageYOffset < 50){
-	fixedMenu.classList.remove('fixed');
-}
-
-window.onscroll = function(){
-if(window.pageYOffset > 50 || document.body.clientWidth > 820){
-	fixedMenu.classList.add('fixed');
-}else if(window.pageYOffset < 50 || document.body.clientWidth < 820 ){
-	fixedMenu.classList.remove('fixed');
-}
-};
-*/
 
 
 
@@ -57,12 +40,12 @@ if(window.pageYOffset > 50 || document.body.clientWidth > 820){
 
 
 
-
+var header = new Headhesive('.menu-section',{offset: 500});
 
 function slowScroll (id) {
-	if(document.documentElement.clientWidth <= 600){
-		var offset = 55;
-	}else  var offset = 0;
+
+		var offset = 60;
+
 	$('html, body').animate ({
 		scrollTop: $(id).offset ().top - offset
 	}, 500);

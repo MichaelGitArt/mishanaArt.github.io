@@ -21,7 +21,7 @@ p:not(header p){
 .mobMenu{
 	position: fixed;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background: rgba(111, 122, 144,1);
 	display: none;
 	align-items: center;
@@ -167,6 +167,7 @@ header{
 }
 
 .header-text{
+	margin: auto 0 0 0;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -193,7 +194,7 @@ header h1{
 	width: 40px;
 	background: #000;
 	border-radius: 50%;
-	margin: 0 auto;
+	margin: auto auto 20px;
 	display: flex;
 	align-items: center;
 }
@@ -401,6 +402,9 @@ h2, h3 {
 	flex-direction: column;
 }
 
+.featured-wrap h2{
+	line-height: 30px;
+}
 .featured-imagesBlock{
 	display: flex;
 	flex-direction: row;
@@ -506,7 +510,6 @@ h2, h3 {
 
 #services{
 	max-width: 1350px;	
-	background: rgba(0,0,0,.1);
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -588,7 +591,6 @@ h2, h3 {
 }
 
 
-@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700);
 .pie{
 	margin: 0 10px;
 	background-color:rgba(4, 115, 120,.1);
@@ -641,7 +643,6 @@ h2, h3 {
 	transform:rotate(0);
 }
 .status {
-
 	position:absolute;
 	top:13px;
 	left: 13px;
@@ -658,8 +659,9 @@ h2, h3 {
 }
 
 
-
-
+.content{
+	height: 1000px;
+}
 
 
 
@@ -670,7 +672,6 @@ h2, h3 {
 
 
 footer{
-
 	text-align: center;
 	background: #44A36F;
 	padding: 10px;
@@ -737,10 +738,31 @@ footer{
 
 
 /*block midia */
-
+@media screen and (min-width: 850px) {
+	.headhesive .main-item{
+		padding: 0 10px 10px;
+		margin: 3px;
+		box-sizing: border-box;
+	}
+	.headhesive{
+		transition: all .2s;
+		position: fixed;
+		background: #202020;
+		transform: translate(-50%, -110%);
+		z-index: 3;
+		left: 50%;
+		border-radius: 0 0 20px 20px;
+		box-shadow: 2px 1px 10px rgba(0,0,0,.7)
+	}
+	.headhesive--stick{
+		transition: all .5s;
+		transform: translate(-50%,0);
+	}
+}
 
 
 @media screen and (max-width: 850px) {
+
 	.mobMenu{
 		transition: all .5s;
 		z-index: 3;
