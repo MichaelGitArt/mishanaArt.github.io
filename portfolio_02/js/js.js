@@ -1,60 +1,63 @@
 'use strict'
-var mobMenu = document.getElementById("sandwich"),
+var sandwich = document.getElementById("sandwich"),
 menu = document.querySelector(".menu-section"),
-openMobMenu = false;
+opensandwich = false,
+dark = document.getElementsByClassName('dark')[0];
+
 
 menu.onclick = function(e){
 	var target = e.target;
-	var	winWidth = document.documentElement.clientWidth - menu.offsetWidth;
-	if(target.tagName === "A" && document.documentElement.clientWidth < 600){
-		toggleMenu(winWidth);
-	}
+	while (target.className != "modal-form" ) {
+			if (target.tagName == 'A') {
+      // нашли элемент, который нас интересует!
+      toggleMenu();
+      return;
+  }
+    target = target.parentNode;
+  }
 }
-
-mobMenu.onclick = function(){
-	var winWidth = document.documentElement.clientWidth - menu.offsetWidth;
-	toggleMenu(winWidth);
+sandwich.onclick = function(){
+	toggleMenu();
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function toggleMenu(winWidth){
-	if(openMobMenu){
-		for (var i = 0; i < document.querySelectorAll("#sandwich > *").length; i++) {
-			document.querySelectorAll("#sandwich > *")[i].style.right = "-85%";
-		}
-		menu.style.left = "-320px";
-		mobMenu.className = "";
-		mobMenu.style.right = 0;
-		openMobMenu = false;
-		mobMenu.style.width = "100%";
-	}else{
-		for (var i = 0; i < document.querySelectorAll("#sandwich > *").length; i++) {
-			document.querySelectorAll("#sandwich > *")[i].style.right = "0%";
-		}
-		mobMenu.style.width = "70px";
-		menu.style.left = "0";
-		mobMenu.className = "active";
-		mobMenu.style.right = winWidth + "px";
-		openMobMenu = true;
-	}
+dark.onclick = function(){
+	toggleMenu();
+};
+function toggleMenu(){
+sandwich.classList.toggle('active');
+menu.classList.toggle('active');
+dark.classList.toggle('active');
+console.log(dark);
+document.getElementsByClassName('mobMenu')[0].classList.toggle('active');
 }
+
+
+/*var fixedMenu = document.getElementsByClassName('nav-menu')[0];
+console.log(fixedMenu);
+
+if(window.pageYOffset > 50 && document.body.clientWidth > 820){
+	fixedMenu.classList.add('fixed');
+}else if(window.pageYOffset < 50){
+	fixedMenu.classList.remove('fixed');
+}
+
+window.onscroll = function(){
+if(window.pageYOffset > 50 || document.body.clientWidth > 820){
+	fixedMenu.classList.add('fixed');
+}else if(window.pageYOffset < 50 || document.body.clientWidth < 820 ){
+	fixedMenu.classList.remove('fixed');
+}
+};
+*/
+
+
+
+
+
+
+
+
+
+
 
 function slowScroll (id) {
 	if(document.documentElement.clientWidth <= 600){
@@ -73,4 +76,54 @@ function getCoords(elem) { // кроме IE8-
     top: box.top + pageYOffset,
     left: box.left + pageXOffset
   };
+}
+
+
+
+
+$(document).ready(function () {
+    var pie1 = $('.pie-1'),
+        pie2 = $('.pie-2'),
+        pie3 = $('.pie-3');
+    progressBarUpdate(40, 100, pie1,'%');
+    progressBarUpdate(75, 100, pie2, '%');
+    progressBarUpdate(90, 100, pie3, '%');
+});
+
+
+
+
+
+
+function rotate(element, degree) {
+    element.css({
+        '-webkit-transform': 'rotate(' + degree + 'deg)',
+            '-moz-transform': 'rotate(' + degree + 'deg)',
+            '-ms-transform': 'rotate(' + degree + 'deg)',
+            '-o-transform': 'rotate(' + degree + 'deg)',
+            'transform': 'rotate(' + degree + 'deg)',
+            'zoom': 1
+    });
+}
+
+function progressBarUpdate(x, outOf, elem,type) {
+    var firstHalfAngle = 180;
+    var secondHalfAngle = 0;
+
+    // caluclate the angle
+    var drawAngle = x / outOf * 360;
+
+    // calculate the angle to be displayed if each half
+    if (drawAngle <= 180) {
+        firstHalfAngle = drawAngle;
+    } else {
+        secondHalfAngle = drawAngle - 180;
+    }
+
+    // set the transition
+    rotate(elem.find(".slice1"), firstHalfAngle);
+    rotate(elem.find(".slice2"), secondHalfAngle);
+
+    // set the values on the text
+    elem.find(".status").html(x + "<span>"+type+"</span>");
 }

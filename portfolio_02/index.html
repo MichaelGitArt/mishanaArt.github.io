@@ -10,30 +10,36 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->	
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+<!-- FONT -->
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
-	<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
+
+<!-- SCRIPTS JS -->
+	<script	src="https://code.jquery.com/jquery-3.3.1.min.js"	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
 </head>
 <body>	
-
-	<div id="sandwich">
-		<div class="sw_top"></div>
-		<div class="sw_bottom"></div>
-		<div class="sw_footer"></div>
+	<div class="dark"></div>
+	<div class="mobMenu">
+		<a href="#" class="main-item">Bouncy</a>
+		<div id="sandwich">
+			<div class="sw_top"></div>
+			<div class="sw_bottom"></div>
+			<div class="sw_footer"></div>
+		</div>
 	</div>
 	<header id="header">		
+		<div class="header-wrap">
 		<div class="menu-section">
 			<a href="#" class="main-item">Bouncy</a>
 			<section class="nav-menu">
-				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item">Hello</a>
-				<a href="javascript://0" onclick="slowScroll ('#about')" class="menu-item">About</a>
-				<a href="javascript://0" onclick="slowScroll ('#services')" class="menu-item">Services</a>
-				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item">розділ5</a>
-				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item">розділ6</a>
-				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item">розділ7</a>
+				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>Hello</a>
+				<a href="javascript://0" onclick="slowScroll ('#about')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>About</a>
+				<a href="javascript://0" onclick="slowScroll ('#services')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>Services</a>
+				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>chapter</a>
+				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>chapter</a>
+				<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>chapter</a>
 			</section>
 		</div>
 
@@ -43,8 +49,9 @@
 				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis <br> praesentium voluptatum</p>
 			</div>
 			<a href="javascript://0" onclick="slowScroll ('#goods')" class="down" >
-				<img src="images/downImg.png" alt="down" width="24px" height="14px">
+				<div><i class="fas fa-chevron-down"></i></div>
 			</a>
+		</div>
 		</div>
 	</header>
 
@@ -75,19 +82,19 @@
 					</div>
 				</div>					
 				<div class="about-textBlock">	
-				<h3>Creative ideas</h3>				
+					<h3>Creative ideas</h3>				
 					<p class='textBlock-p1' >At <span class="span-green">vero</span> eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-					 praesentium voluptatum deleniti atque corrupti quos dolores </p>
+					praesentium voluptatum deleniti atque corrupti quos dolores </p>
 					<p class='textBlock-p2' >At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-					 atque <span class='span-gray'>corrupti quos</span> dolores et quas molestias excepturi sint occaecati cupiditate non <span class='span-green'>provident</span>, similique sunt in culpa qui officia 
-					deserunt mollitia animi, id <span class='span-gray'>laborum</span> et dolorum fuga. Et harum quidem r</p>
+						atque <span class='span-gray'>corrupti quos</span> dolores et quas molestias excepturi sint occaecati cupiditate non <span class='span-green'>provident</span>, similique sunt in culpa qui officia 
+						deserunt mollitia animi, id <span class='span-gray'>laborum</span> et dolorum fuga. Et harum quidem r</p>
+					</div>
 				</div>
-			</div>
-		</section>
-		<section class="featured">
-			<div class="featured-wrap">
-				<h2 class="h2">Featured Projects</h2>
-				<p class="pPlus">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
+			</section>
+			<section class="featured">
+				<div class="featured-wrap">
+					<h2 class="h2">Featured Projects</h2>
+					<p class="pPlus">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
 				</div>
 				<div class="featured-imagesBlock">
 					<div class="imageBlock imageBlock1">
@@ -118,13 +125,78 @@
 				</div>
 			</section>
 		</article>
+		<article id="services" class='services'>
+			<h2 class="services-h2">Featured Projects</h2>
+			<p class="services-p">At vero eos et accusamus et iusto odio dignissimos ducimus qui <br> blanditiis praesentium</p>
+			<div class="skills">
+				<div class="graphic">
+					<div class="skills-icons">
+						<div class='tool'> 
+							<img src="images/tool1.png"	alt="tool">
+						</div>
+						<div class='tool'> 
+							<img src="images/tool2.png"	alt="tool">
+						</div>
+						<div class='tool'> 
+							<img src="images/tool3.png"	alt="tool">
+						</div>
+						<div class='tool'> 
+							<img src="images/tool4.png"	alt="tool">
+						</div>
+					</div>
+					<div class="graphic-text">
+						<h3 class="services-h3">Graphic Design</h3>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti</p>
+						<p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. </p>
+					</div>
+				</div>
+				<div class="skillsPercent">
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+					<div class="progres-wrap">
+						<div class="pie pie-1">
+							<div class="clip1">
+								<div class="slice1"></div>
+							</div>
+							<div class="clip2">
+								<div class="slice2"></div>
+							</div>
+							<div class="status"></div>
+						</div>
+						<p>Branding</p>
+					</div>
+					<div class="progres-wrap">
+						<div class="pie pie-2">
+							<div class="clip1">
+								<div class="slice1"></div>
+							</div>
+							<div class="clip2">
+								<div class="slice2"></div>
+							</div>
+							<div class="status"></div>
+						</div>
+						<p>Web Design</p>
+					</div>
+					<div class="progres-wrap">
+						<div class="pie pie-3">
+							<div class="clip1">
+								<div class="slice1"></div>
+							</div>				
+							<div class="clip2">
+								<div class="slice2"></div>
+							</div>
+							<div class="status"></div>
+						</div>
+						<p>UI/UX</p>
+					</div>
+				</div>
+			</div>
+		</article>
 
 
+		<footer>
+			© Copyright 2018 Css Author. mishana 
+		</footer>
 
-	<footer>
-		© Copyright 2018 Css Author. mishana 
-	</footer>
-
-	<script src="js/js.js"></script>
-</body>
-</html>
+		<script src="js/js.js"></script>
+	</body>
+	</html>
