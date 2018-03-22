@@ -31,6 +31,19 @@ document.getElementsByClassName('mobMenu')[0].classList.toggle('active');
 }
 
 
+window.onscroll = function(){
+    if(window.pageYOffset >= 700){
+        menu.classList.add('fMenu')
+    }else menu.classList.remove('fMenu');
+
+    if(window.pageYOffset >= 800){
+        menu.classList.add('fMenu1')
+    }else menu.classList.remove('fMenu1');
+
+    if(window.pageYOffset >= 900){
+        menu.classList.add('fixMenu')
+    }else menu.classList.remove('fixMenu');
+}
 
 
 
@@ -39,13 +52,15 @@ document.getElementsByClassName('mobMenu')[0].classList.toggle('active');
 
 
 
+// var header = new Headhesive('.menu-section',{offset: 500});
 
-var header = new Headhesive('.menu-section',{offset: 500});
-
+/*//////////////////Anchor//////////////////*/
 function slowScroll (id) {
-
-		var offset = 60;
-
+    if(id == '#goods'){
+     var offset = 0;
+    }else{
+     var offset = 60;
+    }
 	$('html, body').animate ({
 		scrollTop: $(id).offset ().top - offset
 	}, 500);
@@ -63,7 +78,7 @@ function getCoords(elem) { // кроме IE8-
 
 
 
-
+/*//////////////////Progres Bar /////////////////////*/
 $(document).ready(function () {
     var pie1 = $('.pie-1'),
         pie2 = $('.pie-2'),

@@ -131,7 +131,7 @@ header{
 	color: #fff;
 	font: 30px Arial,sans-serif;
 	font-weight: 600;
-	padding: 5px;
+	padding: 5px 5px 5px 15px;
 }
 
 .nav-menu{
@@ -174,13 +174,15 @@ header{
 	justify-content: space-around;
 }
 
-header p {	
+header p {
+	color: #fff;	
 	font: 20px Arial,sans-serif;
 	margin: 20px 0 0 0;
 	line-height: 25px;
 
 }
 header h1{
+	color: #fff;
 	font-size: 50px;
 	margin: 0 20px;
 }
@@ -251,6 +253,7 @@ h2, h3 {
 }
 
 .goods-wrap > img{
+	margin-top: 20px;
 	padding: 20px;
 }
 
@@ -739,27 +742,27 @@ footer{
 
 /*block midia */
 @media screen and (min-width: 850px) {
-	.headhesive .main-item{
-		padding: 0 10px 10px;
-		margin: 3px;
-		box-sizing: border-box;
+	.fMenu{
+		padding: 7px;
+		border-left: 10px groove white;
+		transform: translate(50%,-100%);
 	}
-	.headhesive{
-		transition: all .2s;
+	.fMenu1{
+		transition: all .4s;
+		transform: translate(50%,-100%);
+				right: 50%;
 		position: fixed;
-		background: #202020;
-		transform: translate(-50%, -110%);
-		z-index: 3;
-		left: 50%;
-		border-radius: 0 0 20px 20px;
-		box-shadow: 2px 1px 10px rgba(0,0,0,.7)
 	}
-	.headhesive--stick{
-		transition: all .5s;
-		transform: translate(-50%,0);
+
+
+	.fixMenu{
+
+		background: rgba(166, 166, 166,1);
+		z-index: 2;
+		transform: translate(50%,0);
+
 	}
 }
-
 
 @media screen and (max-width: 850px) {
 
@@ -855,10 +858,4 @@ footer{
 
 
 /* End block midia */
-
-
-
-
-
-
 
