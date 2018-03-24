@@ -59,8 +59,6 @@ window.onscroll = function(){
 
 
 
-// var header = new Headhesive('.menu-section',{offset: 500});
-
 /*//////////////////Anchor//////////////////*/
 function slowScroll (id) {
     if(id == '#goods'){
@@ -132,3 +130,85 @@ function progressBarUpdate(x, outOf, elem,type) {
     // set the values on the text
     elem.find(".status").html(x + "<span>"+type+"</span>");
 }
+
+
+
+/*//////////////////Portfolio/////////////////////*/
+var option = document.getElementsByClassName('portfolio-options')[0];
+option.onclick = function(e){
+  var target = e.target;
+  if(target.tagName != 'P') return;
+  sortPotrfolio(target);
+}
+
+function sortPotrfolio(target){
+  var thisOption = target.getAttribute('data-option');
+  changeAct(target, thisOption);
+  var works = document.getElementsByClassName('gal-items');
+
+  if(thisOption === 'all'){
+    for (var i = 0; i < works.length; i++) {
+      works[i].style.display = 'inline-flex';
+    }
+    return;
+  }
+
+  for (var i = 0; i < works.length; i++) {
+    if(works[i].getAttribute('data-chapter').indexOf(thisOption) != -1){
+      works[i].style.display = 'inline-flex';
+    }else{
+      works[i].style.display = 'none';
+    }
+  }
+}
+
+function changeAct(target, trueOption){
+  var parent = target.parentNode;
+  var elems = parent.children;
+
+  for (var i = 0; i < elems.length; i++) {
+    if(elems[i].getAttribute('data-option') != trueOption){
+      elems[i].classList.remove('active');
+    }else{
+      elems[i].classList.add('active');
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
