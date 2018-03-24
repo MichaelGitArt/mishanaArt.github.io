@@ -5,6 +5,8 @@ opensandwich = false,
 dark = document.getElementsByClassName('dark')[0];
 
 
+
+
 menu.onclick = function(e){
 	var target = e.target;
 	while (target.className != "modal-form" ) {
@@ -16,6 +18,11 @@ menu.onclick = function(e){
     target = target.parentNode;
   }
 }
+
+
+
+
+
 sandwich.onclick = function(){
 	toggleMenu();
 };
