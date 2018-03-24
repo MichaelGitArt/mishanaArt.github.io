@@ -1,64 +1,55 @@
 'use strict'
-
-
-//Contact
-var contactBut = document.querySelector(".contact-info .button");
-
-contactBut.addEventListener("click", function(){
-var allContacts = document.createElement("div");
-allContacts.innerHTML = "<p>Ответ вы получите в течении 12 часов.</p><form class='modal-form' name='modal-form'><input class='modal-email' type='email' placeholder='Email'><input class='modal-name' type='text' placeholder='Имя'><textarea class='modal-message' rows='5' cols='15' name='messsage' placeholder='Ваше сообщение' ></textarea><input class='modal-button' type='button' value='Отправить'></form><div id='close' class='active'><div class='sw_top'></div><div class='sw_bottom'></div></div>";
-
-	allContacts.className = 'modal-window';
-
-
-	document.body.appendChild(allContacts);
-
-
-	allContacts.addEventListener("click", function(e){
-		var target = e.target;
-		while (target.className != "modal-form" ) {
-			if (target.id == 'close') {
-      // нашли элемент, который нас интересует!
-      allContacts.parentNode.removeChild(allContacts);
-      return;
-    }
-    target = target.parentNode;
-  }
-});
-	return false;
-});
-
-
-
-
-// Mobile menu
 var sandwich = document.getElementById("sandwich"),
-menu = document.querySelector(".nav-menu"),
-mobMenu = document.querySelector("#mobMenu"),
-openedMenu = false;
+menu = document.querySelector(".menu-section"),
+opensandwich = false,
+dark = document.getElementsByClassName('dark')[0];
+
+
 
 
 menu.onclick = function(e){
 	var target = e.target;
-	if(target.tagName === "A"){
-		toggleMenu();
-	}
-};
-mobMenu.onclick = function(e){
-	var target = e.target;
-	if(target.tagName === "A"){
-		toggleMenu();
-	}
-};
+	while (target.className != "modal-form" ) {
+			if (target.tagName == 'A') {
+      // нашли элемент, который нас интересует!
+      toggleMenu();
+      return;
+  }
+    target = target.parentNode;
+  }
+}
+
+
+
+
+
 sandwich.onclick = function(){
 	toggleMenu();
 };
-
+dark.onclick = function(){
+	toggleMenu();
+};
 function toggleMenu(){
-	mobMenu.classList.toggle("mobMenu-active");
-	menu.classList.toggle("menu-active");
-	sandwich.classList.toggle("active");
-	return false;
+sandwich.classList.toggle('active');
+menu.classList.toggle('active');
+dark.classList.toggle('active');
+console.log(dark);
+document.getElementsByClassName('mobMenu')[0].classList.toggle('active');
+}
+
+
+window.onscroll = function(){
+    if(window.pageYOffset >= 700){
+        menu.classList.add('fMenu')
+    }else menu.classList.remove('fMenu');
+
+    if(window.pageYOffset >= 800){
+        menu.classList.add('fMenu1')
+    }else menu.classList.remove('fMenu1');
+
+    if(window.pageYOffset >= 900){
+        menu.classList.add('fixMenu')
+    }else menu.classList.remove('fixMenu');
 }
 
 
@@ -68,19 +59,13 @@ function toggleMenu(){
 
 
 
-
-
-
-
-
-
-
-
-//functions
+/*//////////////////Anchor//////////////////*/
 function slowScroll (id) {
-	if(document.documentElement.clientWidth <= 550){
-		var offset = 55;
-	}else  var offset = 0;
+    if(id == '#goods'){
+     var offset = 0;
+    }else{
+     var offset = 60;
+    }
 	$('html, body').animate ({
 		scrollTop: $(id).offset ().top - offset
 	}, 500);
@@ -95,3 +80,105 @@ function getCoords(elem) { // кроме IE8-
     left: box.left + pageXOffset
   };
 }
+
+
+
+/*//////////////////Progres Bar /////////////////////*/
+$(document).ready(function () {
+    var pie1 = $('.pie-1'),
+        pie2 = $('.pie-2'),
+        pie3 = $('.pie-3');
+    progressBarUpdate(40, 100, pie1,'%');
+    progressBarUpdate(75, 100, pie2, '%');
+    progressBarUpdate(90, 100, pie3, '%');
+});
+
+
+
+
+
+
+function rotate(element, degree) {
+    element.css({
+        '-webkit-transform': 'rotate(' + degree + 'deg)',
+            '-moz-transform': 'rotate(' + degree + 'deg)',
+            '-ms-transform': 'rotate(' + degree + 'deg)',
+            '-o-transform': 'rotate(' + degree + 'deg)',
+            'transform': 'rotate(' + degree + 'deg)',
+            'zoom': 1
+    });
+}
+
+function progressBarUpdate(x, outOf, elem,type) {
+    var firstHalfAngle = 180;
+    var secondHalfAngle = 0;
+
+    // caluclate the angle
+    var drawAngle = x / outOf * 360;
+
+    // calculate the angle to be displayed if each half
+    if (drawAngle <= 180) {
+        firstHalfAngle = drawAngle;
+    } else {
+        secondHalfAngle = drawAngle - 180;
+    }
+
+    // set the transition
+    rotate(elem.find(".slice1"), firstHalfAngle);
+    rotate(elem.find(".slice2"), secondHalfAngle);
+
+    // set the values on the text
+    elem.find(".status").html(x + "<span>"+type+"</span>");
+}
+
+
+
+/*//////////////////Portfolio/////////////////////*/
+var option = document.getElementsByClassName('portfolio-options')[0];
+console.log(option);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
