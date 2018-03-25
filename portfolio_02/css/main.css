@@ -981,31 +981,31 @@ header h1{
 
 
 .man-1 .scale1{
-	background: linear-gradient(left,#19BD9A 60%, #E1E4E9 60%);
+	background: linear-gradient(left, #19BD9A 60%, #E1E4E9 60%);
 }
 .man-1 .scale2{
-	background: linear-gradient(left,#19BD9A 80%, #E1E4E9 80%);
+	background: linear-gradient(left, #19BD9A 80%, #E1E4E9 80%);
 }
 .man-1 .scale3{
-	background: linear-gradient(left,#19BD9A 85%, #E1E4E9 85%);
+	background: linear-gradient(left, #19BD9A 85%, #E1E4E9 85%);
 }
 
 
 .man-2 .scale1{
-	background: linear-gradient(left,#19BD9A 50%, #E1E4E9 50%);
+	background: linear-gradient(left, #19BD9A 50%, #E1E4E9 50%);
 }
 .man-2 .scale2{
-	background: linear-gradient(left,#19BD9A 90%, #E1E4E9 90%);
+	background: linear-gradient(left, #19BD9A 90%, #E1E4E9 90%);
 }
 .man-2 .scale3{
-	background: linear-gradient(left,#19BD9A 70%, #E1E4E9 70%);
+	background: linear-gradient(left, #19BD9A 70%, #E1E4E9 70%);
 }
 
 .man-3 .scale1{
-	background: linear-gradient(left,#19BD9A 65%, #E1E4E9 65%);
+	background: linear-gradient(left, #19BD9A 65%, #E1E4E9 65%);
 }
 .man-3 .scale2{
-	background: linear-gradient(left,#19BD9A 70%, #E1E4E9 70%);
+	background: linear-gradient(left, #19BD9A 70%, #E1E4E9 70%);
 }
 .man-3 .scale3{
 	background: linear-gradient(left,#19BD9A 35%, #E1E4E9 35%);
@@ -1085,7 +1085,7 @@ header h1{
 	height: 20px;
 	display: flex;
 	justify-content: center;
-	margin: 15px auto;
+	margin: 25px auto 80px;
 }
 
 .switch > div{
