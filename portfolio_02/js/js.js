@@ -133,6 +133,11 @@ function progressBarUpdate(x, outOf, elem,type) {
 
 
 
+
+
+
+
+
 /*//////////////////Portfolio/////////////////////*/
 var option = document.getElementsByClassName('portfolio-options')[0];
 option.onclick = function(e){
@@ -166,6 +171,7 @@ function changeAct(target, trueOption){
   var parent = target.parentNode;
   var elems = parent.children;
 
+  //if(!trueOption){console.log('hello');}else{}
   for (var i = 0; i < elems.length; i++) {
     if(elems[i].getAttribute('data-option') != trueOption){
       elems[i].classList.remove('active');
@@ -181,10 +187,60 @@ function changeAct(target, trueOption){
 
 
 
+/*//////////////////Team slider/////////////////////*/
+var people = document.getElementsByClassName('people')[0],
+teamSwitch = document.getElementsByClassName('switch')[0];
+var visible = 0;
+
+teamSwitch.onclick = function(e){
+  var target = e.target;
+  while (target.className != "switch" ) {
+    if (target.classList.contains('member')) {
+      var option = target.getAttribute('data-option');
+      changeAct(target, option);
+      showMember(option);
+      return;
+    }
+    target = target.parentNode;
+  }
+}
+
+function showMember(option){
+  var members = people.children;
+  var newVisible;
+
+  for (var i = 0; i < members.length; i++) {
+    if(members[i].classList.contains(option)){
+      newVisible = i;
+      break;
+    }
+  }
+
+  members[visible].classList.add('op');
+  setTimeout(function(){
+    members[visible].classList.add('hid');
+    members[newVisible].classList.remove('hid');
+    setTimeout(function(){
+     members[newVisible].classList.remove('op');
+      visible = newVisible;
+    },10);
+
+  },1000);
 
 
 
 
+
+
+
+  // for (var i = 0; i < members.length; i++) {
+  //     console.log(members[i].style.display === 'flex');
+  //   if(members[i].style.display === 'block'){
+  //     members[i].style.opacity = '0';
+  //   }
+  // }
+
+}
 
 
 
