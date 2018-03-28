@@ -6,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Test</title>
 	<link rel="stylesheet" href="allStyle.min.css" type="text/css">
-	<link rel="stylesheet" href="js/animate.css">
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->	
@@ -23,6 +22,9 @@
  -->
 </head>
 <body>	
+	<div class="preloader" id="page-preloader">
+		<div class="loader"></div>
+	</div>
 	<div class="mobMenu">
 		<div id="sandwich">
 			<div class="sw_top"></div>
@@ -154,7 +156,7 @@
 				<p class="post">Marketing</p>
 			</div>
 		</div>
-		<p>Become part of our dream team, let’s join us !</p>
+		<p class="anim">Become part of our dream team, let’s join us !</p>
 		<a href="" class="learnMore">We are hiring</a>
 	</article>
 	<article id="portfolio" class="portfolio">
@@ -281,6 +283,8 @@
 			</div>
 		</div>
 	</footer>
+	<a  href="javascript://0" onclick="slowScroll ('#header')" class="up" id="up"><i class="fas fa-chevron-up"></i></a>
+	
 	<!--[if lt IE 9]> 
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
