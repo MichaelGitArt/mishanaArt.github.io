@@ -1,41 +1,82 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
-
 <head>
-	<meta charset="utf-8"/> 
-	<title>mishana's webSite</title>
-	<link rel="shortcut icon" href="images/1.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>mishana</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+	<link rel="stylesheet" href="allStyle.min.css" type="text/css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->	
 
 
-	<link href="css/navStyle.css" type="text/css" rel="stylesheet" />
-	<link href="css/main.css" type="text/css" rel="stylesheet" />
-	<link href="css/resetNew.css" type="text/css" rel="stylesheet" />
-	<link href="css/index.css" type="text/css" rel="stylesheet" />
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/js.js"></script>
+	<link rel="stylesheet" href="libs/animate/animate.css">	
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">
+	
+	<!-- SCRIPTS JS -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<script src="libs/modernizr/modernizr.js"></script>
+	<script	src="https://code.jquery.com/jquery-3.3.1.min.js"	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
 </head>
-<body>	
-	<div id="wrapper">
-		<header>
-			<div class="bGTop"></div>
-			<nav class="nav">
-				<a class="nav__item"  href="#">mishana</a>
-				<a class="nav__item" href="#">Exercize</a>
-				<a class="nav__item" href="#">Blog</a>
-				<a class="nav__item" href="#">Empty section</a>
-			</nav>
-		</header>
-		<section class="section">
-			<div class="h01">
-				_mishana_
-			</div>	
-		</section>	
+<body>
+	<div class="menu-wrap">
+		<div class="nav-menu">
+			<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item">Главная</a>
+			<a href="javascript://0" onclick="slowScroll ('#portf')" class="menu-item">Портфолио</a>
+			<a href="javascript://0" onclick="slowScroll ('#contact')" class="menu-item">Контакты</a>
+		</div>
+	</div>	
+	<header id="header">
+		<div class="header-wrap">
+			<div class="fut-block">
+				<div class="top">
+					<div class="first">
+						<div class="first-text"><span class="none">_</span>mishana - W</div>
+					</div>
+					<div>
+						<div class="center-line"></div>
+					</div>
+					<div class="second">
+						<div class="second-text">eb Developer</div>
+					</div>
+				</div>
+				<div class="bottom-line"></div>
+			</div>
+			<div class="content">
+				<img class="logotype" src="images/logo.jpg" alt="logo">
+				<div class="header-text">
+					<h1 class="h1">mishana</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem eius mollitia, sed dolores magni atque, dignissimos aut nemo fuga! Facere a delectus, tenetur natus placeat necessitatibus aliquam ipsa assumenda cumque.</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="portf c1 " id="portf">
+		...
 	</div>
-	<footer id="footer">	
-		<a target="_blank" href="https://www.facebook.com/mishana2002">FaceBook</a>	
-		<a target="_blank" href="https://plus.google.com/u/0/115686709170615316046" title="mishana">Google+</a>
-		<div class="gmail">mishakruvoruchko@gmail.com</div>
-		<p>(c)mishana</p>
-	</footer>
-</body>
+	<div class="contact c1" id="contact">
+		...
+	</div>
+
+
+
+	
+
+
+
+			<!--[if lt IE 9]> 
+				<script src="libs/html5shiv/es5-shim.min.js"></script>
+				<script src="libs/html5shiv/html5shiv.min.js"></script>
+				<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+				<script src="libs/respond/respond.min.js"></script>
+			<![endif]-->
+			<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+			<script src="libs/waypoints/waypoints.min.js"></script>
+			<script src="libs/animate/animate-css.js"></script>
+			<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+			<script src="js/js.js"></script>
+	</body>
 </html>
