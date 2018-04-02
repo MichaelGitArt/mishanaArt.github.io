@@ -13,6 +13,150 @@ img{
 	display: block;
 }
 
+.preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(77, 37, 0);
+	z-index: 10;
+	transition: all 1s;
+	opacity: 1;
+	visibility: visible;
+	display: flex;
+	align-items: center;
+}
+
+.loader{
+	width: 200px;
+	height: 200px;
+	border: 2px solid rgba(255,255,255,.8); 
+	border-radius: 50%;
+	position: relative;
+	margin: auto;
+	background: rgba(0,0,0,.5);
+	animation: 4s preload3 infinite linear;
+}
+
+.loader-wrap{
+/*	animation: 4s preload3 infinite linear;
+*/	position: relative;
+}
+
+
+
+
+
+.loader-bg0{
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background: url(../images/preloader0.jpg) center center no-repeat;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+	border-radius: 50%;
+}
+
+/*.loader-wrap1{
+	animation: 10s preload1 infinite linear;
+}*/
+.loader-bg1{
+	animation: 4s preload1 infinite linear;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background: url(../images/preloader1.png) center center no-repeat;
+	position: absolute;
+	top: 0;
+	transform: translate(-50%, 0%);
+	left: 50%;
+}
+
+.loader-bg2{
+	animation: 4s preload2 infinite linear;
+	height: 100%;
+	width: 100%;
+	z-index: 2;
+	background: url(../images/preloader2.png) center center no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+@keyframes preload2 {
+	0%{
+		height: 200px;
+		width: 200px;
+	}
+	13%{
+		width: 250px;
+		height: 250px;
+	}
+	25%{
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@keyframes preload1 {
+	25%{
+		height: 200px;
+		width: 200px;
+	}
+	33%{
+		width: 250px;
+		height: 250px;
+	}
+	50%{
+		width: 200px;
+		height: 200px;
+	}
+}
+@keyframes preload3 {
+	50%{
+			transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
+
+/*.inLoader{
+	animation: 1s spin infinite linear;
+	animation-duration: 4s .2s ;
+	width: 100%;
+	height: 100%;
+	border: 10px solid rgba(0,0,0,1);
+	border-radius: 50%;
+	border-top-color: #08DAD0;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}*/
+
+*.done{
+	opacity: 0;
+	visibility: hidden;
+}
+
+@keyframes spin {
+	from{
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	100%{
+	transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
 
 
 
@@ -35,6 +179,7 @@ header{
 	width: 100%;
 	height: 100%;
 	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .menu-wrap{
@@ -107,18 +252,6 @@ header{
 }
 
 
-@keyframes spin {
-	from { 
-		transform: translate(-50%) rotateX(0deg) rotateY(0deg);
-	}
-	50% { 
-		transform: translate(-50%) rotateX(0deg) rotateY(360deg);
-	}
-	100%{
-		transform: translate(-50%) rotateX(0deg) rotateY(720deg);
-	}
-}
-
 .header-text{
 	position: relative;
 	max-width: 320px;
@@ -135,110 +268,111 @@ header{
 
 
 
+.reset-animation{
+	transition: all .5s;
+	background: #fff;
+	margin: auto auto 20px;
+	font-size: 30px;
+	padding: 10px 30px;
+	font-weight: 600;
+	cursor: pointer;
+	border: 2px solid rgba(255,0,255,0);
+}
+.reset-animation:hover{
+	border: 2px solid rgba(255,255,255,1);
+	background: #000;
+	color: #fff;
+}
+
+
+
 .none{
 	color: rgba(0,0,0,0) !important ;
 }
 
-.fut-block{
-	transition: all 1s;
+.animated-text{
 	border: 2px solid rgba(0,0,0,.1);
-	width: 360px;
-	height: 40px;
-	margin: 0 auto;
-	overflow: hidden;
-	font-size: 30px;
+	margin: 0 auto 20px;
+	font-size: 50px;
 	color: #fff;
-	padding: 12px 5px;
+	padding: 15px 5px 12px;
 	position: relative;
-}
-
-.top{
-	display: flex;
-	padding: 0;
-	margin: 0;
-}
-
-.top > *{
 	overflow: hidden;
+}
+
+.an-top-block{
+	display: flex;
+}
+
+.first-block{
+	padding: 0px;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+}
+
+.second-block{
+	padding: 0px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+}
+
+.first-text{
+	transition: all .8s 1s;
+	transform: translate(100%, 0%);
+}
+
+.do .first-text{
+	transition: all 1s .3s;
+	transform: translate(0%, 0%);
+}
+
+.second-text{
+	transition: all .8s 1s;
+	transform: translate(-100%, 0%);
+}
+.do .second-text{
+	transition: all 1s .3s;
+	transform: translate(0%, 0%);
+}
+.second-op-block,  .first-op-block{	opacity: 0;}
+
+.do .center-line{
+	transition: all 2.2s;
+	transform: translate(-50%, 100%);
+}
+.center-line{
+	transition: all 2s .6s;
+	background: #fff;
+	height: 200%;
+	width: 8px;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+
+.do .bottom-line{
+	transition: all 1s .6s;
+	height: 8px;
+	width: 100%;
+}
+.bottom-line.zero{
+	transition: all .4s;
+	height: 0;
 }
 
 .bottom-line{
-	transition: all .5s .0s;
-	margin: 0 auto;
+	transition: all 1s;
 	background: #fff;
-	height: 0px;
+	height: 5px;
 	width: 0%;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
 	transform: translate(-50%, 0%);
-
 }
-
-.center-line{
-	transition: all 1s .1s;
-	background: #fff;
-	height: 400px;
-	width: 5px;
-	margin: 0 4px;
-	transform: translate(-100%, -20%);
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-}
-
-.first{
-	position: absolute;
-	right: calc(50% + 0px);
-}
-.second{
-	position: absolute;
-	left: calc(50% + 0px);
-}
-
-.first-text{
-	transition: all .5s .2s;
-	transform: translateX(100%);
-}
-.second-text{
-	transition: all .5s .2s;
-	transform: translateX(-100%);
-}
-
-.fut-block:hover .second-text{
-	transition: all .5s linear .4s;
-	transform: translateX(0%);
-}
-.fut-block:hover .first-text{
-	transition: all .5s linear .4s;
-	transform: translateX(0%);
-}
-.fut-block:hover .center-line{
-	transition: all 1s linear .0s;
-	transform: translate(-100%, 100%);
-}
-.fut-block:hover .bottom-line{
-	transition: all .5s 1s;
-	transform: translate(-50%, 0%);
-	width: 70%;
-	height: 5px;
-	animation: .1s spin 1;
-
-}
-
-
-
-}
-@keyframes spin {
-	0% { 
-		height: 5px;
-	}
-	100% {
-		height: 0;
-	}
-}
-
-
 
 
 

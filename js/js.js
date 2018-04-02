@@ -3,6 +3,20 @@
 /* Анимация */
 //$(".nav-menu").animated("fadeInUpBig");
 
+document.body.onload = function(){
+	setTimeout(function(){
+		let bodyChildren = document.body.children;
+		bodyChildren[bodyChildren.length-1].style.display = 'none';
+
+
+		let preloader = document.getElementById('page-preloader');
+		if( !preloader.classList.contains('done') ){
+			preloader.classList.add('done')
+		}
+
+	},1000)
+}
+
 
 
 
@@ -72,8 +86,39 @@ function slowScroll (id) {
 }
 
 
+/* Owm Animated-text*/
+
+let animatedText = document.getElementsByClassName('animated-text')[0];
+let bottomLine = document.getElementsByClassName('bottom-line')[0];
+let resetAn = document.getElementsByClassName('reset-animation')[0];
+
+let activated = false;
+
+animatedText.onmouseover = function(){
+	if(activated) return;
+	activated = true;
+  setTimeout(function(){
+    activated = false;
+	}, 2200)
 
 
+  animatedText.classList.add('do');
+  setTimeout(function(){
+    bottomLine.classList.add('zero');
+	}, 1800)
+};
+
+console.log(resetAn);
+resetAn.onclick = function(){
+	if(activated) return;
+	activated = true;
+	setTimeout(function(){
+    activated = false;
+	}, 2000)
+
+	bottomLine.classList.remove('zero');
+	animatedText.classList.remove('do');
+};
 
 
 
