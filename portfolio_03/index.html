@@ -38,7 +38,7 @@
 					<a href="javascript://0" onclick="slowScroll ('#about')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>About</a>
 					<a href="javascript://0" onclick="slowScroll ('#services')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>Services</a>
 					<a href="javascript://0" onclick="slowScroll ('#portfolio')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>Portfolio</a>
-					<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>chapter</a>
+					<a href="javascript://0" onclick="slowScroll ('#team')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>Team</a>
 					<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item"> <div><i class="fas fa-chevron-right"></i></div>chapter</a>
 				</section>
 			</div>
@@ -121,7 +121,6 @@
 				<div class="featured-more">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					<a href="" class="readMore">Submit now</a>
-					<div class="featured-more-bg"></div>
 				</div>
 			</section>
 		</article>
@@ -202,145 +201,331 @@
 			</div>
 		</div>
 		<article id="portfolio" class="portfolio">
-			<h2>THE PORTFOLIO</h2>
-			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-			<div class="portfolio-options">
-					<p data-all>All works</p>
-					<p data-branding>Branding</p>
-					<p data-web>Web</p>
-					<p data-psd>PSD Nesting</p>
-					<p data-wordpress>Wordpress</p>
-				</div>	
-			<div class="gallery">
-				<div class="gal-items gal-item2">
-					<div class="portf-text">
-						<div>
-						<h4>Title here</h4>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
+			<div class="portfolio-wrap">
+				<h2>THE PORTFOLIO</h2>
+				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+				<div class="portfolio-options">
+					<p data-option="all" >All works</p>
+					<p data-option="branding" >Branding</p>
+					<p data-option="web" >Web</p>
+					<p data-option="psd" >PSD Nesting</p>
+					<p data-option="wordpress" >Wordpress</p>
 				</div>
-				<div class="gal-items gal-item10">
-					<div class="portf-text">
-						<div>
-						<h4>Title here</h4>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div>
-							<a href="#" class="gal-heart"><i class="far fa-heart"></i></a>
-							<a href="#" class="gal-link"><i class="fas fa-link"></i></a>
+				<!-- Works -->
+				<div class="gallery">
+					<div class="gal-items gal-item2" data-chapter='web wordpress'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
 						</div>
 					</div>
-				</div>
+					<div class="gal-items gal-item10" data-chapter='web psd'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item4" data-chapter='web wordpress'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item1" data-chapter='branding'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>				
+					<div class="gal-items gal-item5" data-chapter='web psd'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item6" data-chapter='web wordpress'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item7" data-chapter='web wordpress'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item8" data-chapter='branding psd'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
 
-				<div class="gal-items gal-item4">
-					<div class="portf-text">
-						<div>
-						<h4>Title here</h4>
-						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+					<div class="gal-items gal-item3" data-chapter='branding wordpress'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
 						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+					</div>
+					<div class="gal-items gal-item11" data-chapter='web psd'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item12" data-chapter='branding'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item9" data-chapter='branding'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item11" data-chapter='web psd wordpress'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item12" data-chapter='wordpress web'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item9" data-chapter='branding'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item3" data-chapter='branding'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item11" data-chapter='web psd'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item12" data-chapter='branding'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
+					</div>
+					<div class="gal-items gal-item13" data-chapter='branding'>
+						<div class="portf-text">
+							<div>
+								<h4>Title here</h4>
+								<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+							</div>
+							<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						</div>
 					</div>
 				</div>
-				<div class="gal-items gal-item1">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+				<div class="portf-addition">	
+					<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis </p>
+					<a href="" class="readMore">Start now</a>
+				</div>			
+			</div>
+		</article>
+		<article id="team" class="team">
+			<h2>THE TEAM</h2>
+			<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui <br>blanditiis praesentium</p>
+			<div class="people">
+				<!--.man-1.man>.ava>img^.description>.main-info>h3{Abdullag Noman}+p{Createve Director, Code Cafe}^p{At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium}+.ownSkills-percent>.skill*3>.skill-text>.skill-name+.percent^.scale -->
+				<div class="man-1 man">
+					<div class="ava"><img src="images/jack.jpg" alt=""></div>
+					<div class="description">
+						<div class="main-info">
+							<h3>Abdullah Noman</h3>
+							<p>Createve Director, Code Cafe</p>
 						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
+						<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+						<div class="ownSkills-percent">
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">Branding</div>
+									<div class="percent">60%</div>
+								</div>
+								<div class="scale scale1"></div>
+							</div>
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">Web Design</div>
+									<div class="percent">80%</div>
+								</div>
+								<div class="scale scale2"></div>
+							</div>
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">User Interface</div>
+									<div class="percent">85%</div>
+								</div>
+								<div class="scale scale3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="man-2 man hid op">
+					<div class="ava"><img src="images/jon.jpg" alt=""></div>
+					<div class="description">
+						<div class="main-info">
+							<h3>Jack Danials</h3>
+							<p>Main Designer, Code Cafe</p>
+						</div>
+						<p>At vero eos imos ducimus qui blanditiis praesentium</p>
+						<div class="ownSkills-percent">
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">UI/UX</div>
+									<div class="percent">50%</div>
+								</div>
+								<div class="scale scale1"></div>
+							</div>
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">Web Design</div>
+									<div class="percent">90%</div>
+								</div>
+								<div class="scale scale2"></div>
+							</div>
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">Neuro-Interface</div>
+									<div class="percent">70%</div>
+								</div>
+								<div class="scale scale3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="man-3 man hid op">
+					<div class="ava"><img src="images/bob.jpg" alt=""></div>
+					<div class="description">
+						<div class="main-info">
+							<h3>Alex Wikich</h3>
+							<p>Brander, Code Cafe</p>
+						</div>
+						<p>At vero eos et accusaet accusamus et iusto odio dignisset accusamus et iusto odio dignissmus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+						<div class="ownSkills-percent">
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">Branding</div>
+									<div class="percent">65%</div>
+								</div>
+								<div class="scale scale1"></div>
+							</div>
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">SEO</div>
+									<div class="percent">70%</div>
+								</div>
+								<div class="scale scale2"></div>
+							</div>
+							<div class="skill">
+								<div class="skill-text">
+									<div class="skill-name">Design</div>
+									<div class="percent">35%</div>
+								</div>
+								<div class="scale scale3"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				
-				<div class="gal-items gal-item5">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
-				<div class="gal-items gal-item6">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
-				<div class="gal-items gal-item7">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
-				<div class="gal-items gal-item8">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
-				<div class="gal-items gal-item9">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
-				<div class="gal-items gal-item3">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
-
-				<div class="gal-items gal-item11">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
-				<div class="gal-items gal-item12">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
-				<div class="gal-items gal-item13">
-					<div class="portf-text">
-						<div>
-							<h4>Title here</h4>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-						</div>
-						<div class="gal-icon"><a href="#" class="gal-heart"><i class="far fa-heart"></i></a><a href="#" class="gal-link"><i class="fas fa-link"></i></a></div>
-					</div>
-				</div>
 			</div>
+			<div class="switch">
+				<div data-option='man-1' class="member active"><div class="sw"></div></div>
+				<div data-option='man-2' class="member"><div class="sw"></div></div>
+				<div data-option='man-3' class="member"><div class="sw"></div></div>
+			</div>
+<!-- 			<div class="fastContact">
+				<p>Already Loved Us? Let’s talk!</p>
+				<a href="#" class="fastContact-a" onclick="return false">Contact US</a>
+			</div> -->
 		</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<footer>
 			© Copyright 2018 Css Author. mishana 
 		</footer>
-
 		<script src="js/js.js"></script>
 	</body>
 	</html>

@@ -1,52 +1,15 @@
 'use strict'
-$(".text-story").animated("fadeInLeft");
-$(".play").animated("fadeIn");
-$(".slider").animated("fadeIn");
+var sandwich = document.getElementById("sandwich"),
+menu = document.querySelector(".menu-section"),
+opensandwich = false,
+dark = document.getElementsByClassName('dark')[0];
 
 
-$(".works").animated("fadeInUpBig");
-$(".portf-title").animated("fadeInUpBig");
-$(".team > *").animated("fadeInUpBig");
-$(".says-wrap").animated("fadeInUpBig");
-$(".contact > *").animated("fadeInLeft");
-$("footer > *").animated("fadeInRight");
-$(".social").animated("fadeInUpBig");
-$(".expertise > *").animated("fadeInUpBig");
-$("article .learnMore").animated("fadeInUpBig");
-
-
-var up = document.getElementsByClassName('up')[0];
-
-window.onscroll = function(){
-    if(window.pageYOffset >= 1000){
-        up.classList.add('active')
-    }else up.classList.remove('active');
-
-}
-
-document.body.onload = function(){
-	setTimeout(function(){
-		var preloader = document.getElementById('page-preloader');
-		if( !preloader.classList.contains('done') )
-		{
-			preloader.classList.add('done')
-		}
-	},1000)
-}
-
-
-
-
-	/*//////////////////Menu/////////////////////*/
-
-var mobMenu = document.getElementsByClassName('mobMenu')[0],
-sandwich = document.getElementById('sandwich'),
-menu = document.getElementsByClassName('menu-section')[0];
 
 
 menu.onclick = function(e){
 	var target = e.target;
-	while (target.className != "menu-section" ) {
+	while (target.className != "modal-form" ) {
 			if (target.tagName == 'A') {
       // нашли элемент, который нас интересует!
       toggleMenu();
@@ -57,16 +20,36 @@ menu.onclick = function(e){
 }
 
 
-mobMenu.onclick = function(){
+
+
+
+sandwich.onclick = function(){
 	toggleMenu();
-}
-
-
-
+};
+dark.onclick = function(){
+	toggleMenu();
+};
 function toggleMenu(){
-	menu.classList.toggle('active');
-	sandwich.classList.toggle('active');
-	mobMenu.classList.toggle('active');
+sandwich.classList.toggle('active');
+menu.classList.toggle('active');
+dark.classList.toggle('active');
+console.log(dark);
+document.getElementsByClassName('mobMenu')[0].classList.toggle('active');
+}
+
+
+window.onscroll = function(){
+    if(window.pageYOffset >= 700){
+        menu.classList.add('fMenu')
+    }else menu.classList.remove('fMenu');
+
+    if(window.pageYOffset >= 800){
+        menu.classList.add('fMenu1')
+    }else menu.classList.remove('fMenu1');
+
+    if(window.pageYOffset >= 900){
+        menu.classList.add('fixMenu')
+    }else menu.classList.remove('fixMenu');
 }
 
 
@@ -76,272 +59,102 @@ function toggleMenu(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*//////////////////Header slider/////////////////////*/
-
-
-var headerSwitch = document.getElementsByClassName('header-switch')[0],
-visible = 0,
-working = false;
-headerSwitch.onclick = function(e){
-	if(working) return;
-	working = true;
-	var target = e.target;
-	while (target.className != "header-switch" ) {
-		if (target.getAttribute('data-option')) {
-	      // нашли элемент, который нас интересует!
-	      var thisOption = target.getAttribute('data-option'),
-	      slider = document.getElementsByClassName('desk-wrap')[0];
-
-	      changeAct(target, thisOption);
-	      showMember(thisOption, slider);
-	      return;
-	    }
-	    target = target.parentNode;
-	  }
-	}
-	function showMember(option, slider){
-		var parts = slider.children,
-		newVisible;
-		for (var i = 0; i < parts.length; i++) {
-			if(parts[i].getAttribute('data-option') === option){
-				newVisible = i;
-				break;
-			}
-		}
-		parts[visible].classList.add('op');
-		setTimeout(function(){
-			parts[visible].classList.add('hid');
-			parts[newVisible].classList.remove('hid');
-			setTimeout(function(){
-				parts[newVisible].classList.remove('op');
-				visible = newVisible;
-				setTimeout(function(){
-					working = false;
-				},250);
-			},20);
-		},500);
-	}
-	function changeAct(target, trueOption){
-		var parent = target.parentNode;
-		var elems = parent.children;
-		for (var i = 0; i < elems.length; i++) {
-			if(elems[i].getAttribute('data-option') != trueOption){
-				elems[i].classList.remove('active');
-			}else{
-				elems[i].classList.add('active');
-			}
-		}
-	}
-
-
-
-
-
-	/*//////////////////Team slider/////////////////////*/
-
-
-	var peopleSlider = document.getElementsByClassName('slider')[0],
-	workingSlider = false,
-	act = 2,
-	oldAct = 2;
-
-	peopleSlider.onclick = function(e){
-		if(workingSlider) return;
-		workingSlider = true;
-		var target = e.target;
-		if(target.hasAttribute('data-option')) {
-			newShowPeoplePart(target);
-		}
-		while (target.className != "slider" ) {
-			if (target.classList.contains('back') || target.classList.contains('forward')){
-	      // нашли элемент, который нас интересует!
-	      var thisOption = target.className,
-	      images = document.getElementsByClassName('slider-images')[0],
-	      slider = document.getElementsByClassName('says-wrap')[0];
-	      peopleChangeAct(images, thisOption);
-	      return;
-	    }
-	    target = target.parentNode;
-	  }
-	}
-
-	function showPeoplePart(option){
-		var slider = document.getElementsByClassName('says-wrap')[0],
-		parts = slider.children;
-
-		parts[oldAct].classList.add('op');
-		setTimeout(function(){
-			parts[oldAct].classList.add('hid');
-			parts[option].classList.remove('hid');
-			setTimeout(function(){
-				parts[option].classList.remove('op');
-				setTimeout(function(){
-					workingSlider = false;
-					oldAct = act;
-
-				},250);
-			},20);
-		},500);
-	}
-
-	function peopleChangeAct(images, option){
-		var elements = images.children;
-		for (var i = 0; i < elements.length; i++){
-			if(i === act){
-				elements[i].classList.add('sm');    
-			}
-		}
-		oldAct = act;
-		if(option === "back") act--;
-		if(option === "forward") act++;
-		if(act > 4) act = 0;
-		if(act < 0) act = 4;
-		elements[act].classList.remove('sm'); 
-		showPeoplePart(act)
-	}
-	function newShowPeoplePart(target){
-		var option = target.getAttribute('data-option') - 1;
-		console.log(oldAct);
-
-
-		var images = document.getElementsByClassName('slider-images')[0];
-		var elements = images.children;
-		elements[oldAct].classList.add('sm'); 
-		elements[option].classList.remove('sm'); 
-		act = option;
-		showPeoplePart(act)
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var sandwich = document.getElementById("sandwich"),
-// dark = document.getElementsByClassName('dark')[0];
-
-
-
-
-
-
-
- /*//////////////////Anchor//////////////////*/
+/*//////////////////Anchor//////////////////*/
 function slowScroll (id) {
-
+    if(id == '#goods'){
      var offset = 0;
-
+    }else{
+     var offset = 60;
+    }
 	$('html, body').animate ({
 		scrollTop: $(id).offset ().top - offset
 	}, 500);
 	return false;
 }
 
-// function getCoords(elem) { // кроме IE8-
-//   var box = elem.getBoundingClientRect();
+function getCoords(elem) { // кроме IE8-
+  var box = elem.getBoundingClientRect();
 
-//   return {
-//     top: box.top + pageYOffset,
-//     left: box.left + pageXOffset
-//   };
-// }
-
-
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+}
 
 
 
+/*//////////////////Progres Bar /////////////////////*/
+$(document).ready(function () {
+    var pie1 = $('.pie-1'),
+        pie2 = $('.pie-2'),
+        pie3 = $('.pie-3');
+    progressBarUpdate(40, 100, pie1,'%');
+    progressBarUpdate(75, 100, pie2, '%');
+    progressBarUpdate(90, 100, pie3, '%');
+});
 
 
 
 
- /*//////////////////Team slider/////////////////////*/
-// var people = document.getElementsByClassName('people')[0],
-// teamSwitch = document.getElementsByClassName('switch')[0];
-// var visible = 0;
-
-// teamSwitch.onclick = function(e){
-//   var target = e.target;
-//   while (target.className != "switch" ) {
-//     if (target.classList.contains('member')) {
-//       var option = target.getAttribute('data-option');
-//       changeAct(target, option);
-//       showMember(option);
-//       return;
-//     }
-//     target = target.parentNode;
-//   }
-// }
-
-// function showMember(option){
-//   var members = people.children;
-//   var newVisible;
-
-//   for (var i = 0; i < members.length; i++) {
-//     if(members[i].classList.contains(option)){
-//       newVisible = i;
-//       break;
-//     }
-//   }
-
-//   members[visible].classList.add('op');
-//   setTimeout(function(){
-//     members[visible].classList.add('hid');
-//     members[newVisible].classList.remove('hid');
-//     setTimeout(function(){
-//      members[newVisible].classList.remove('op');
-//       visible = newVisible;
-//     },10);
-
-//   },1000);
 
 
-// }
+function rotate(element, degree) {
+    element.css({
+        '-webkit-transform': 'rotate(' + degree + 'deg)',
+            '-moz-transform': 'rotate(' + degree + 'deg)',
+            '-ms-transform': 'rotate(' + degree + 'deg)',
+            '-o-transform': 'rotate(' + degree + 'deg)',
+            'transform': 'rotate(' + degree + 'deg)',
+            'zoom': 1
+    });
+}
+
+function progressBarUpdate(x, outOf, elem,type) {
+    var firstHalfAngle = 180;
+    var secondHalfAngle = 0;
+
+    // caluclate the angle
+    var drawAngle = x / outOf * 360;
+
+    // calculate the angle to be displayed if each half
+    if (drawAngle <= 180) {
+        firstHalfAngle = drawAngle;
+    } else {
+        secondHalfAngle = drawAngle - 180;
+    }
+
+    // set the transition
+    rotate(elem.find(".slice1"), firstHalfAngle);
+    rotate(elem.find(".slice2"), secondHalfAngle);
+
+    // set the values on the text
+    elem.find(".status").html(x + "<span>"+type+"</span>");
+}
+
+
+
+/*//////////////////Portfolio/////////////////////*/
+var option = document.getElementsByClassName('portfolio-options')[0];
+console.log(option);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
