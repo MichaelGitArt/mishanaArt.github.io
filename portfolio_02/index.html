@@ -1,106 +1,52 @@
 <!doctype html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<title>First site</title>
-		<link rel="stylesheet" href="css/main.css" type="text/css">
-		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Animating</title>
 	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
-	<link href="https://fonts.googleapis.com/css?family=Mukta+Malar" rel="stylesheet">
-
+	<link rel="stylesheet" href="allStyle.min.css" type="text/css">
 </head>
-<body>
-	
-	<header>
-		<div class="logo">
-			<img src="images/logo.png" alt="logo" >
+<body>	
+	<div class="preloader" id="page-preloader">
+		<div class="loader">
+			<div class="inLoader"></div>
 		</div>
-		<h1 class="topTitle">
-			Be sure you put your feet <br>
-			in the right place
-		</h1>
-	</header>
+	</div>
 	<div class="wrapper">
-		<section>
-			<article>
-				<form class="elem1">
-					<input type="text" class="input" placeholder="Enter your zip code">
-					<img src="images/someImg.jpg" alt="places">
-					<p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit.</p>
-					<input type="submit" class="dws-submit" value="PRESS ME">
-				</form>
-				<div class="container">
-					<div class="sec">
-						<img src="images/icon1.jpg" alt="" class="someImg1">
-						<h2>Documents</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adio debitis tenetur cum similique!</p>
-					</div>
-					<div class="sec">
-						<img src="images/icon2.jpg" alt="files" class="someImg2">
-						<h2>Photos</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur xime? Quidem explicabo at pariatur in!</p>
-					</div>
-				</div>
-			</article>	
-		</div>		
-		<article class="gren">
-			<div class="grenWrap">
-			<div class="blockWrap1">
-				<div class="block">
-					<img src="images/grenImg1.png" alt="er" class="blockImg1 ">
-					<img src="images/grenShadow1.png" alt="er" class="blockImg2 ">
-				</div>
+		<div class='main-block'>
+			<div class="dark-bg"></div>
+			<div class="top-menu">
+				<a class="t-menu-item">О комплексе</a>
+				<a class="t-menu-item">Доставка</a>
 			</div>
-			<div class="textWrap1">
-				<h1>This is a Heading</h1>
-				<p>Lorem ipsum dolorolor incidunt quas dolore, officiis, autem ipsam tempora facilis. Velit quo, quae perspiciatis consequuntur omnis unde excepturi.</p>
-				<p>Lorem ipsum dololoribus eius magni qui dolorum quaerat accusamus praesentium pariatur autem optio iure, nesciunt architecto nulla repellat ad hic deleniti voluptate incidunt neque!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ducimus vero porro ut esse illum ab quis delectus dolores ad error dolore fuga ipsam, tempore quia repellat consequuntur voluptate hic!</p>
+			<div class="menu">
+				<a class="menu-item">О ресторане</a>
+				<a class="menu-item">Меню</a>
+				<a class="menu-item">Интерьер</a>
+				<a class="menu-item">Команда</a>
+				<a class="menu-item">Фотоотчеты мероприятий</a>
+				<a class="menu-item">Как нас найти</a>
 			</div>
-			<div class="blockWrap2">
-				<div class="block2">
-					<img src="images/grenImg2.png" alt="er" class="blockImg1">
-					<img src="images/grenShadow2.png" alt="er" class="blockImg2 ">
-				</div>
+			<div class="bg-images">
+				<img src="images/logo.png" alt="logo" class="logo">
+				<img src="images/meat.png" alt="meat" class="meat">
+				<img src="images/bow.png" alt="bow" class="bow">
+				<img src="images/spray.png" alt="spray" class="spray">
+				<img src="images/pepper.png" alt="pepper" class="pepper">
+				<img src="images/tomato_2.png" alt="tomato" class="tomato2">
+				<img src="images/tomato_1.png" alt="tomato" class="tomato1">
+				<img src="images/broccoli.png" alt="" class="broccoli1">
+				<img src="images/broccoli-2.png" alt="" class="broccoli2">
+				<img src="images/smoke.png" alt="smoke" class="smoke">
 			</div>
-			<div class="textWrap2">
-				<h1>This is a Heading</h1>
-				<p>Lorem ipsum dolor sit amet, consmmodi itaque cum ullam dolor incidunt quas dolore, officiis, autem ipsam tempora facilis. Velit quo, quae perspiciatis consequuntur omnis unde excepturi.</p>
-				<p>Lorem ipsum ciad  consectetur adipisicing elit. Obcaecati ducimus vero porro ut esse illum ab quis delectus dolores ad error dolore fuga ipsam, tempore quia repellat consequuntur voluptate hic!</p>
-			</div>
-			</div>
-		</article>
-		<article class="map">
-			<button class="map-hide">Показать форму заполнения</button>
-			<div id="map"></div>
-			<div class="map-circle">
-				<button class="map-open">Показать карту</button>
-				<form>
-					<div>
-					<input type="text" class="map-text-name input " placeholder="Name">
-				</div>
-				<div>
-					<input type="text" class="map-text-message input" placeholder="Email address">
-				</div>
-				<div>
-					<textarea class="map-textbox" placeholder="Message"></textarea>
-				</div>
-				<div class="map-button-wrap">
-					<input type="submit" class="map-button"  value="OK">
-				</div>
-			</form>
+			<img src="images/prime-logo-index.png" alt="" class="prime">
 		</div>
-	</article>
-</section>
-<footer>
-		 © Copyright 2018 Css Author. mishana 
-	</footer>
-	  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEzbx19e_p-S4gaNXgz-lzYJ5c5fJRmak&callback=initMap"
-  	async defer></script>
-	<script src="js/js.js"></script>
-</body>
+		<div class="green-block"></div>
+		<div class="red-block"></div>
+
+			<script src="scripts.min.js"></script>
+		</div>
+	</body>
 </html>
