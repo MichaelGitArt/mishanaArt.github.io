@@ -70,16 +70,59 @@ document.body.onload = function(){
 	},1000)
 }
 
+// Адаптация 
+	let wrapper = document.getElementsByClassName('wrapper')[0];
+	let backButton = document.getElementsByClassName('back')[0];
+	let forwardButton = document.getElementsByClassName('forward')[0];
+
+
+	document.addEventListener('click', function(event){
+		let target = event.target;
+		while(target != document.body){
+				if(target.className == 'back' || target.className == 'forward' ){
+					moveBlock(target.className);
+					return;
+				}
+			target = target.parentNode;
+		}
+	});
 
 
 
+	let screenSize;
+
+	if(matchMedia){
+		let screen = window.matchMedia('(max-width: 1000px)');
+		screen.addListener(changes);
+		changes(screen);
+	}
+	function changes(screen){
+		if(screen.matches){
+			console.log('700+');
+			screenSize = '700+'
+			wrapper.style.transform = 'translate(0%, 0)'
+			forwardButton.classList.remove('hide');
+			backButton.classList.add('hide');
+		}else{
+			console.log('1000+');
+			screenSize = '1000+'
+			// wrapper.style.transform = 'translate(0%, 0)'
+		}
+	}
 
 
+function moveBlock(value){
+	if (value === "back"){
+		wrapper.style.transform = 'translate(0%, 0)'
+			forwardButton.classList.remove('hide');
+			backButton.classList.add('hide');
+	}else{
+		wrapper.style.transform = 'translate(-50%, 0)'
+			forwardButton.classList.add('hide');
+			backButton.classList.remove('hide');
+	}
 
-
-
-
-
+}
 
 
 

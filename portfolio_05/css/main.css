@@ -69,7 +69,7 @@ body{
 }
 /*End Preloader*/
 
-
+/***************   Main   ***************/
 .wrapper{
 	justify-content: center;
 	width: 100%;
@@ -88,7 +88,6 @@ body{
 	flex-direction: column;
 }
 
-
 .black-block{
   background: #1C1C1C;
 }
@@ -100,6 +99,10 @@ body{
 }
 
 
+
+
+
+/***************   End Main   ***************/
 /***************   Top block   ***************/
 .top-block{
 	transition: all 1.5s cubic-bezier(0,0,.3,1);
@@ -284,32 +287,75 @@ body{
 	display: none;
 }
 
-@media screen and (max-width: 1170px){
+@media screen and (max-width: 1000px){
 
 
 
 
 
 .back ,.forward{
+	cursor: pointer;
+	color: #fff;
+	justify-content: center;
+	font-size: 30px;
+	transition: all 1s;
 	z-index: 2;
-/*	display: flex;
-*/	align-items: center;
-	top: 300px;
+	display: flex;
+	align-items: center;	
+	top: 200px;
 	position: absolute;
 	width: 30px;
-	height: 400px;
-	border: 1px solid #fff;
-	background: rgba(255,255,255,.3);
+	height: 200px;
+}
+.back:hover ,.forward:hover{
+	background: none;
 }
 
 .back{
+	border-radius: 0  5px 5px 0;
 	left: 0px;
+	background: rgba(28, 28, 28,1);
 }
 .forward{
+	border-radius: 5px 0 0 5px;
 	right: 0;
+	background: rgba(146, 20, 21,1);
+}
+
+.back.hide{
+	transform: translate(	-100%, 0%);
+}
+.forward.hide{
+	transform: translate(	100%, 0%);
 }
 
 
+
+
+
+.wrapper{
+	transition: all 1s;
+	transform: translate(-50%, 0);
+	justify-content: flex-start;
+}
+
+
+.black-block, .green-block, .red-block{
+	min-width: 50%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+/*.black-block{
+  background: #1C1C1C;
+}
+.green-block{
+  background: linear-gradient(-47deg, #11721e, #7ba50d);
+}
+.red-block{
+	background: #921415;
+}*/
 
 }
 
