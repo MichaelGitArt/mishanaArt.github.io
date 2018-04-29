@@ -3,8 +3,8 @@ html, body, div{
 	margin: 0;
 }
 body{
-	overflow: hidden;
-		background: #212121;
+	overflow-x: hidden; 
+	background: #212121;
 }
 @font-face {
   font-family: "GothamProReg";
