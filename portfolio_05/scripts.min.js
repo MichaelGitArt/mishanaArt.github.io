@@ -127,13 +127,17 @@ document.body.onload = function(){
 			screenSize = '700-';
 			if(testWidth === 'first'){
 			testWidth = true;
+			forwardButton.classList.remove('hide');
+			backButton.classList.add('hide')
 			}
 			console.log('0-700');
 			wrapper.style.transform = 'translate(0%, 0)'
 			forwardButton.classList.remove('hide');
 			backButton.classList.add('hide');
+
 		// 700-1000
 		}else{
+			backButton.classList.add('hide')
 			wrapper.style.transform = 'translate(0%, 0)'
 			xMixing = 0
 			screenSize = '1000-';
@@ -144,6 +148,9 @@ document.body.onload = function(){
 	function changeScreen1(screen){
 		if(!screen.matches){
 			wrapper.style.transform = 'translate(0%, 0)'
+			forwardButton.classList.remove('hide');
+			backButton.classList.add('hide');
+
 		}
 	}
 
@@ -169,28 +176,33 @@ function moveBlock(value, screenSize){
 
 
 	//Убираем и показываем кнопки для экранов 700-1000
-		if(+k === 1 && +xMixing === -50) {
+	if(+k === 1){
+		if(+xMixing === -50) {
 			forwardButton.classList.add('hide')
 		}else{
 			forwardButton.classList.remove('hide')
+			console.log('-');
 		}
-		if(+k === 1 && +xMixing === 0) {
+		if(+xMixing === 0) {
 			backButton.classList.add('hide')
 		}else{
+			console.log('-');
 			backButton.classList.remove('hide')
 		}
+	}
 	//Убираем и показываем кнопки для экранов 0-700
-
-	if(+k === 2 && +xMixing === -200) {
+	if(+k === 2){
+	if(+xMixing === -200) {
 			forwardButton.classList.add('hide')
 		}else{
 			forwardButton.classList.remove('hide')
 		}
-		if(+k === 2 && +xMixing === 0) {
+		if(+xMixing === 0) {
 			backButton.classList.add('hide')
 		}else{
 			backButton.classList.remove('hide')
 		}
+	}
 }
 
 

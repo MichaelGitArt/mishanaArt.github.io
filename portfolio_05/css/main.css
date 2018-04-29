@@ -3,6 +3,7 @@ html, body, div{
 	margin: 0;
 }
 body{
+	min-height: 100vh;
 	overflow-x: hidden; 
 	background: #212121;
 }
@@ -75,6 +76,8 @@ body{
 	justify-content: center;
 	width: 100%;
 	display: flex;
+	min-height: 100vh;
+/*	min-height: 900px;*/
 	background: linear-gradient(to right, #1C1C1C, #1C1C1C,  #921415, #921415);
 }
 
@@ -83,7 +86,6 @@ body{
 	box-sizing: border-box;
 	overflow: hidden;
 	width: 456px;
-	min-height: 1000px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -200,10 +202,14 @@ body{
 .logotype.show{
 	opacity: 1;
 }
+
 .images{
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	flex-grow: 1;
-}
+	}
+
 .images > img:not(.going){
 	position: absolute;
 }
@@ -211,10 +217,14 @@ body{
 @import url('black-animation.css');
 @import url('green-animation.css');
 @import url('red-animation.css');
+/**********  End Images   **********/
 
+
+/***************   Bottom block   ***************/
 
 .b-bottom-block, .r-bottom-block{
 	padding: 0  25px	20px;
+	margin-top: 50px;
 }
 
 .b-bottom-block{
@@ -237,11 +247,7 @@ body{
 }
 
 
-.images{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-}
+
 
 .menu{
 	transition: all 1.5s;
@@ -279,14 +285,18 @@ body{
 .full-active:hover .menu{
 	opacity: 1 !important;
 }
-
-
-
-
-
 .back ,.forward{
 	display: none;
 }
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px){
 .back ,.forward{
@@ -338,6 +348,19 @@ body{
 .black-block, .green-block, .red-block{
 	min-width: 50%;
 	flex-direction: column;
+	min-height: 700px;
+}
+.main-section{
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.logotype{
+
+	margin: 40px auto 0;
+}
+.top-block{
+	height: 130px;
 }
 }
 
@@ -352,11 +375,13 @@ body{
 .black-block, .green-block, .red-block{
 	min-width: 100%;
 	flex-direction: column;
+	min-height: 710px;
 }
 .main-section{
-	max-width: 400px;
+	max-width: 420px;
 	margin: 0 auto;
 }
+
 }
 
 
