@@ -200,7 +200,7 @@ body{
 	position: relative;
 	flex-grow: 1;
 }
-.images > img{
+.images > img:not(.going){
 	position: absolute;
 }
 /*Black images animations*/
@@ -280,13 +280,38 @@ body{
 
 
 
+.back ,.forward{
+	display: none;
+}
+
+@media screen and (max-width: 1170px){
 
 
 
 
 
+.back ,.forward{
+	z-index: 2;
+/*	display: flex;
+*/	align-items: center;
+	top: 300px;
+	position: absolute;
+	width: 30px;
+	height: 400px;
+	border: 1px solid #fff;
+	background: rgba(255,255,255,.3);
+}
+
+.back{
+	left: 0px;
+}
+.forward{
+	right: 0;
+}
 
 
+
+}
 
 
 

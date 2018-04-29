@@ -1,11 +1,11 @@
 .meat{
-	top: 700px;
-	right: 20px;
+	width: 100%;
+	height: auto;
+	transform: translate(0, 300%);
 }
 .show.meat{
 	transition: all 1s cubic-bezier(0,0,.3,1);
-	top: 90px;
-	right: 20px;
+	transform: translate(0, 100px);
 }
 
 
@@ -47,7 +47,7 @@
 
 .pepper{
 	top: 150px;
-	right: 270px;
+	left: 100px;
 	opacity: 0;
 }
 .show .pepper{
@@ -57,7 +57,7 @@
 	transition: all 1.2s cubic-bezier(0,0,.3,1);
 	opacity: 1;
 	top: 65px;
-	right: 325px;
+	left: 45px;
 }
 
 
@@ -84,7 +84,7 @@
 
 .tomato2{
 	top: -110px;
-	right: 250px;
+	left: 130px;
 	opacity: 0;
 }
 .show .tomato2{
@@ -94,7 +94,7 @@
 	transition: all 1.2s cubic-bezier(0,0,.3,1);
 	opacity: 1;
 	top: -180px;
-	right: 310px;
+	left: 70px;
 }
 
 
@@ -136,7 +136,7 @@
 	transition: all 2s cubic-bezier(0,0,.3,1);
 	opacity: 0;
 	top: -170px;
-	right: 30px;
+	left: 10px;
 }
 .show.black-smoke{
 	z-index: 2;

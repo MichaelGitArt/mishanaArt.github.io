@@ -1,10 +1,12 @@
 .logo-coffee{
+	width: 100%;
+	height: auto;	
 	z-index: 2;
-	top: 700px;
+	transform: translate(0, 300%);
 }
 .show.logo-coffee{
 	transition: all 1s cubic-bezier(0,0,.3,1);
-	top: -45px;
+	transform: translate(0, -30px);
 }
 
 .coffee{
