@@ -5,41 +5,92 @@
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Name</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/logos.svg">
 	<link rel="stylesheet" href="allStyle.min.css" type="text/css">
 
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500&amp;subset=cyrillic" rel="stylesheet">
 
-	<!-- FONT -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
 
-	<!-- SCRIPTS JS -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	<body>	
+	<script	src="https://code.jquery.com/jquery-3.3.1.min.js"	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
 
+<body>
+	
 
-		
-		<header id="header">		
-			<div class="herader-mainContent">
-				<div class="nav-wrap">
-					<nav class="navigation">
-						<a href="javascript://0" onclick="slowScroll ('#header')" class="main-item"><img src="images/logos.svg" class="logo" alt="Logotype"><div class="main-item-text">mishana</div></a>
-						<div class="secondary-items">
-							<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item"> <div></div>Портфолио</a>
-							<a href="javascript://0" onclick="slowScroll ('#about')" class="menu-item"> <div></div>Контакты</a>
-						</div>
-						<div class="sandwich">
-							<div class="sw-top"><div class="sw-color sw-color_1"></div></div>
-							<div class="sw-center"><div class="sw-color sw-color_2"></div></div>
-							<div class="sw-bottom"><div class="sw-color sw-color_3"></div></div>
-						</div>
-					</nav>
+	<div class="сustomerProblem">
+		<h2>С какими проблемами обращаються <br> наши клиенты:</h2>
+		<div class="cp-problems">
+			<div class="cp-problem">
+				<div class="cp-problem-wrap cp-wr-colLeft">
+				<div class="cp-title"><span class="cp-bold">Пробема №1:</span><br>Рестораторы не знают своих гостей</div>
+				<div class="cp-text">Часто рестораторы не знают, какую долю занимают постоянные
+				 гости, предпочтения гостей по меню, по каким дням приходят, сколько денег оставляют и возвращаются
+					ли снова. Грамотная работа с этими данными позволит увеличить частоту посещений и средний чек. А получить
+					 и накопить эту информацию можно при регистрации гостя в бонусной системе.
+				</div>
+				<div class="cp-advice">
+					<img src="images/finger.png" alt="finger" class="finger">
+					<div class="cp-centerLine"></div>
+					<div class="cp-advice-text">Ресторан обязан знать своих гостей!</div>
+				</div>
 				</div>
 			</div>
-		</header>
+			<div class="cp-problem">
+				<div class="cp-problem-wrap">
+				<div class="cp-title"><span class="cp-bold">Пробема №2:</span><br>Рестораторы не собирают базу гостей или не знают, как это сделать</div>
+				<div class="cp-text">Главный ресурс любого ресторана - гости. Важно иметь
+				 возможность собирать контакты гостей, чтобы получать от них обратную связь и делать адресные предложения.
+				  Бонус – достойный обмен за оставленные контакты. Система лояльности – инструмент, чтобы этот бонус пре
+					доставить и сказать «спасибо».
+				</div>
+				<div class="cp-advice">
+					<img src="images/finger.png" alt="finger" class="finger">
+					<div class="cp-centerLine"></div>
+					<div class="cp-advice-text">Ресторан должен поощрять <br> гостей за вход в их <br> информационное поле</div>
+				</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="cp-problem">
+				<div class="cp-problem-wrap cp-wr-colLeft">
+				<div class="cp-title"><span class="cp-bold">Пробема №3:</span><br>Гости теряют или забывают пластиковые карты и невозможно начислить бонус или посчитать скидку</div>
+				<div class="cp-text">
+					Будущее уже наступило! В эпоху гаджетов, мобильных приложений, оплат с телефона,
+					трудно себе представить, что кто-то еще носит с собой целую стопку карт, чтобы получить скидки и бонусы.
+				</div>
+				<div class="cp-advice">
+					<img src="images/finger.png" alt="finger" class="finger">
+					<div class="cp-centerLine"></div>
+					<div class="cp-advice-text">Будьте на одной волне с гостями</div>
+				</div>
+				</div>
+			</div>
+			<div class="cp-problem">
+				<div class="cp-problem-wrap">
+				<div class="cp-title"><span class="cp-bold">Пробема №4:</span><br>Есть контакты, но непонятно, <br> что с ними делать</div>
+				<div class="cp-text">
+					Предложить кофеману зайти за пятой бесплатной чашкой кофе, оповестить любителей о пивном фестивале, рассказать о том, что появились бизнес-ланчи. Все это
+					можно с помощью современных инструментов и при наличии базы гостей, сегментированной по различным критериям.
+				</div>
+				<div class="cp-advice">
+					<img src="images/finger.png" alt="finger" class="finger">
+					<div class="cp-centerLine"></div>
+					<div class="cp-advice-text">Адресное рекламное сообщение эффективнее!</div>
+				</div>
+				</div>
+			</div>
+
+
+			<!-- .cp-problem*4>.cp-title>span.cp-bold{Пробема №$}+br+{Рестораторы не знают своих гостей}^.cp-text{lorem20}+cp-advice>img.finger+cp-centerLine+cp-advice-text -->
+		</div>
+				<div class="clearfix"></div>
+
+	</div>
 
 
 
-		
 
 
 
@@ -50,12 +101,13 @@
 
 
 
+	<div class="customerSlider">
+		<div class="sl"></div>
+	</div>
 
-
-		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-		<script	src="https://code.jquery.com/jquery-3.3.1.min.js"	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/script.js"></script>
-
-		</body>
-		</html>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<script	src="https://code.jquery.com/jquery-3.3.1.min.js"	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
