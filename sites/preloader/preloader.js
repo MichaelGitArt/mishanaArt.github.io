@@ -54,7 +54,7 @@ function number_to(element,from,to,duration){
   setTimeout(function() {
     if(progressComleted) return;
     if(progress >= 100 || loadedImg == imagesCount){
-      numberToFinish(loaderTextPercent,Math.floor(100 - percent, 100 , 800);
+      numberToFinish(loaderTextPercent,Math.floor(100 - percent), 100 , 800);
       progressComleted = true;
       return;
     }
