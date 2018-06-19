@@ -50,13 +50,13 @@ var progressComleted = false;
 **/
 function number_to(element,from,to,duration){
   var start = new Date().getTime();
-  if(progressComleted) break;
+  if(progressComleted) return;
   setTimeout(function() {
-    if(progressComleted) break;
+    if(progressComleted) return;
     if(progress >= 100 || loadedImg == imagesCount){
       numberToFinish(loaderTextPercent,Math.floor(100 - percent),100 , 800);
       progressComleted = true;
-      break;
+      return;
     }
 
     var now = (new Date().getTime()) - start;
