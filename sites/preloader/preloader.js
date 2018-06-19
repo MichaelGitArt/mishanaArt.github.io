@@ -41,12 +41,33 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
 
   }
 
+// Переменная для остановки множества setTimeout в запущенных number_to;
+var progressComleted = false;
 
 /**
 *inc - увеличение либо уменьшение
 *shift - на сколько изменяется значение
 **/
 function number_to(element,from,to,duration){
+  var start = new Date().getTime();
+  if(progressComleted) break;
+  setTimeout(function() {
+    if(progressComleted) break;
+    if(progress >= 100 || loadedImg == imagesCount){
+      numberToFinish(loaderTextPercent,Math.floor(100 - percent),100 , 800);
+      progressComleted = true;
+      break;
+    }
+
+    var now = (new Date().getTime()) - start;
+    var progress = now / duration;
+    var result = Math.floor((to - from) * progress + from);
+    element.innerHTML = progress < 1 ? result : to;
+    if (progress < 1) setTimeout(arguments.callee, 10);
+  }, 10);
+}
+
+function numberToFinish(element,from,to,duration){
   var start = new Date().getTime();
   setTimeout(function() {
     var now = (new Date().getTime()) - start;
@@ -56,7 +77,6 @@ function number_to(element,from,to,duration){
     if (progress < 1) setTimeout(arguments.callee, 10);
   }, 10);
 }
-
 
 
 
