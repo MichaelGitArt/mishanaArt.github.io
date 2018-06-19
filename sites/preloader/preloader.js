@@ -1,6 +1,6 @@
 var preloader    = document.querySelector('.preloader'), // селектор прелоадера
     loader   = document.querySelector('.progres-filler'), // селектор прелоадера
-    loaderTextPercent   = document.querySelector('.loader-text'), // селектор прелоадера
+    loaderTextPercent   = document.querySelector('.loader-text span'), // селектор прелоадера
     imagesCount  = document.querySelectorAll('img').length, // количество изображений
     dBody        = document.querySelector('body'), //обращаемся к body
     percent      = 100 / imagesCount, // количество % на одну картинку
@@ -28,15 +28,34 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
         setTimeout(function(){
           preloader.style.display = 'none';
         }, 1800);
-      }, 200);
+      }, 2000000);
     }
+
     setTimeout(function(){
-     loaderTextPercent.textContent =  Math.floor(progress) + "%";
-    }, progress + 100)
+      number_to(loaderTextPercent,0,progress ,progress);
+    }, progress + percent)
 
 
-    loader.style.width = progress + "%"; 
+
+    loader.style.width = progress + "%";
+
   }
+
+
+/**
+*inc - увеличение либо уменьшение
+*shift - на сколько изменяется значение
+**/
+function number_to(element,from,to,duration){
+  var start = new Date().getTime();
+  setTimeout(function() {
+    var now = (new Date().getTime()) - start;
+    var progress = now / duration;
+    var result = Math.floor((to - from) * progress + from);
+    element.innerHTML = progress < 1 ? result : to;
+    if (progress < 1) setTimeout(arguments.callee, 10);
+  }, 10);
+}
 
 
 
