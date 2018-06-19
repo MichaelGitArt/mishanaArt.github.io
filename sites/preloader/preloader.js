@@ -1,5 +1,6 @@
 var preloader    = document.querySelector('.preloader'), // селектор прелоадера
     loader   = document.querySelector('.progres-filler'), // селектор прелоадера
+    loaderTextPercent   = document.querySelector('.loader-text'), // селектор прелоадера
     imagesCount  = document.querySelectorAll('img').length, // количество изображений
     dBody        = document.querySelector('body'), //обращаемся к body
     percent      = 100 / imagesCount, // количество % на одну картинку
@@ -29,6 +30,10 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
         }, 1800);
       }, 200);
     }
+    setTimeout(function(){
+     loaderTextPercent.textContent =  Math.floor(progress) + "%";
+    }, progress + 100)
+
 
     loader.style.width = progress + "%"; 
   }
