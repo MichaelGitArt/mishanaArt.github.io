@@ -38,7 +38,7 @@ body{
 	padding: 3px;
 }
 .progres-filler{
-	transition: all .5s;
+	transition: all 1s;
 	border-radius: 4px;
 	height: 100%;
 	width: 0%;

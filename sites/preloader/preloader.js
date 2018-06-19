@@ -28,11 +28,11 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
         setTimeout(function(){
           preloader.style.display = 'none';
         }, 1800);
-      }, 2000000);
+      }, 800);
     }
 
     // setTimeout(function(){
-      number_to(loaderTextPercent,Math.floor(progress - percent), Math.floor(progress) , 900);
+      number_to(loaderTextPercent,Math.floor(progress - percent), Math.floor(progress) , 1000);
     // }, progress / percent * 600)
 
 
