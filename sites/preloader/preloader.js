@@ -31,9 +31,9 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
       }, 2000000);
     }
 
-    setTimeout(function(){
-      number_to(loaderTextPercent,0,progress , 100);
-    }, loadedImg * 100)
+    // setTimeout(function(){
+      number_to(loaderTextPercent,0, Math.floor(progress) , 600);
+    // }, progress / percent * 600)
 
 
 
