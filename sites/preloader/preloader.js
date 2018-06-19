@@ -32,8 +32,8 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
     }
 
     setTimeout(function(){
-      number_to(loaderTextPercent,0,progress ,progress);
-    }, progress + percent)
+      number_to(loaderTextPercent,0,progress , 100);
+    }, loadedImg * 100)
 
 
 
