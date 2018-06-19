@@ -32,7 +32,7 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
     }
 
     // setTimeout(function(){
-      number_to(loaderTextPercent,0, Math.floor(progress) , 600);
+      number_to(loaderTextPercent,Math.floor(progress - percent), Math.floor(progress) , 700);
     // }, progress / percent * 600)
 
 
