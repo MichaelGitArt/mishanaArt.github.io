@@ -32,7 +32,7 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
     }
 
     // setTimeout(function(){
-      number_to(loaderTextPercent,Math.floor(progress - percent), Math.floor(progress) , 700);
+      number_to(loaderTextPercent,Math.floor(progress - percent), Math.floor(progress) , 900);
     // }, progress / percent * 600)
 
 
@@ -54,7 +54,7 @@ function number_to(element,from,to,duration){
   setTimeout(function() {
     if(progressComleted) return;
     if(progress >= 100 || loadedImg == imagesCount){
-      numberToFinish(loaderTextPercent,Math.floor(100 - percent),100 , 800);
+      numberToFinish(loaderTextPercent,Math.floor(100 - (percent * 2)),100 , 800);
       progressComleted = true;
       return;
     }
