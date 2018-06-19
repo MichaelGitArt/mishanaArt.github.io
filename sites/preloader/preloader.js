@@ -6,7 +6,6 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
     percent      = 100 / imagesCount, // количество % на одну картинку
     progress     = 0, // точка отсчета
     loadedImg    = 0; // счетчик загрузки картинок
-
     dBody.style.overflow = 'hidden';
 
 
@@ -20,7 +19,6 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
   function img_load () {
     progress += percent;    
     loadedImg++;
-
     if (progress >= 100 || loadedImg == imagesCount) { // загрузка картинок закончена    
       setTimeout(function(){
         dBody.style.overflow = 'visible';
@@ -30,31 +28,23 @@ var preloader    = document.querySelector('.preloader'), // селектор п�
         }, 1800);
       }, 800);
     }
-
-    // setTimeout(function(){
-      number_to(loaderTextPercent,Math.floor(progress - percent), Math.floor(progress) , 1000);
-    // }, progress / percent * 600)
-
-
-
+    number_to(loaderTextPercent,Math.floor(progress - percent), Math.floor(progress) , 1200); 
     loader.style.width = progress + "%";
-
   }
 
 // Переменная для остановки множества setTimeout в запущенных number_to;
 var progressComleted = false;
 
-/**
-*inc - увеличение либо уменьшение
-*shift - на сколько изменяется значение
-**/
+
 function number_to(element,from,to,duration){
   var start = new Date().getTime();
   if(progressComleted) return;
   setTimeout(function() {
     if(progressComleted) return;
-    if(progress >= 100 || loadedImg == imagesCount){
-      numberToFinish(loaderTextPercent,Math.floor(100 - percent), 100 , 800);
+    if(progress >= 100 || loadedImg == imagesCount){ 
+      // Если прогрес дошел до 100% а запущенная предыдущая функция с своими setTimeout,
+      // то их все останавливаем и запускаем финальную фуекцию отсчета 
+      numberToFinish(loaderTextPercent,Math.floor(100 - percent), 100 , 1000);
       progressComleted = true;
       return;
     }
