@@ -1,733 +1,117 @@
-<!DOCTYPE html>
-<html lang="ru">
-
+<!doctype html>
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>mishana Portfolio</title>
-	<meta name="description" content="">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/mishana.jpg">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/logo.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Animating</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo.png">
+	<link rel="stylesheet" href="allStyle.min.css" type="text/css">
 
-	<link rel="stylesheet" href="css/main.min.css">
 </head>
-<body>
-	<header class="main-head">
-		<div class="top-line">
-			<div class="container">
-				<div class="row">
-					<div class="col-3 col-lg-3">
-						<a href="#" class="logo" ><img src="img/logo.svg" alt="Armata Financial Group"></a>			
-					</div>
-					<div class="col-xl-7 order-3 order-xl-0 col-12">						
-						<nav class="main-mnu">
-							<div class="mnu-inner">
-								<a href="#" class="active">Главная</a>
-								<a href="#">О компании</a>
-								<a href="#">Оценка</a>
-								<a href="#">Сделки М&А</a>
-								<a href="#">Бухгалтерские услуги</a>
-								<a href="#">Контакты</a>
-							</div>
-						</nav>
-					</div>
-					<div class="col-9 col-xl-2">						
-						<div class="phone-wrap">
-							<div class="phone">+7 (495) 00-99-56</div>
-							<div class="toggle-mnu">
-								<span></span>
-							</div>							
-						</div>
+<body>	
+	<div class="preloader" id="page-preloader">
+		<div class="loader">
+			<img src="images/logo.png" class="inLoader"></img>
+		</div>
+	</div>
+	<div class="back"><i class="fas fa-chevron-left"></i></div>
+	<div class="wrapper">
+		<div class='black-block'>
+			<div class="top-block">
+				<div class="black-top-menu">
+					<a class="t-menu-item">О комплексе</a>
+					<a class="t-menu-item">Доставка</a>
+				</div>
+			</div>
+			<div class="main-section">
+				<a href="#" class="logotype"><img src="images/logo.png" alt=""></a>
+				<div class="menu black-menu">		
+					<a class="menu-item">О пицерии</a>
+					<a class="menu-item">Меню</a>
+					<a class="menu-item">Интерьер</a>
+					<a class="menu-item">Команда</a>
+					<a class="menu-item">Фотоотчеты мероприятий</a>
+					<a class="menu-item">Как нас найти</a>				
+				</div>
+				<div class="images">
+					<img src="images/meat.png" alt="meat" class="meat going">
+					<img src="images/bow.png" alt="bow" class="bow">
+					<img src="images/spray.png" alt="spray" class="spray">
+					<img src="images/pepper.png" alt="pepper" class="pepper">
+					<img src="images/tomato_2.png" alt="tomato" class="tomato1">
+					<img src="images/tomato_1.png" alt="tomato" class="tomato2">
+					<img src="images/broccoli.png" alt="" class="broccoli1">
+					<img src="images/broccoli-2.png" alt="" class="broccoli2">
+					<img src="images/smoke.png" alt="smoke" class="smoke black-smoke">
+				</div>
+				<div class="b-bottom-block"><a href="#"><img src="images/prime-logo.png" alt="prime-logo"></a></div>
+			</div>
+		</div>
+		<div class="green-block">
+			<div class="top-block">
+				<a href="#" class="g-top-logo"><img src="images/logo-rus-steik.png" alt="logo"></a>
+			</div>
+			<div class="main-section">
+				<a href="#" class="logotype"><img src="images/logo-lapsha.png" alt="plate of lapsha"></a>
+				<div class="menu green-menu">				
+					<a class="menu-item">О ресторане</a>
+					<a class="menu-item">Меню</a>
+					<a class="menu-item">Интерьер</a>
+					<a class="menu-item">Команда</a>
+					<a class="menu-item">Фотоотчеты</a>
+					<a class="menu-item">Контакты</a>
+				</div>
+				<div class="images">
+					<img src="images/logo-lapsha-plate.png" alt="lapsha-plate" class="lapsha going">
+					<img src="images/mushrooms.png" alt="mushrooms" class="mushrooms">
+					<img src="images/leaflet.png" alt="mushrooms" class="leaflet">
+					<img src="images/smoke-lapsha.png" alt="smoke" class="smoke green-smoke">
+				</div>
+			</div>
+		</div>
+		<div class="red-block">
+			<div class="top-block">
+				<div class="main-info">
+					<p class="mobileNumber">(4852) 33-92-90</p>
+					<p class="address">Ярославль, пр-т Ленина, 26</p>
+					<div class="social">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-vk"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
 					</div>
 				</div>
 			</div>
-		</div>		
-		<div class="header-wrap">
-			<div class="container">
-				<div class="row">					
-					<div class="col-lg-8">
-						<div class="header-left">
-							<h1>Armata Financical Group</h1>
-							<ul>
-								<li><a href="#">Независимая оценка имущества</a></li>
-								<li><a href="#">Сделки cлияния и поглощения</a></li>
-								<li><a href="#">Бухгалтерские услуги</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<form class="forms">
-							<h4>Заявка:</h4>
-							<p>
-								Оставьте заявку и мы свяжемся с вами в
-								течение 15 минут в рабочее
-								время с 10:00 до 18:00 c пн-пт.
-							</p>
-
-							<label>
-								<span>Ваше имя:</span>
-								<input type="text" name="text" required>
-							</label>
-							<label>
-								<span>Ваш телефон:</span>
-								<input type="text" name="phone" required>
-							</label>
-							<div class="button-wrap">
-								<button class="buttons">Отправить</button>
-							</div>
-						</form>						
-					</div>
+			<div class="main-section">
+				<a href="#" class="logotype"><img src="images/hegevara-logo.png" alt="vegevara"></a>
+				<div class="menu green-menu">	
+					<a class="menu-item">О кофейне</a>
+					<a class="menu-item">Меню</a>
+					<a class="menu-item">Интерьер</a>
+					<a class="menu-item">Команда</a>
+					<a class="menu-item">Фотоотчеты</a>
+					<a class="menu-item">Контакты</a>
+				</div>
+				<div class="images">
+					<img src="images/logo-coffe.png" alt="logo-coffe" class="logo-coffee going">
+					<img src="images/coffe.png" alt="coffee" class="coffee">
+					<img src="images/croissant.png" alt="croissant" class="croissant">
+				</div>
+				<div class="r-bottom-block">
+					<a href="#">
+						<div>Разработка</div>
+						<div>mishana.online</div>
+					</a>
 				</div>
 			</div>			
-		</div>
-		<div class="arrow-wrap">
-			<div class="arrow-bottom"></div>
-		</div>	
-	</header>
-	<section class="homesect section_1">
-		<div class="container">
-			<div class="row">
-				<div class="section-head col-lg-10 offset-lg-1">
-					<h2>Независимая оценка имущества</h2>
-					<p><strong>Определение рыночной стоимости</strong> любого актива, или <a href="#">оценка</a> — это первый этап всех рыночных отношений. Оценка заключается в объективном анализе объекта с целью придания ему стоимостных характеристик, выраженных в едином денежном эквиваленте. </p>
-				</div>
-			</div>
-		</div>
-		<div class="section-content section-content_1">
-			<div class="container">
-				<div class="row">					
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Оценка ценных бумаг</a></h4>
-							<p>Далеко-далеко за словесными горами в стране.</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Заголовок для елементів інфо</a></h4>
-							<p>Далеко-далеко за словесными горами в стране.</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Оценка недвижимости</a></h4>
-							<p>Далеко-далеко за словесными горами в стране.</p>
-						</div>
-					</div>
-
-					<div class="col-md-8 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Заголовок для елементів інфо</a></h4>
-							<p>Далеко-далеко за словесными горами в стране.</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Оценка недвижимости</a></h4>
-							<p>Далеко-далеко за словесными горами в стране.</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="s1-bottom-triangle">
-				<img class="logo-triangle" src="img/logo_triangle.svg" alt="Armata Financical Group">
-				<img src="img/icons/section_1/scales.svg" alt="scales" class="scales">
-			</div>
-		</div>
-		<div class="s1-bottom">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Оценка недвижимости</a></h4>
-							<p>Далеко-далеко за словесными горами в стране.</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Заголовок для елементів інфо</a></h4>
-							<p>Далеко-далеко за словесными горами в стране.</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Оценка недвижимости</a></h4>
-							<p>Далеко-далеко за словесными горами в стране.</p>
-						</div>
-					</div>					
-				</div>
-			</div>
-
 
 		</div>
-
-		<div class="section-bottom">
-			<a href="#callback" class="buttons">Заказать оценку</a>
-		</div>
-	</section>
-
-	<section class="homesect section_2">
-		<div class="container">
-			<div class="row">
-				<div class="section-head col-lg-10 offset-lg-1">
-					<h2>Сделки M&A</h2>
-					<p><strong>Сделки cлияния и поглощения</strong>– это процессы укрупнения бизнеса и капитала. Популярность сделки слияния и поглощения приобрели в конце 80-х годов и сейчас они являются одним из основных движущих факторов развития бизнеса на макро и микроуровне. Эффективность сделок слияния и поглощения огромна и не вызывает сомнений.</p>
-					<h3>Наши услуги по <a href="#">сопровождению сделок M&A</a></h3>
-				</div>
-			</div>
-		</div>
-		<div class="s_wrap">
-			<div class="s2-items">
-				<div class="container">
-					<div class="s2-items-container">
-
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/1.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/2.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/3.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/4.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/5.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/6.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/7.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/8.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/9.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-						<div class="s2-item-wrap">
-							<a href="#" class="s2-item">
-								<div class="img-wrap">
-									<img src="img/icons/section_2/10.svg" alt="Alt">
-								</div>
-								<span>Разработка новой структуры управления бизнесом</span>
-							</a>
-						</div>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="section-bottom">
-			<a href="#callback" class="buttons">Заказать сопровождение</a>
-		</div>
-	</section>
-
-	<section class="homesect section_3 s_dark ">
-		<div class="container">
-			<div class="row">
-				<div class="section-head col-lg-10 offset-lg-1">
-					<h2>Бухгалтерские услуги</h2>
-					<p><strong>Бухгалтерский учёт</strong> это строго структурированная система сбора, регистрации и систематизации информации в денежном выражении о состоянии имущества, обязательств организации и их изменениях путём сплошного, непрерывного и документального учёта всех хозяйственных и экономических операций.</p>
-				</div>
-			</div>
-		</div>
-		<div class="section-content section-content_3">
-			<div class="container">
-				<div class="row">					
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Документальное оформление</a></h4>
-							<p>Документальное оформление всех хозяйственных операций предприятия</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Обработка данных</a></h4>
-							<p>Обработка, систематизация и введение данных в бухгалтерскую программу</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Расчеты</a></h4>
-							<p>Расчет заработной платы и налогов</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Формирование отчетности</a></h4>
-							<p>Формирование финансового результата предприятия</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap s_3-img-wrapper">
-						<div class="s_3-img-wrap">
-							<img src="img/icons/section_3/folder.svg" alt="Folder">
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Налоговая отчетность</a></h4>
-							<p>Оформление и подача бухгалтерской и налоговой отчетности в соответствующие</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Консультирование организаций</a></h4>
-							<p>Консультирование по вопроса оптимизации финансовой функции и бухгалтерскому учету</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Помощь в подборе персонала</a></h4>
-							<p>Помощь в подборе персонала в отдел бухгалтерского и налогового учета</p>
-						</div>
-					</div>
-
-					<div class="col-md-4 info-item-wrap">
-						<div class="info-item">
-							<h4><a href="#">Восстановление бухгалтерского учета</a></h4>
-							<p>Восстановление функционирования предприятия и бухгалтерского учета</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="section-bottom">
-			<a href="#callback" class="buttons">Заказать бухгалтерские услуги</a>
-		</div>
-	</section>
-
-	<section class="homesect section_4 s_gray">
-		<div class="container">
-			<div class="row">
-				<div class="section-head col-lg-10 offset-lg-1">
-					<h2>Преимущества Armata Financical Group</h2>
-					<p><strong>Компания AFG </strong>поддерживает российские и иностранные компании, работающие на отечественном рынке в решении задач экономического роста, защиты своих интересов, управления текущей деятельностью. Помогает создавать системы владения активами, устанавливает коммуникации с новыми партнерами и рынками, организует сделки и привлекает капиталы.</p>
-					<h3>Привлекательные условия сотрудничества</h3>
-				</div>
-			</div>
-		</div>
-		<div class="section-pb">
-			<div class="container">
-				<div class="row">
-
-					<div class="cards">
-						<div class="card card-off">
-							<div class="card-icon"><img src="img/icons/section_4/1.svg" alt="Sales"></div>
-							<h4>Скидки</h4>
-							<p> Предоставляем всем нашим клиентам уникальную возможность получить скидку <strong>50%</strong> на все услуги</p>
-						</div>
-						<div class="card card-off">
-							<div class="card-icon"><img src="img/icons/section_4/2.svg" alt="Team"></div>
-							<h4>Команда</h4>
-							<p>Приступаем к выполнению обязательст в день обращения в нашу компанию</p>
-						</div>
-						<div class="card card-off">
-							<div class="card-icon"><img src="img/icons/section_4/3.svg" alt="Speed"></div>
-							<h4>Скорость</h4>
-							<p>У нас большой опыт работы в крупнейших консалтинговых компаниях</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="section-bottom">
-			<a href="#callback" class="buttons">Обратиться к нам</a>
-		</div>
-	</section>
-
-	<section class="homesect section_5 s_dark ">
-		<div class="container">
-			<div class="row">
-				<div class="section-head col-lg-10 offset-lg-1">
-					<h2>Как мы работаем</h2>
-				</div>
-			</div>
-		</div>
-		
-		<div class="triangles-container">
-			<div class="container">
-				<div class="tc-items-wrap">
-					<div class="tc-item tc-item-off">
-						<div class="tc-content">
-							<img src="img/icons/section_5/1.svg" alt="1">
-							<div class="tc-text"><span>1.</span> Вы оставляете заявку</div>
-						</div>				
-						<svg 
-							id="tc-svg-0"
-						  xmlns="http://www.w3.org/2000/svg" 
-						  width="311" 
-						  height="143" 
-						  viewBox="0 0 311 143">							       
-						  <path 
-						  	fill-opacity="0"
-						  	stroke-opacity="0"
-						    stroke="rgb(243, 159, 24)" 
-						    stroke-width="6px"          
-						    fill="rgb(243, 159, 24)"
-						    d="M7,7H259l45,62-45,67H7V7Z"/>
-						</svg>
-					</div>
-					<div class="tc-item tc-item-off">
-						<div class="tc-content">
-							<img src="img/icons/section_5/2.svg" alt="1">
-							<div class="tc-text"><span>2.</span>Подписываем договор</div>
-						</div>						
-						<svg 
-							id="tc-svg-1"
-						  xmlns="http://www.w3.org/2000/svg" 
-						  width="311" 
-						  height="143" 
-						  viewBox="0 0 311 143">						       
-						  <path 
-						  	fill-opacity="0"
-						  	stroke-opacity="0"
-						    stroke="rgb(243, 159, 24)" 
-						    stroke-width="6px"          
-						    fill="rgb(243, 159, 24)"
-						    d="M7,7H259l45,62-45,67H7L52,69Z"/>
-						</svg>
-					</div>			
-					<div class="tc-item tc-item-off">
-						<div class="tc-content">
-							<img src="img/icons/section_5/3.svg" alt="1">
-							<div class="tc-text"><span>3.</span> Ми проводим оценку</div>
-						</div>
-						<svg 
-							id="tc-svg-2"
-						  xmlns="http://www.w3.org/2000/svg" 
-						  width="311" 
-						  height="143" 
-						  viewBox="0 0 311 143">						       
-						  <path 
-						  	fill-opacity="0"
-						  	stroke-opacity="0"
-						    stroke="rgb(243, 159, 24)" 
-						    stroke-width="6px"          
-						    fill="rgb(243, 159, 24)"
-						    d="M7,7H259l45,62-45,67H7L52,69Z"/>
-						</svg>
-					</div>			
-					<div class="tc-item tc-item-off">
-						<div class="tc-content">
-							<img src="img/icons/section_5/4.svg" alt="1">
-							<div class="tc-text"><span>4.</span>Вы получаете отчет</div>
-						</div>
-						<svg 
-							id="tc-svg-3"
-						  xmlns="http://www.w3.org/2000/svg" 
-						  width="311" 
-						  height="143" 
-						  viewBox="0 0 311 143">						       
-						  <path 
-						  	fill-opacity="0"
-						  	stroke-opacity="0"
-						    stroke="rgb(243, 159, 24)" 
-						    stroke-width="6px"          
-						    fill="rgb(243, 159, 24)"
-						    d="M7,7H259l45,62-45,67H7L52,69Z"/>
-						</svg>
-					</div>			
-				</div>
-			</div>
-		</div>
-		<div class="section-bottom">
-			<a href="#callback" class="buttons">Оставить заявку</a>
-		</div>
-	</section>
-
-	<section class="homesect section_6">
-		<div class="container">
-			<div class="row">
-				<div class="section-head col-lg-10 offset-lg-1">
-					<h2>С кем можно связаться через сайт</h2>
-					<p>Свяжитесь с одним из сотрудников и получите консультацию по работе с нашей компанией</p>
-				</div>
-			</div>
-		</div>
-		<div class="section-pb">
-			<div class="container">
-				<div class="row">
-
-					<div class="teams">
-						<div class="team team-off">
-							<div class="team-icon"><img src="img/team/1.jpg" alt="Sales"></div>
-							<h4>Евгений Александрович</h4>
-							<p>Директор компании</p>
-							<div class="team-phone">+7 929 568 98 98</div>
-						</div>
-						<div class="team team-off">
-							<div class="team-icon"><img src="img/team/2.jpg" alt="Sales"></div>
-							<h4>Виталий Дое</h4>
-							<p>Менеджер продаж</p>
-							<div class="team-phone">+7 929 568 98 98</div>
-						</div>
-						<div class="team team-off">
-							<div class="team-icon"><img src="img/team/3.jpg" alt="Sales"></div>
-							<h4>Екатеринае</h4>
-							<p>Старший менеджер</p>
-							<div class="team-phone">+7 929 568 98 98</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="homesect section_7 s_gray">
-		<div class="container">
-			<div class="row">
-				<div class="section-head col-lg-10 offset-lg-1">
-					<h2>Отзывы клиентов</h2>
-					<p>Послушайте, что о нас говорят благодарные клиенты:</p>
-				</div>
-			</div>
-		</div>
-		<div class="section-pb">
-			<div class="slider">
-				<div class="slide">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-10 offset-lg-1">
-								<div class="sl-img-wrap">
-									<img src="img/team/1.jpg" alt="client">
-								</div>
-								<h3>Михаил Алексеевич Потапов</h3>
-								<div class="sl-descr">OOO "Роскомнадзор"</div>
-								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Подзаголовок вскоре, деревни? Вопроса строчка пор, последний вершину заглавных единственное? Над щеке злых, залетают то безорфографичный своих текстов бросил живет. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Подзаголовок вскоре, деревни? Вопроса строчка пор, последний вершину заглавных единственное? Над щеке злых, залетают то безорфографичный своих текстов бросил живет.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-10 offset-lg-1">
-								<div class="sl-img-wrap">
-									<img src="img/team/2.jpg" alt="client">
-								</div>
-								<h3>Михаил Алексеевич Потапов</h3>
-								<div class="sl-descr">OOO "Роскомнадзор"</div>
-								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Подзаголовок вскоре, деревни? Вопроса строчка пор, последний вершину заглавных единственное? Над щеке злых, залетают то безорфографичный своих текстов бросил живет. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Подзаголовок вскоре, деревни? Вопроса строчка пор, последний вершину заглавных единственное? Над щеке злых, залетают то безорфографичный своих текстов бросил живет.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slide">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-10 offset-lg-1">
-								<div class="sl-img-wrap">
-									<img src="img/team/3.jpg" alt="client">
-								</div>
-								<h3>Михаил Алексеевич Потапов</h3>
-								<div class="sl-descr">OOO "Роскомнадзор"</div>
-								<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Подзаголовок вскоре, деревни? Вопроса строчка пор, последний вершину заглавных единственное? Над щеке злых, залетают то безорфографичный своих текстов бросил живет. Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Подзаголовок вскоре, деревни? Вопроса строчка пор, последний вершину заглавных единственное? Над щеке злых, залетают то безорфографичный своих текстов бросил живет.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="homesect section_8">
-		<div class="container">
-			<div class="section-pb">
-				<div class="row justify-content-center">
-					<div class="col-lg-8 s8_left">
-						<div class="section-head">
-							<h2>Мы - профессионалы!</h2>
-							<div class="p">Наши специалисты являются профессионалами высочайшего класса, лауреатами и призерами многих конкурсов и первенств в области финансов и бухгалтерии. За своими плечами имеют богатый опыт осуществления проектов в области оценки, ведения бухгалтерии, слияний и присоединений в сферах строительства, жилищно-коммунальных услуг, производства, аэрокосмической промышленности и прочих.</div>
-						</div>
-						<div class="s8-items">	
-							<div class="row">
-								<div class="s8-item col-md-3 col-sm-6">
-									<div class="s8-img-wrap">
-										<img src="img/icons/section_8/1.svg" alt="ACCA">
-									</div>
-									<p>Диплом по налогообложению РФ (ДипНРФ), квалификация ACCA</p>
-								</div>
-								<div class="s8-item col-md-3 col-sm-6">
-									<div class="s8-img-wrap">
-										<img src="img/icons/section_8/2.svg" alt="ACCA">
-									</div>
-									<p>Аттестат профессионального бухгалтера Института профессиональных бухгалтеров России </p>
-								</div>
-								<div class="s8-item col-md-3 col-sm-6">
-									<div class="s8-img-wrap">
-										<img src="img/icons/section_8/3.svg" alt="ACCA">
-									</div>
-									<p>Аттестат налогового консультанта 2-й категории Палаты налоговых консультантов России</p>
-								</div>
-								<div class="s8-item col-md-3 col-sm-6">
-									<div class="s8-img-wrap">
-										<img src="img/icons/section_8/4.svg" alt="ACCA">
-									</div>
-									<p>Призер Первой всероссийской премии бухгалтеров строительной отрасли «Профессиональные грани-2011»</p>
-								</div>
-							</div>
-
-						</div>
-					</div>
-					<div class="col-lg-4 col-sm-8 col-12">
-						<form class="forms">
-							<h4>Оставить заявку:</h4>
-							<p>
-								Оставьте заявку и мы свяжемся с вами в
-								течение 15 минут в рабочее
-								время с 10:00 до 18:00 c пн-пт.
-							</p>
-
-							<label>
-								<span>Ваше имя:</span>
-								<input type="text" name="text" required>
-							</label>
-							<label>
-								<span>Ваш телефон:</span>
-								<input type="text" name="phone" required>
-							</label>
-							<div class="button-wrap">
-								<button class="buttons">Отправить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</section>
-	<footer class="main-footer homesect s_dark">
-		<div class="container">
-			<div class="footer-content">
-
-				<div class="row">
-					<div class="col-2">
-						<a href="#" class="logo" ><img src="img/logo.svg" alt="Armata Financial Group"></a>			
-					</div>
-					<div class="col-xl-8 order-3 order-xl-0 col-12">						
-						<nav class="main-mnu">
-							<div class="mnu-inner">
-								<a href="#" class="active">Главная</a>
-								<a href="#">О компании</a>
-								<a href="#">Оценка</a>
-								<a href="#">Сделки М&А</a>
-								<a href="#">Бухгалтерские услуги</a>
-								<a href="#">Контакты</a>
-							</div>
-						</nav>
-					</div>
-					<div class="col-10 col-xl-2">						
-						<div class="phone-wrap">
-							<div class="phone">+7 (495) 00-99-56</div>
-							<div class="toggle-mnu">
-								<span></span>
-							</div>							
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="top" title="Наверх!"></div>
-	</footer>
-	<div class="form-modal-wrap">		
-		<form class="forms form-modal" id="callback">
-			<div class="close"><i class="fal fa-times"></i></div>
-			<h4>Заявка:</h4>
-			<p>Оставьте заявку и мы свяжемся с вами в течение 15 минут в рабочее время с 10:00 до 18:00 c пн-пт.</p>			<label>
-				<span>Ваше имя:</span>
-				<input type="text" name="name" required>
-			</label>
-			<label>
-				<span>Ваш телефон:</span>
-				<input type="text" name="phone" required>
-			</label>
-			<div class="button-wrap">
-				<button class="buttons">Отправить</button>
-			</div>
-			<input type="hidden" name="formname" value="">
-		</form>
 	</div>
+	<div class="forward"><i class="fas fa-chevron-right"></i></div>
 
-
-<script src="js/scripts.min.js"></script>
+	<script src="scripts.min.js"></script>
+</div>
 </body>
 </html>

@@ -4,69 +4,298 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<title>mishana - разработка сайтов</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<link rel="stylesheet" media="(max-width: 600px)" href="css/mobile600.css"> 
-	<!-- FONT -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i,800&amp;subset=cyrillic" rel="stylesheet">
-	<!-- SCRIPTS JS -->
+	<title>Test</title>
+	<link rel="stylesheet" href="allStyle.min.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/big-logo.png">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	<body class="page">		
-		<header id="header" class="header">		
-				<div class="nav">
-					<nav class="nav__wrap">
-						<div class="nav__item-wrap nav__item-wrap_highlighted">
-						<a href="#header" class="nav__item nav__item_main-item">
-							<img src="images/logos.svg" class="nav__logo-img" alt="Logotype">
-							<div class="nav__main-text">mishana</div>
-						</a>
-						</div>
-						<div class="nav__items-wrap">
-							<div class="nav__item-wrap"><a href="#portfolio"  class="nav__item">Портфолио</a></div>
-							<div class="nav__item-wrap"><a href="#skill" class="nav__item">Навыки</a></div>
-							<div class="nav__item-wrap"><a href="#contact" class="nav__item">Контакты</a></div>
-						</div>
+	<script src="libs/modernizr/modernizr.js"></script>
+	<link rel="stylesheet" href="libs/animate/animate.css">	
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,900" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+<!-- SCRIPTS JS -->
+<!-- <script	src="https://code.jquery.com/jquery-3.3.1.min.js"	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+ -->
+</head>
+<body>	
+	<div class="preloader" id="page-preloader">
+		<div class="loader">
+			<div class="inLoader"></div>
+		</div>
 
-						<div class="sandwich">
-							<div class="sandwich__line"><div class="sandwich__color-line sandwich__color-line_type-one"></div></div>
-							<div class="sandwich__line"><div class="sandwich__color-line sandwich__color-line_type-two"></div></div>
-							<div class="sandwich__line"><div class="sandwich__color-line sandwich__color-line_type-three"></div></div>
-						</div>
-					</nav>
-				</div>			
-				<div class="header__main-content">
-					<div class="header__title title">
-						<div class="title__text title__text_main">						
-							mishana - Front-end Разработчик
-						</div>
-						<div class="title__text title__text_desc">Сайт-портфолио</div>
-					</div>
-					<a href="javascript://0" onclick="slowScroll('#portfolio')" class="header__mouse">
-						<img src="images/mouse.png" alt="down">
-					</a>	
+	</div>
+
+
+
+	<div class="mobMenu">
+		<div id="sandwich">
+			<div class="sw_top"></div>
+			<div class="sw_bottom"></div>
+			<div class="sw_footer"></div>
+		</div>
+	</div>
+	<header id="header">		
+		<div class="header-wrap">
+			<div class="menu-section">
+				<a href="javascript://0" onclick="slowScroll ('#header')" class="main-item"><div>tajam</div></a>
+				<section class="nav-menu">
+					<a href="javascript://0" onclick="slowScroll ('#header')" class="menu-item">Home</a>
+					<a href="javascript://0" onclick="slowScroll ('#about')" class="menu-item">About</a>
+					<a href="javascript://0" onclick="slowScroll ('#expertise')" class="menu-item"> Expertise</a>
+					<a href="javascript://0" onclick="slowScroll ('#team')" class="menu-item">Teams</a>
+					<a href="javascript://0" onclick="slowScroll ('#portfolio')" class="menu-item">Works</a>
+					<a href="javascript://0" onclick="slowScroll ('#people')" class="menu-item">People say</a>
+					<a href="javascript://0" onclick="slowScroll ('#contact')" class="menu-item">Contact</a>
+				</section>
+			</div>
+			<div class="desk-wrap">
+				<div data-option="desk-1" class="description">
+					<h1>We Are Awesome Creative Agency</h1>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+					<a href="#" class="learnMore">Learn More</a>
 				</div>
-				<div class="header__mail">Gmail: <a class="header__mail-link" href="mailto:mishakruvoruchko@gmail.com">mishakruvoruchko@gmail.com</a></div>
-			</header>
+				<div data-option="desk-2" class="description op hid">
+					<h1>We Are Good Company</h1>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem  quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+					<a href="#" class="learnMore">Learn More</a>
+				</div>
+				<div data-option="desk-3" class="description op hid">
+					<h1>Our work is fast</h1>
+					<p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+					<a href="#" class="learnMore">Learn More</a>
+				</div>
+				<div data-option="desk-4" class="description op hid">
+					<h1>We The Best</h1>
+					<p>Morbi accumsan ipsum velit. Morbi accumsan ipsum velit. Aenean sollicitudin, lorem  quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+					<a href="#" class="learnMore">Learn More</a>
+				</div>
+			</div>
+			<div class="header-switch">
+				<div data-option="desk-1" class="active"><div class="sw"></div></div>
+				<div data-option="desk-2"><div class="sw"></div></div>
+				<div data-option="desk-3"><div class=" sw"></div></div>
+				<div data-option="desk-4"><div class="sw"></div></div>
+			</div>
+		</div>
+	</header>
+	<article id="about" class="about">
+		<section class="text-story">
+			<div class="logotype"><img src="images/big-logo.png" alt=""></div>
+			<div class="story">	
+				<h2>Our Story</h2>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
+				<p class='p2'>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+				<a href="#" class="learnMore">Learn More</a>
+			</div>
+		</section>
+		<section class="video-story">
+			<a href="#" class="play">
+			<div class="line-top"></div>
+			<div class="line-right"></div>
+			<div class="line-left"></div>
+			<div class="line-bottomLeft"></div>
+			<div class="line-bottomRith"></div>
+				Watch our story
+			</a>
+		</section>
+	</article>
+	<article id="expertise" class="expertise">
+		<h2 class=exp-h2>Expertise</h2>
+		<p class=exp-p>Lorem ipsum dolor sit amet proin gravid nibh vel velit</p>
+		<div class="line"></div>
+		<div class="expertises">
+			<div class="expression">
+				<img src="images/icons/screen.png" alt="screen">
+				<h3>Web disign & Debelopment</h3>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+			</div>
+			<div class="expression">
+				<img src="images/icons/brush.png" alt="brush">
+				<h3>Branding identity</h3>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+			</div>
+			<div class="expression">
+				<img src="images/icons/phone.png" alt="phone">
+				<h3>Mobile app</h3>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+			</div>
+			<div class="expression">
+				<img src="images/icons/diagramma.png" alt="diagramma">
+				<h3>Search engine optimization</h3>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+			</div>
+			<div class="expression">
+				<img src="images/icons/play.png" alt="playstation">
+				<h3>Game Development</h3>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+			</div>
+			<div class="expression">
+				<img src="images/icons/heart.png" alt="heart">
+				<h3>Made with love</h3>
+				<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.</p>
+			</div>
+		</div>
+	</article>
+	<article id="team" class="team">
+		<h2>Meet our amazing team</h2>
+		<p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+		<div class="line"></div>
+		<div class="members">
+			<div class="member">
+				<div class="team-img"></div>
+				<p class="name">Senf Ucuk</p>
+				<p class="post">CEO & Founder</p>
+			</div>
+			<div class="member">
+				<div class="team-img"></div>
+				<p class="name">Dik Adalin</p>
+				<p class="post">Engineering</p>
+			</div>
+			<div class="member">
+				<div class="team-img"></div>
+				<p class="name">Jeng Kol</p>
+				<p class="post">Designer</p>
+			</div>
 
-			<div id="portfolio" class="page__portfolio portfolio">Портфолио</div>		
-			<div id="contact" class="page__contact contact">Контакты</div>
-
-
-
-
-
-
-
-
-
-
-
-		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-		<script	src="https://code.jquery.com/jquery-3.3.1.min.js"	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/nav.js"></script>
-		<script src="js/smooth-scroll.js"></script>
-		</body>
-		</html>
+			<div class="member">
+				<div class="team-img"></div>
+				<p class="name">Pet Romak</p>
+				<p class="post">Marketing</p>
+			</div>
+		</div>
+		<p class="anim">Become part of our dream team, let’s join us !</p>
+		<a href="#" class="learnMore">We are hiring</a>
+	</article>
+	<article id="portfolio" class="portfolio">
+		<div class="portf-title">
+			<h2>Our Works</h2>
+			<a href="#">See All Project in dribbble <i class="fas fa-chevron-right"></i></a>
+		</div>
+		<div class="works">
+			<div class="work-block work-block-1"></div>
+			<div class="work-block work-block-2"></div>
+			<div class="work-block work-block-3"></div>
+			<div class="work-block work-block-4"></div>
+			<div class="work-block work-block-5"></div>
+			<div class="work-block work-block-6"></div>
+		</div>
+		<div class="works">
+			<div class="work-block work-block-7"></div>
+			<div class="work-block work-block-8"></div>
+			<div class="work-block work-block-9"></div>
+			<div class="work-block work-block-10"></div>
+			<div class="work-block work-block-11"></div>
+			<div class="work-block work-block-12"></div>
+		</div>
+		<a href="" class="learnMore">Load more</a>
+	</article>
+	<article id="people" class="people">
+		<div class="says-wrap">
+			<!-- .says.says-$>.quote>i.fas.fa-quote-left^p.prase{lorem50} -->
+			<div class="says op hid">
+				<div class="quote"><i class="fas fa-quote-left"></i></div>
+				<p class="prase">Lorem ipsum dolor sit. Delectus labore expedita deleniti, minus dolor excepturi odit voluptates nemo magnam. Sunt quod iste illum perspiciatis officiis consectetur error dolor cupiditate sequi possimus quas vero, ratione quasi asperiores assumenda ex qui saepe laboriosam perferendis. Dolore, aspernatur et? Inventore quaerat praesentium alias excepturi.</p>
+			</div>
+			<div class="says op hid">
+				<div class="quote"><i class="fas fa-quote-left"></i></div>
+				<p class="prase">Delectus labore expedita deleniti, minus dolor excepturi odit voluptates nemo magnam. Sunt quod iste illum perspiciatis officiis consectetur error dolor cupiditate sequi possimus quas vero, ratione quasi asperiores assumenda ex qui saepe laboriosam perferendis. Dolore, aspernatur et? Inventore quaerat praesentium alias excepturi.</p>
+			</div>
+			<div class="says">
+				<div class="quote"><i class="fas fa-quote-left"></i></div>
+				<p class="prase">Sunt quod iste illum perspiciatis officiis consectetur error dolor cupiditate sequi possimus quas vero, ratione quasi asperiores assumenda ex qui saepe laboriosam perferendis. Dolore, aspernatur et? Inventore quaerat praesentium alias excepturi.</p>
+			</div>
+			<div class="says op hid">
+				<div class="quote"><i class="fas fa-quote-left"></i></div>
+				<p class="prase"> Dolore, aspernatur et? Inventore quaerat praesentium alias excepturi. amet, consectetur adipisicing elit. Delectus labore expedita deleniti, minus dolor excepturi odit voluptates nemo magnam. Sunt quod iste illum perspiciatis officiis consectetur error dolor cupiditate sequi possimus quas vero, ratione quasi asperiores assumenda ex qui saepe laboriosam perferendis. Dolore, aspernatur et? Inventore quaerat praesentium alias excepturi.</p>
+			</div>
+			<div class="says op hid">
+				<div class="quote"><i class="fas fa-quote-left"></i></div>
+				<p class="prase">dipisicing elit. Delectus labore expedita deleniti, minus dolor excepturi odit voluptates nemo magnam. Sunt quod iste illum perspiciatis officiis consectetur error dolor cupiditate sequi possimus quas vero, ratione quasi asperiores assumenda ex qui saepe laboriosam perferendis. Dolore, aspernatur et? Inventore quaerat praesentium alias excepturi.</p>
+			</div>
+		</div>
+		<div class="slider">
+			<div class="back"><i class="fas fa-chevron-left"></i></div>
+			<div class="slider-images">
+				<img data-option="1" src="images/people/1.png" alt="people" class="slider-img sm">
+				<img data-option="2" src="images/people/2.png" alt="people" class="slider-img sm">
+				<img data-option="3" src="images/people/3.png" alt="people" class="slider-img">
+				<img data-option="4" src="images/people/4.png" alt="people" class="slider-img sm">
+				<img data-option="5" src="images/people/5.png" alt="people" class="slider-img sm">
+			</div>
+			<div class="forward"><i class="fas fa-chevron-right"></i></div>
+		</div>
+	</article>
+	<article id="contact" class="contact">
+		<div class="e-mail">
+			<h3>Give us a good news</h3>
+			<form class='send'>
+				<input type="text" class="user-name" placeholder="Name">
+				<input type="mail" class="mail" placeholder="Email">
+				<input type="text" class="subj" placeholder="Subject">
+				<textarea name="" id="" cols="30" rows="10" class="test-area" placeholder="Your Massage"></textarea>
+				<input type="submit" class="input-mail" value="SUBMIT">
+			</form>
+		</div>
+		<div class="clients">
+			<h3>Our happy client</h3>
+			<div class="logotypes">
+				<div><img src="images/logotypes/1.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/2.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/3.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/4.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/5.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/6.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/7.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/8.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/9.png" alt="client's logo"></div>
+				<div><img src="images/logotypes/10.png" alt="client's logo"></div>
+			</div>
+		</div>
+	</article>
+	<footer class="footer">
+		<div class="footer-info">
+			<div class="info-chapter chap-1">
+				<div class="main-item">tajam</div>
+				<p>lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
+			</div>
+			<div class="info-chapter chap-2">
+				<h3>Our studio</h3>
+				<div><div><i class="fas fa-map-marker-alt"></i></div><p class="location">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat11480 - Indonesia</p></div>
+				<div><div><i class="fas fa-phone"></i></div><p class="mobile">(+62) 21-2224 3333</p></div>
+			</div>
+			<div class="info-chapter chap-3">
+				<h3>Stay in touch</h3>
+				<form>
+					<input type="text" placeholder="Subscribe our newsletter">
+					<input type="submit" value="">
+				</form>
+				<div class="social">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fas fa-basketball-ball"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-help">
+			<div class="help-wrap">
+			<div class="links">
+				<a href="#">Help</a>
+				<a href="#">Terms & Condition</a>
+				<a href="#">Privacy</a>
+			</div>
+			<div class="rights">Copyright © 2015 - Tajem Creative</div>
+			</div>
+		</div>
+	</footer>
+	<a  href="javascript://0" onclick="slowScroll ('#header')" class="up" id="up"><i class="fas fa-chevron-up"></i></a>
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/waypoints/waypoints.min.js"></script>
+	<script src="libs/animate/animate-css.js"></script>
+	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="js/js.js"></script>
+</body>
+</html>
