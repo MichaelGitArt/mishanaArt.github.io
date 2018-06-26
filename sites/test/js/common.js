@@ -5,26 +5,45 @@ function initMap() {
     zoom: 16
   });
 }
-// 46.474665, 30.731917
-
 
 $(function() {
+
 	$(".reviews-container").on('click', '.reviews-item', function(){
 		let newSrc = $(this).find('.reviews-img').attr('src').replace('.jpg', '-big.jpg')
-		console.log(newSrc);
-
 		$('.zoom-modal').addClass('on').find('img').attr('src', newSrc);
-
 	});
 
-	$('.close').click(function(){
-		$(this).parent().parent().removeClass('on')
-	})
 	$('.zoom-modal').click(function(e){
 		if(e.target.classList.contains('zoom-modal')){
 			$(this).removeClass('on')
 		}
 	})
+	$('body').on('click', '.close', function(){
+		$(this).parent().parent().removeClass('on')
+		$(this).parent().removeClass('on')
+	})
+
+
+$('.team-btn').click(function(){
+	let element = $(this).closest('.staff-item').clone();
+	console.log(element);
+	$('.team-modal').empty().append(element).addClass('on')
+	$('.close').clone().appendTo('.team-modal .staff-item')
+})
+
+	$('.team-modal').click(function(e){
+		if(e.target.classList.contains('team-modal')){
+			$(this).removeClass('on')
+		}
+	})
+
+	$("body").on('click', '.crt-item', function(){
+		console.log($(this));
+		let newSrc = $(this).find('img').attr('src').replace('.jpg', '-big.jpg')
+		$('.zoom-modal').addClass('on').find('img').attr('src', newSrc);
+	});
+
+
 
 $('.reviews-container').slick({
   spead: 1500,
@@ -33,7 +52,6 @@ $('.reviews-container').slick({
   prevArrow: '<button type="button" class="slick-arrow slick-arrow-prev"><i class="far fa-angle-left"></i></button>',
   nextArrow: '<button type="button" class="slick-arrow slick-arrow-next"><i class="far fa-angle-right"></i></button>'
  });
-
 
 
 
