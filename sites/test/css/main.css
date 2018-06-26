@@ -7,8 +7,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*background: rgba(0,0,0,.2);*/
-	min-height: 150vh;
 	font-size: 14px;
 	/*min-width: 320px;*/
 	min-width: 970px;
@@ -31,6 +29,29 @@ input:required:valid, textarea:required:valid{
 	border-color: green;
 }
 
+/*Стандартные классы */
+.page_content{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sect-wide{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.sect-wrap{
+	width: 100%;
+	max-width: 980px;
+	padding: 0 10px;
+}
+/*Конец стандартных класов*/
+
+
+
 
 .header{
 	width: 100%;
@@ -41,9 +62,8 @@ input:required:valid, textarea:required:valid{
 
 .header-top{
 	width: 100%;
-	max-width: 960px;
-	padding: 0 10px;
-	padding: 28px 0;
+	max-width: 980px;
+	padding: 28px 10px 17px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -52,18 +72,19 @@ input:required:valid, textarea:required:valid{
 	width: 286px;
 	text-decoration: none;
 }
+.logo:hover {
+	text-decoration: none;
+}
 
 .logo-text{
 	text-transform: uppercase;
 	color: #cc3b34;
 	font-size: 0.857em;
-	/*letter-spacing: .5px;*/
+	margin: 10px 0 5px;
 }
 
-
-
-
-.mnu {
+.menu {
+	margin: 0;
 	padding: 0;
 	justify-content: space-between;
 	height: 100%;
@@ -72,12 +93,11 @@ input:required:valid, textarea:required:valid{
 	list-style-type: none;
 }
 
-.mnu li{
+.menu li{
 	flex-shrink: 0;
 	margin-left: 2px;
 }
-
-.mnu a{
+.menu a{
 	line-height: 30px;
 	height: 30px;
 	display: block;
@@ -88,15 +108,15 @@ input:required:valid, textarea:required:valid{
 	transition: all .2s;
 	position: relative;
 }
-.mnu a:hover{
+.menu a:hover{
 	text-decoration: none;
 }
 
-.header-mnu .active a{
+.header-menu .active a{
 	color: #fff;
 	background: #cc3b34;
 }
-.header-mnu .active a::after{
+.header-menu .active a::after{
 	display: block;
 	position: absolute;
 	left: 50%;
@@ -107,14 +127,10 @@ input:required:valid, textarea:required:valid{
 	width: 8px;
 	background: #cc3b34;
 }
-
-.header-mnu li:hover a{
+.header-menu li:hover a{
 	color: #fff;
 	background: #cc3b34;
 }
-
-
-
 
 .header-info-container{
 	background-color: #6c6666;
@@ -124,48 +140,68 @@ input:required:valid, textarea:required:valid{
 	justify-content: center;
 }
 
-.header-info{
+.info{
 	margin: 0;
-	width: 100%;
-	max-width: 960px;
-	padding: 0 10px;
-	padding: 0;
 	list-style-type: none;
 	display: flex;	
 }
+.header-info{
+	width: 100%;
+	max-width: 980px;
+	padding: 0 10px;
+}
 
-.header-info li{
+
+.info li{
 	display: flex;
 	justify-content: center;
 	flex-grow: 1;
 	font-size: .95em;
+}
+
+.header-info li{
 	border-left: 1px solid #7d7878;
 }
 
 
-.header-info span{
+
+.info span{
 	font-weight: 400;
 	color: #fff;
 	padding: 19px 0px 17px 25px;
-	/*background-image: url(../img/icons/clock.png);*/
+	background-repeat: no-repeat;
+	background-position: -0 50%;
+}
+.mobile-number a{
+	font-weight: 400;
+	color: #fff;
 	background-repeat: no-repeat;
 	background-position: 0 50%;
+	border-bottom: 1px dashed #fff;
+	transition: all .2s;
 }
+.mobile-number a:hover{
+	text-decoration: none;
+	color: #ffe09f;
+	border-color: #ffe09f;
+}
+.mobile-number.viber{
+	border: none;
+}
+
 
 .address span{
 	padding-left: 19px;
 	background-image: url(../img/icons/map.png);
 }
-.phones span:first-child{
-	padding-left: 25px;
+.mobile-number.viber span{
 	background-image: url(../img/icons/viber.png);
 }
-.phones span:last-child{
+.mobile-number.num span {
 	padding-left: 19px;
 	margin-left: 6px;
 	background-image: url(../img/icons/phone.png);
 }
-
 
 .schedule span{
 	background-image: url(../img/icons/clock.png);
@@ -188,8 +224,187 @@ input:required:valid, textarea:required:valid{
 	background: #413a3a;
 }
 
-
 .btn-form-text{
 	line-height: 1.2em;
 	border-bottom: 1px dashed #ffe09f;
 }
+
+
+
+.breadcrumb{
+	padding: 5px 0;
+	color: #3d3d3d;
+	font-family: "PT Sans", sans-serif;
+	font-size:  0.85em;
+}
+	
+.breadcrumb a{
+	color: #9f9f9f;
+}
+.breadcrumb a svg{
+	font-size: .8em;
+}
+
+.main-h{
+	padding-bottom: 10px;
+	font-weight: 700;
+	font-size: 1.7em;
+	display: block;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+/*Отзывы*/
+.reviews{
+	margin-bottom: 30px;
+}
+
+.reviews-container{
+	display: flex;
+	justify-content: space-between;
+
+}
+.reviews-item{
+	cursor: pointer;
+	position: relative;
+	border: 4px solid #dddedb;
+	border-radius: 5px;
+	max-height: 228px;
+	overflow: hidden;
+}
+
+.zoom{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*Футер*/
+.footer{
+	background-color: #3b3333;
+}
+
+.footer-top{
+	display: flex;
+	padding: 60px 0;
+}
+
+.footer-menu-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	margin-left: 10px;
+}
+
+.footer-menu{
+	height: auto;
+	margin-left: auto;
+}
+.footer-menu li{
+	flex-shrink: 0;
+}
+
+.footer-menu a{
+	color: #fff;
+	text-decoration: underline;
+}
+.footer-menu a:hover{
+	text-decoration: none;
+}
+
+
+.footer-info{
+	width: 100%;
+	/*margin-left: 15px;*/
+	padding: 0;
+	justify-content: space-between;
+}
+.footer-info li{
+	color: #fff;
+	justify-content: flex-end;
+}
+
+.footer-info .phones{
+
+	justify-content: space-between;
+}
+
+
+.footer-info .address span{
+	padding-left: 19px;
+	background-image: url(../img/icons/map_red.png);
+}
+
+.footer-info .phones span:last-child{
+	padding-left: 19px;
+	margin-left: 6px;
+	background-image: url(../img/icons/phone_red.png);
+}
+
+
+
+.footer-info span{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.footer-info a{
+	color: #fff;
+}
+.footer-info span{
+	color: #fff;
+}
+
+
+
+
+.footer-bottom-wrap{
+	background-color: #272121;
+}
+.footer-bottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rights{
+	font-size: .86em;
+	color: #929191;
+}
+.rights a{
+	margin-left: 10px;
+	color: #ffe09f;
+}
+
+.social{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+}
+
+.social a{
+	display: inline-block;
+	margin-left: 10px;
+	box-shadow: 0px 0px 5px rgba(255, 224, 159,.0);
+	transition: all .2s;
+}
+
+
+.social a:hover{
+	box-shadow: 0px 1px 5px rgba(255, 224, 159,.6);
+}
+
+.footer-bottom .btn-form{
+	padding: 18px 18px;
+	width: auto;
+	display: flex;
+	align-items: center;
+	background-color: #cc3b34;
+	color: #fff;
+}
+
+.footer-bottom  .btn-form:hover{
+	background-color: #b6352e;
+}
+
