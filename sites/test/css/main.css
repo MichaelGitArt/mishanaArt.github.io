@@ -14,7 +14,7 @@ body{
 	line-height: 1.65;
 	font-family: "Open Sans", sans-serif;
 	font-weight: 600;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	color: #333;
 }
 
@@ -37,6 +37,11 @@ input:required:valid, textarea:required:valid{
 	align-items: center;
 }
 
+.page_content .main-h{
+	font-size: 1.7em;
+}
+
+
 .sect-wide{
 	width: 100%;
 	display: flex;
@@ -47,6 +52,16 @@ input:required:valid, textarea:required:valid{
 	width: 100%;
 	max-width: 980px;
 	padding: 0 10px;
+}
+
+.main-h{
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
+	font-weight: 700;
+	font-size: 2.57em;
+	display: block;
+	border-bottom: 1px solid #dfdfdf;
 }
 /*Конец стандартных класов*/
 
@@ -245,22 +260,18 @@ input:required:valid, textarea:required:valid{
 	font-size: .8em;
 }
 
-.main-h{
-	padding-bottom: 10px;
-	font-weight: 700;
-	font-size: 1.7em;
-	display: block;
-	border-bottom: 1px solid #dfdfdf;
-}
 
 /*Отзывы*/
 .reviews{
-	margin-bottom: 30px;
+	margin-bottom: 90px;
 }
+
+
 
 .reviews-container{
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 54px;
 
 }
 .reviews-item{
@@ -268,16 +279,79 @@ input:required:valid, textarea:required:valid{
 	position: relative;
 	border: 4px solid #dddedb;
 	border-radius: 5px;
-	max-height: 228px;
+	/*max-height: 228px;*/
+	max-width: 160px;
 	overflow: hidden;
 }
 
+.reviews-item img{
+	width: 100%;
+}
+
+.reviews-item:hover .zoom{
+	transform: scale(1.1) translate(-50%, -50%);
+}
+
+
+
 .zoom{
+	transition: all .3s;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.slick-arrow{
+	position: absolute;
+	bottom: 0;
+	transform: translate(-50%, 0);
+	z-index: 2;
+	height: 24px;
+	width: 24px;
+	font-size: 18px;
+	background-color: #3b3333;
+	border: none;
+	color: #fff;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slick-arrow:hover{
+	background-color: #cc3b34;
+	outline: none;
+}
+.slick-arrow-prev{
+	left: calc(50% - 18px);
+}
+.slick-arrow-next{
+	left: calc(50% + 18px);
+}
+
+.slick-slide > div{
+	display: flex;
+	justify-content: center;
+}
+
+
+.rv-bottom-line{
+	position: relative;
+	top: -13px;
+	width: 100%;
+	height: 3px;
+	border-bottom: 1px solid #d9d9d9;
+	border-top: 1px solid #d9d9d9;
+}
+
+
+
+/*Карта*/
+.googleMap{
+	width: 100%;
+	height: 420px;
+}
+
 
 /*Футер*/
 .footer{
@@ -408,3 +482,54 @@ input:required:valid, textarea:required:valid{
 	background-color: #b6352e;
 }
 
+
+
+
+
+
+
+
+.zoom-modal{
+	background-color: rgba(0,0,0,.65);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.zoom-modal.on{
+	display: block;
+}
+
+.zoom-modal-wrap{
+	position: fixed;
+
+	max-height: 98vh;
+}
+.zoom-modal-wrap img{
+	max-height: 98vh;
+	max-width: 100vw;
+}
+
+
+.close{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 40px;
+	width: 40px;
+	border-radius: 0 0 0 50% ;
+	background: #cc3b34;
+	color: #fff;
+	transition: all .3s;
+	border-left: 2px solid #cc3b34;
+	border-bottom: 2px solid #cc3b34;
+}
+.close:hover{
+	background-color: #fff;
+	color: #cc3b34;
+
+}
