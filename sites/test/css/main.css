@@ -1,7 +1,17 @@
-@font-face {
-	font-family:"RobotoReg";
-	src:url(../fonts/RobotoRegular/RobotoRegular.ttf);
-}
+/*
+
+	aboutq - Про компанию на главной
+
+
+
+
+*/
+
+
+
+
+
+
 
 body{
 	display: flex;
@@ -68,6 +78,7 @@ input:required:valid, textarea:required:valid{
 }
 
 .button{
+	display: inline-block;
 	border-radius: 5px;
 	/*margin-top: 15px;*/
 	padding: 8px 26px;
@@ -82,6 +93,8 @@ input:required:valid, textarea:required:valid{
 
 .button:hover{
 	background-color: #d5504a;
+	text-decoration: none;
+	color: #fff;
 }
 .button:active{
 	background-color: #ba342d;
@@ -411,11 +424,104 @@ input:required:valid, textarea:required:valid{
 }
 
 
-/* О компании about */
+/* О компании about  aboutq*/
 
 .about-wrap{
 	background-color: #edeff0;
 }
+.about{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.about p{
+	text-align: center;
+}
+
+.about .button{
+	align-self: center;
+	background: none;
+	color: #333;
+	border: 2px solid #cc3b34;
+}
+.about .button:hover{
+
+}
+
+.advantages{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 9px;
+	margin-top: 20px;
+}
+.adv-item-wrap{
+	position: relative;
+	margin: 0 10px;
+	box-shadow: 0 0 0 1px #cbcccd;
+}
+
+.adv-item{
+	position: relative;
+	max-height: 350px;
+	max-width: 288;
+	overflow: hidden;
+	transform: translate(-9px, -9px);
+	transition: all .5s;
+}
+.over-border{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: 10px solid rgba(255,255,255,.6);
+}
+
+.adv-desc{
+	text-align: center;
+	padding: 18px 10px;
+	font-weight: 700;
+	color: #fff;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+	background-color: rgba(64, 58, 58, .8);
+}
+
+.adv-button{
+	display: inline-block;
+	padding: 5px 16px;
+	color: #fff;
+	background-color: #cc3b34;
+	border-radius: 0 0 5px 5px;
+	position: absolute;
+	bottom: 0;
+	z-index: 3;
+	left: 50%;
+	transform: translate( calc(-50% - 9px), calc(100% - 9px) );
+	transition: all .5s;
+}
+
+.adv-button:hover{
+	text-decoration: none;
+	color: #fff;
+	background-color: #ce4b45;
+}
+.adv-button:active{
+	background-color: #bc352e;	
+}
+
+
+.adv-item-wrap:hover .adv-button{
+	transform: translate(-50%, 100%);
+}
+.adv-item-wrap:hover .adv-item{
+	transform: translate(0px, 0px);
+}
+
+
 
 
 
