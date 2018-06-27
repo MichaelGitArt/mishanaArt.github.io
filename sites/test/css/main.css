@@ -1,6 +1,9 @@
 /*
 
 	aboutq - Про компанию на главной
+	staffq - Плитка Персонала
+	main_staffq - Кастомизация персонала под главную
+	main_sect-descriptionq - контент на главной
 
 
 
@@ -47,7 +50,7 @@ input:required:valid, textarea:required:valid{
 	align-items: center;
 }
 
-.page_content .main-h{
+.staff_content .main-h{
 	font-size: 1.7em;
 }
 
@@ -66,22 +69,22 @@ input:required:valid, textarea:required:valid{
 
 .main-h{
 	text-transform: uppercase;
-	padding-bottom: 10px;
+	padding-bottom: 8px;
 	margin-bottom: 40px;
 	font-weight: 700;
-	font-size: 2.57em;
+	font-size: 2.54em;
 	display: block;
 	border-bottom: 1px solid #dfdfdf;
 }
 .main-h span{
-	color: #cc3b34;
+	color: #E9372F;
 }
 
 .button{
 	display: inline-block;
 	border-radius: 5px;
 	/*margin-top: 15px;*/
-	padding: 8px 26px;
+	padding: 7px 26px;
 	background-color: #cc3b34;
 	border: none;
 	text-transform: uppercase;
@@ -100,6 +103,17 @@ input:required:valid, textarea:required:valid{
 	background-color: #ba342d;
 }
 
+.link{
+	color: #1ba3c5;
+	text-decoration: underline;
+}
+.link:hover{
+	color: #16809b;
+	text-decoration: none;
+}
+.link:active{
+	color: #36badb;	
+}
 /*Конец стандартных класов*/
 
 
@@ -430,20 +444,27 @@ input:required:valid, textarea:required:valid{
 	background-color: #edeff0;
 }
 .about{
+	padding-top: 80px;
+	padding-bottom: 150px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 }
+.about .main-h{
+	margin-bottom: 26px;
+}
 
 .about p{
 	text-align: center;
+	margin-bottom: 33px;
 }
 
 .about .button{
 	align-self: center;
 	background: none;
 	color: #333;
-	border: 2px solid #cc3b34;
+	border: 2px solid #E9372F;
+	margin-bottom: 34px;
 }
 .about .button:hover{
 
@@ -470,6 +491,10 @@ input:required:valid, textarea:required:valid{
 	transform: translate(-9px, -9px);
 	transition: all .5s;
 }
+.adv-item img{
+	transition: all .5s;
+}
+
 .over-border{
 	position: absolute;
 	width: 100%;
@@ -488,13 +513,14 @@ input:required:valid, textarea:required:valid{
 	bottom: 0;
 	position: absolute;
 	background-color: rgba(64, 58, 58, .8);
+	transition: all .5s;
 }
 
 .adv-button{
 	display: inline-block;
-	padding: 5px 16px;
+	padding: 4px 16px;
 	color: #fff;
-	background-color: #cc3b34;
+	background-color: #E9372F;
 	border-radius: 0 0 5px 5px;
 	position: absolute;
 	bottom: 0;
@@ -513,19 +539,26 @@ input:required:valid, textarea:required:valid{
 	background-color: #bc352e;	
 }
 
+/* Контент на главной
+- main_sect-descriptionq
+*/
 
-.adv-item-wrap:hover .adv-button{
-	transform: translate(-50%, 100%);
+.main_sect-description{
+	padding: 0 0 140px;
 }
-.adv-item-wrap:hover .adv-item{
-	transform: translate(0px, 0px);
+
+.description p{
+	text-align: center;
+	margin-bottom: 10px;
 }
 
 
 
+/*Контент Our Team
 
+- staffq
 
-/*Контент Our Team*/
+*/
 
 .breadcrumb{
 	padding: 5px 0;
@@ -560,7 +593,7 @@ input:required:valid, textarea:required:valid{
 
 
 .staff-item h4{
-	margin: 24px 0 16px;
+	margin: 20px 0 14px;
 	font-weight: 800;
 	font-size: 1.286em;
 	line-height: 1.2em;
@@ -581,7 +614,6 @@ p.stf-important{
 	font-weight: 700;
 }
 
-
 .team-btn{
 	margin-top: auto;
 	text-transform: uppercase;
@@ -589,6 +621,14 @@ p.stf-important{
 	padding: 6px 20px;
 	color: #fff;
 	background-color: #cc3b34;
+}
+.team-btn:hover{
+	background-color: #d5504a;
+	color: #fff;
+	text-decoration: none;
+}
+.team-btn:active{
+	background-color: #ba342d;
 }
 
 
@@ -707,18 +747,32 @@ p.stf-important{
 }
 
 
-.team-modal .close{
-	border-radius: 50%;
-	height: 36px;
-	width: 36px;
-	font-size: 22px;
-	top: -16px;
-	right: -16px;
+
+/*На главной Our Team
+
+- main_staffq
+
+*/
+
+.team{
+	padding: 84px 0 80px;
 }
 
+.main_staff .staff-item{
+	margin-bottom: 26px;
+	text-align: center;
+}
 
+.main_staff .stf-main{
+	align-items: center;
+}
 
-
+.main_staff .stf-main > *:not(.stf-photo){
+	padding: 0 10px;
+}
+.main_staff p{
+	/*margin-bottom: 15px;*/
+}
 
 
 
@@ -789,7 +843,7 @@ p.stf-important{
 
 /*Отзывы*/
 .reviews{
-	margin-bottom: 90px;
+	padding: 80px 0 75px;
 }
 
 
@@ -1012,9 +1066,11 @@ p.stf-important{
 
 
 
-.zoom-modal{
+.modal-wrap{
+	top: 0;
+	left: 0;
 	z-index: 5;
-	background-color: rgba(0,0,0,.65);
+	background-color: rgba(0,0,0,.75);
 	position: fixed;
 	height: 100%;
 	width: 100%;
@@ -1022,10 +1078,9 @@ p.stf-important{
 	justify-content: center;
 	align-items: center;
 }
-.zoom-modal.on{
+.modal-wrap.on{
 	display: flex;
 }
-
 .zoom-modal-wrap{
 	position: fixed;
 
@@ -1057,8 +1112,52 @@ p.stf-important{
 	color: #cc3b34;
 }
 
+.close_circle.close{
+	border-radius: 50%;
+	height: 32px;
+	width: 32px;
+	font-size: 20px;
+	top: -16px;
+	right: -16px;
+}
+
+
+
+
 .zoom-modal .close{
 	border-radius: 0 0 0 50% ;
 	border-left: 2px solid #cc3b34;
 	border-bottom: 2px solid #cc3b34;
+}
+
+
+.signUp-modal{
+	background: #fff;
+	border: 3px solid #6c6666;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding: 16px 20px;
+}
+.signUp-modal h4{
+	font-size: 1.71em;
+}
+
+
+.signUp-modal input{
+	width: 270px;
+	margin-bottom: 18px;
+}
+
+
+
+
+@media only screen and (min-width: 980px) {
+	.adv-item-wrap:hover img{
+		transform: scale(1.10);
+	}
+	.adv-item-wrap:hover .adv-desc{
+		background-color: rgba(64, 58, 58, 1);
+	}
+
 }
