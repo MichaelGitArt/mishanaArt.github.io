@@ -63,11 +63,35 @@ input:required:valid, textarea:required:valid{
 	display: block;
 	border-bottom: 1px solid #dfdfdf;
 }
+.main-h span{
+	color: #cc3b34;
+}
+
+.button{
+	border-radius: 5px;
+	/*margin-top: 15px;*/
+	padding: 8px 26px;
+	background-color: #cc3b34;
+	border: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.15em;
+	font-weight: 400;
+	transition: all .2s;
+}
+
+.button:hover{
+	background-color: #d5504a;
+}
+.button:active{
+	background-color: #ba342d;
+}
+
 /*Конец стандартных класов*/
 
 
 
-
+/*Хедер*/
 .header{
 	width: 100%;
 	display: flex;
@@ -242,6 +266,155 @@ input:required:valid, textarea:required:valid{
 .btn-form-text{
 	line-height: 1.2em;
 	border-bottom: 1px dashed #ffe09f;
+}
+
+
+/*Главный слайдер*/
+
+.main-head {
+	background-image: url(../img/main-head_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+}
+
+.head-slide-wrap{
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+.head-slide{
+	max-width: 980px;
+	padding: 0 10px;
+	height: 500px;
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+
+.head-slide img{
+	position: absolute;
+	bottom: 0;
+	left: -280px;
+}
+
+.sl-content{
+	position: relative;
+	z-index: 2;
+	max-width: 60%;
+	margin-left: auto;
+}
+.sl-h{
+	line-height: 1.2em;
+	font-weight: 700;
+	font-size: 2.57em;
+	margin-bottom: 20px;
+}
+
+.sl-p{
+	margin-bottom: 20px;
+	line-height: 1.1em;
+	font-size: 1.75em;
+}
+
+.sl-list{
+	list-style-type: none;
+	padding-left: 10px;
+
+}
+.sl-list li{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	padding-left: 25px;
+	background-image: url(../img/icons/checkMark.png);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+}
+
+.main-head .slick-dots{
+	margin: 0;
+	position: absolute;
+	bottom: 38px;
+	padding: 0;
+	left: 48%;
+	transform: translate(-50%, 0);
+	list-style-type: none;
+	display: flex;
+}
+.main-head .slick-dots li{
+	transition: all .2s;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #cdcdcd;
+	background-color: #fff;
+	margin: 0 4px;
+	border-radius: 4px;
+}
+
+.main-head .slick-dots li.slick-active{
+	background-color: #928e8e;
+	border-color: #928e8e;
+}
+.main-head .slick-dots li{
+	border-color: #928e8e;
+}
+
+/*Популярные услуги*/
+
+.popular-serv{
+	padding: 50px 0 80px;
+}
+
+.p-serv-container{	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.p-serv-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+	width: 150px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 45px;	
+}
+.p-serv-item:hover{
+	text-decoration: none;
+}
+
+.p-serv-item img{
+	transition: all .2s;
+	border-radius: 50%;
+}
+
+.p-serv-item:hover img{
+	box-shadow: 0 0 0 3px #e1e0e0;
+}
+
+
+.p-serv-desc{
+	margin-top: 14px;
+	line-height: 1.2em;
+	text-align: center;
+	color: #000;
+	text-transform: uppercase;
+}
+.p-serv-desc span{
+	color: #cc3b34;
+}
+
+
+/* О компании about */
+
+.about-wrap{
+	background-color: #edeff0;
 }
 
 
@@ -502,18 +675,9 @@ p.stf-important{
 
 .signUp-input[type='submit']{
 	flex-grow: .4;
-	text-transform: uppercase;
-	font-size:  1.14em;
-	color: #fff;
+	padding-left: 12px;
+	padding-right: 12px;
 	border-radius: 4px;
-	background-color: #cc3b34;
-	border: none;
-}
-.signUp-input[type='submit']:hover{
-	background-color: #c84a44;
-}
-.signUp-input[type='submit']:active{
-	background-color: #c2312a;
 }
 
 

@@ -54,6 +54,21 @@ $('.reviews-container').slick({
  });
 
 
+$('.main-head').slick({
+	 slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+	spead: 1500,
+  dots: true,
+  customPaging : function(slider, i) {
+    let thumb = $(slider.$slides[i]).data('thumb');
+    return '';
+  }
+})
 
 
-	});
+
+
+
+
+});
