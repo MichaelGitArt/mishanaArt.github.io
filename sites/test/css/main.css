@@ -3,7 +3,16 @@
 	aboutq - Про компанию на главной
 	staffq - Плитка Персонала
 	main_staffq - Кастомизация персонала под главную
+	procedure_staffq - Кастомизация персонала под главную
+
 	main_sect-descriptionq - контент на главной
+	services_main-contentq - первый блок в Услуги
+		services_sidebarq - сайд бар
+		services_contentq - правая часть		
+
+	priceq - цены
+
+	our-mainAdvantagesq Главные преимущества 
 
 
 
@@ -76,6 +85,10 @@ input:required:valid, textarea:required:valid{
 	display: block;
 	border-bottom: 1px solid #dfdfdf;
 }
+.main-h.sm{
+	font-size: 1.71em;
+}
+
 .main-h span{
 	color: #E9372F;
 }
@@ -114,6 +127,106 @@ input:required:valid, textarea:required:valid{
 .link:active{
 	color: #36badb;	
 }
+
+  /*Акордион*/
+
+.accordion{
+	text-transform: uppercase;
+	display: flex;
+	flex-direction: column;
+}
+
+.accordion li{
+	color: #333;
+}
+
+.accordion, .accordion-sub{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.accordion-item{
+	cursor: pointer;
+	border-bottom: 1px solid #dddedb;
+	transition: all .2s;
+}
+
+.accordion-sub{
+	max-height: 0;
+	overflow: hidden;
+	transition: all .5s;
+	padding-left: 10px;
+}
+
+.accordion-sub li{
+	color: #6c6666;
+	text-transform: none;
+}
+
+.accordion-item.on{
+	color: #cc3b34;
+}
+
+.accordion-item.on .accordion-sub{
+	max-height: 100px;
+}
+
+.accordion-arrow{
+	display: inline-block;
+	transition: all .5s;
+}
+
+.accordion-item.on > .accordion-arrow{
+	transform: rotate(90deg);
+}
+  /*тень для блока*/
+
+  .block-shadow-wrap{
+  	position: relative;
+  	margin: 0 10px;
+  	box-shadow: 0 0 0 1px #cbcccd;
+  	margin: 9px 0 0 9px;
+  }
+  .block-shadow{
+  	position: relative;
+  	max-height: 350px;
+  	max-width: 288;
+  	overflow: hidden;
+  	transform: translate(-9px, -9px);
+  	transition: all .5s;
+  }
+
+.over-border{
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border: 10px solid rgba(255,255,255,.6);
+}
+
+.block-shadow-content{
+	position: relative;
+	z-index: 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Конец стандартных класов*/
 
 
@@ -491,18 +604,12 @@ input:required:valid, textarea:required:valid{
 	transform: translate(-9px, -9px);
 	transition: all .5s;
 }
+
 .adv-item img{
 	transition: all .5s;
 }
 
-.over-border{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	border: 10px solid rgba(255,255,255,.6);
-}
+
 
 .adv-desc{
 	text-align: center;
@@ -770,8 +877,507 @@ p.stf-important{
 .main_staff .stf-main > *:not(.stf-photo){
 	padding: 0 10px;
 }
-.main_staff p{
-	/*margin-bottom: 15px;*/
+
+
+
+/* Главный контент на Услуги
+- services_main-contentq
+-- services_sidebarq
+*/
+
+
+.services_main-content{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
+	padding-bottom: 25px;
+}
+
+.services_sidebar{
+	width: 290px;
+	flex-basis: 285px;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+.sidebar-accordion{
+	width: 100%;
+	border: 1px solid #e6e6e4;
+	box-shadow: 10px 10px 0 0 #e6e6e4;
+	margin-bottom: 65px;
+}
+
+
+.sidebar-accordion .accordion-main-item{
+	font-size: 1.285em;
+	margin: 0;
+	color: #d4b682;
+	padding: 10px 10px 10px 50px;
+	background-color: #3b3333;
+	background-image: url(../img/icons/toth.png) !important;
+	background-repeat: no-repeat;
+	background-position: 20px center;
+}
+
+.sidebar-accordion .accordion-item:not(.accordion-main-item){
+	margin: 0 20px;
+	padding-top: 12px;
+	padding-bottom: 12px;	
+}
+
+.sidebar-accordion .accordion-arrow{
+	margin-right: 4px;
+}
+
+.sidebar-accordion a{
+	color: #6c6666;
+}
+.sidebar-accordion a:hover{
+	text-decoration: underline;
+}
+
+.services_advantages .adv-item-wrap{
+	margin-bottom: 60px;
+}
+
+	/*
+	-- services_contentq
+	*/
+
+.services_content{
+	flex-grow: 1;
+	max-width: 610px;
+}
+
+
+.baner{
+	background: #eaebed url(../img/baner_bg_1.jpg) right bottom no-repeat;
+	background-size: cover;
+	padding: 30px 40px;
+	width: 100%;
+}
+.baner h4{
+	max-width: 300px;
+	font-size: 1.285em;
+}
+
+.gift{
+	margin: 20px 0 0;
+	display: block;
+}
+
+.baner-wrap{
+	margin-bottom: 70px;
+}
+
+.procedures{
+	margin-bottom: 30px;
+}
+
+
+.procedures h2{
+	text-transform: none;
+	line-height: 1.35em;
+	margin-bottom: 30px;
+}
+
+.procedures-list{
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 45px;
+}
+.procedures-list li{
+	background-image: url(../img/icons/checkMark_sm.png);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	padding-left: 30px;
+	margin-bottom: 14px;
+	line-height: 1.2em;
+}
+
+.procedures-links-wrap{
+	width: 100%;
+}
+
+.procedures-list-links{
+	display: flex;
+	padding: 0px 20px 7px;
+	margin: 0;
+	list-style-type: none;
+	flex-wrap: wrap;
+	flex-direction: column;
+	max-height: 110px;
+	background-size: cover;
+	background: #FAFAFA url(../img/list-links_bg.jpg) center center no-repeat;
+}
+
+.procedures-list-links li{
+	flex-shrink: 0;
+	margin: 15px 0 7px;
+
+}
+.procedures-list-links a{
+	background-image: url(../img/icons/checkMark_sm_red.png);
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left: 35px;
+	color: #333;
+	text-decoration: underline;
+}
+.procedures-list-links a:hover{
+	text-decoration: none;
+}
+
+.reasons{
+	margin-bottom: 60px;
+}
+
+.reasons h2{
+	text-transform: none;
+	line-height: 1.35em;
+	margin-bottom: 40px;
+}
+
+.reasons-buttons{
+	margin-bottom: 20px;
+	display: flex;
+	width: 100%;
+}
+
+.reasons-btn{
+	flex-grow: 1;
+	margin-right: 10px;
+	display: inline-flex;
+	justify-content: space-between;
+	background-color: #6c6666;
+	border: none;
+	font-weight: 900;
+	color: #fff;
+	padding: 10px 10px 10px 15px;
+	transition: all .3s;
+	cursor: pointer;
+}
+.reasons-btn:focus{
+	outline: none;
+}
+
+
+.reasons-btn span{
+	color: #ffe09f;
+	transition: all .3s;
+}
+.reasons-btn.on{
+	background-color: #3b3333;
+	transition: all .3s;
+}
+.reasons-btn.on span{
+	transform: rotate(90deg);
+}
+
+.reasons-tabs{
+	overflow: hidden;
+	max-height: 0px;
+	transition: all .5s;
+}
+.reasons-tabs.on{
+	transition: all .8s .7s;
+	max-height: 400px;
+}
+
+
+
+
+.reasons-tabs p{
+	line-height: 1.2em;
+	margin-bottom: 8px;
+}
+
+.reasons-tabs .procedures-list{
+	font-weight: 700;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.article{
+	font-weight: 400;
+	color: #fff;
+	background-color: #cc3b34;
+	padding: 15px 10px;
+	border-radius: 4px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.article a{
+	color: #fff;
+	text-decoration: underline;
+}
+.article a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+.question{
+	font-size: 1.14em;
+	font-style: italic;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+
+/* Главные преимущества
+- our-mainAdvantagesq
+*/
+
+.our-mainAdvantages{
+	margin-bottom: 80px;
+}
+.our-mainAdvantages h2{
+	text-transform: none;
+}
+
+.mainAdv-links{
+	margin: 0;
+	padding: 0;	
+	list-style-type: none;
+}
+
+.mainAdv-link{
+	background: #6c6666;
+	bottom: none;
+	font-size: 1.17em;
+	margin-bottom: 10px;
+
+}
+
+
+.mainAdv-link a{
+	display: block;
+	color: #fff;
+	padding: 8px 15px 8px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.mainAdv-link a span{
+	color: #ffe09f;
+}
+
+
+/* Кастомизация Персонал под страницу процедцры
+- procedure_staffq
+*/
+
+.procedure_team{
+	margin-bottom: 40px;
+}
+
+
+.procedure_team h2{
+	text-transform: none;
+}
+
+
+.procedure_staff{
+	justify-content: flex-start;
+}
+
+.procedure_staff .staff-item{
+	margin-bottom: 26px;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.procedure_staff .stf-main{
+	align-items: center;
+}
+
+.procedure_staff .stf-main > *:not(.stf-photo, .team-btn){
+	padding: 0 10px;
+}
+
+.procedure_team .team-btn{
+	padding: 8px 32px;
+	border-radius: 5px;
+}
+
+
+/* Блок с примерами
+- procedure_examplesq
+*/
+
+.pr-example{
+	display: flex;
+	padding: 0 0 30px;
+}
+
+.example-images-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.example-images-wrap{
+	display: flex;
+}
+
+.example-images-item{
+	margin-right: 20px;
+	margin-bottom: 25px;
+}
+
+.example-img-wrap{
+	width: 215px;
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.ex-img-border{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border: 10px solid rgba(255, 255, 255, .6);
+}
+
+.example-img-wrap img{
+	width: 100%;
+	display: block;
+}
+
+.example-title{
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.example-h{
+	font-weight: bold;
+	font-size: 1em;
+	margin-bottom: 2px;
+}
+
+.example-p{
+	line-height: 1.1em;
+}
+
+.example-doctor{
+	font-size: 1.17em;
+	font-weight: 900;
+	margin-bottom: 25px;
+}
+
+.dark-button-wrap{
+	display: flex;
+	justify-content: center;
+}
+
+.button.dark{
+	font-weight: 400;
+	color: #ffe09f;
+	background-color: #3b3333;
+	border-radius: 3px;
+	padding: 9px 20px;
+	font-size: 1em;
+}
+
+
+
+
+
+
+
+
+/*Цены
+- priceq
+*/
+
+.procedure_price{
+	padding: 80px 0 60px;
+}
+
+.price, .price ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.price-item{
+	cursor: pointer;
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	background-color: #6c6666;
+	padding: 8px 20px 8px 20px;
+	color: #fff;
+	font-size: 1.29em;
+	font-weight: 900;
+	margin-bottom: 18px;
+}
+
+.price-sub{
+	display: none;
+}
+
+.procedure_price .price-sub{
+	display: block;
+}
+
+.price-item span{
+	transition: all .3s;
+	font-size: .8em;
+	color: #f6d89b;
+}
+.on .price-item span{
+	transform: rotate(90deg);
+}
+
+
+
+
+
+.pr-sub-item{
+	display: flex;
+	border-bottom: 1px solid #cbcccd;
+	padding-left: 15px;
+}
+
+.price-sub .pr-sub-item:last-child{
+	border: none;
+	margin-bottom: 15px;
+}
+
+.pr-sub-item:nth-child(even){
+	background-color: #eeeeee;
+}
+
+.pr-sub-item.pr-sub-main{
+	padding-left: 0;
+	font-size: 1.1em;
+	/*padding-bottom: 12px;*/
+	font-weight: 900;
+}
+
+.pr-sub-item.pr-sub-main span{
+	padding: 12px 0 14px;
+}
+
+.pr-sub-item span{
+	font-weight: 700;
+	padding: 9px 0;
+}
+
+
+
+.pr-sub-first-part{
+	flex-grow: 1;
+}
+
+.pr-sub-second-part{
+	width: 130px;
+	text-align: center;
+	border-left: 1px solid #cbcccd;
 }
 
 
@@ -839,6 +1445,10 @@ p.stf-important{
 	padding-right: 12px;
 	border-radius: 4px;
 }
+
+
+
+
 
 
 /*Отзывы*/
