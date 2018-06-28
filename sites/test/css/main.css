@@ -4,6 +4,7 @@
 	staffq - Плитка Персонала
 	main_staffq - Кастомизация персонала под главную
 	procedure_staffq - Кастомизация персонала под главную
+	pr-navq
 
 	main_sect-descriptionq - контент на главной
 	services_main-contentq - первый блок в Услуги
@@ -448,25 +449,25 @@ input:required:valid, textarea:required:valid{
 	max-width: 60%;
 	margin-left: auto;
 }
-.sl-h{
+.sl-content h1, .sl-content h2{
 	line-height: 1.2em;
 	font-weight: 700;
 	font-size: 2.57em;
 	margin-bottom: 20px;
 }
 
-.sl-p{
+.sl-content p{
 	margin-bottom: 20px;
 	line-height: 1.1em;
 	font-size: 1.75em;
 }
 
-.sl-list{
+.sl-content ul{
 	list-style-type: none;
 	padding-left: 10px;
-
 }
-.sl-list li{
+
+.sl-content ul li{
 	text-transform: uppercase;
 	font-size: 1.5em;
 	padding-left: 25px;
@@ -1202,6 +1203,37 @@ p.stf-important{
 	border-radius: 5px;
 }
 
+/* Блок с примерами
+- pr-navq
+*/
+.pr-nav{
+	background-image: url(../img/pr-nav_bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	border: 1px solid #cbcccd;
+}
+
+.pr-nav ul{
+	list-style-type: none;
+	padding: 9px 0px;
+	margin: 0;
+}
+
+.pr-nav a{
+	text-transform: uppercase;
+	display: block;
+	padding: 7px 0 7px 20px;
+	color: #333;
+}
+.pr-nav a:hover{
+
+}
+
+.pr-nav a span{
+	margin-right: 10px;
+}
+
 
 /* Блок с примерами
 - procedure_examplesq
@@ -1453,7 +1485,8 @@ p.stf-important{
 
 /*Отзывы*/
 .reviews{
-	padding: 80px 0 75px;
+	margin-top: 80px;
+	padding: 0 0 75px;
 }
 
 
