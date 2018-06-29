@@ -1,6 +1,9 @@
 /*
 
-	aboutq - Про компанию на главной
+	about_q - Страница О клинике
+
+	aboutq - О клинике на главной
+
 	staffq - Плитка Персонала
 	main_staffq - Кастомизация персонала под главную
 	procedure_staffq - Кастомизация персонала под главную
@@ -34,7 +37,7 @@ body{
 	align-items: center;
 	font-size: 14px;
 	/*min-width: 320px;*/
-	min-width: 970px;
+	min-width: 980px;
 	position: relative;
 	line-height: 1.65;
 	font-family: "Open Sans", sans-serif;
@@ -47,12 +50,7 @@ input, textarea{
 	border: #666 1px solid;
 	outline: none;
 }
-/*input:focus:required:invalid, textarea:focus:required:invalid{
-	border-color: red;
-}
-input:required:valid, textarea:required:valid{
-	border-color: green;
-}*/
+
 
 /*Стандартные классы */
 .page_content{
@@ -194,11 +192,11 @@ input:required:valid, textarea:required:valid{
   	margin-left: 9px;
   	margin-bottom: 9px;
   }
+
   .block-shadow{
   	position: relative;
-  	max-height: 350px;
-  	max-width: 288;
   	overflow: hidden;
+  	max-height: 1000px;
   	transform: translate(-9px, -9px);
   	transition: all .5s;
   }
@@ -1634,6 +1632,95 @@ li.contact-social{
 .last-event-item .art-main-info{
 	border: none;
 }
+
+
+/* страница О клинике
+about_q
+*/
+
+.about_baner{
+	/*max-height: auto;*/
+}
+
+.about_baner .block-shadow-content{
+	max-width: 600px;
+	padding: 60px 40px;
+}
+
+.about_baner h4{
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 1.71em;
+	margin-bottom: 60px;
+}
+.about_baner p{
+	margin-bottom: 8px;
+}
+
+.baner-name{
+	font-size: 1.65em;
+}
+
+.writeMe .main-h{
+	text-transform: none;
+}
+
+.writeMe > p{
+	text-transform: uppercase;
+	font-size: 1.17em;
+	font-weight: 900;
+}
+
+.flags{
+	display: flex;
+}
+
+.flags-item{
+	color: #fff;
+	padding: 30px 40px;
+	background-color: #6c6666;
+}
+.flags-item .block-shadow-content{
+	display: flex;
+	align-items: center;
+}
+
+.flags-item-wrap{
+	margin: 15px 20px;
+}
+
+.flags-item-img{
+	display: inline-block;
+	padding: 10px 30px 10px 0;
+}
+
+
+.flags-item h5{
+	text-transform: uppercase;
+	font-size: 1.17em;
+	color: #ffe09f;
+	font-weight: 900;
+}
+.flags-item p{
+	margin: 0;
+}
+
+.about_form-wrap{
+	margin: 20px 0 80px;
+}
+
+.accost .main-h{
+	text-transform: none;
+}
+.accost h3{
+	text-transform: uppercase;
+	font-size: 1.17em;
+}
+.accost p{
+	margin-bottom: 22px;
+}
+
+
 
 
 
