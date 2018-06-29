@@ -956,7 +956,6 @@ p.stf-important{
 
 .baner{
 	background-color: #eaebed;
-
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1504,9 +1503,8 @@ li.contact-social{
 	display: flex;
 	padding-left: 0;
 }
-.contact-social li{
-	padding-left: 5px;
-}
+
+
 
 /*Учебный центр
 - educationq
