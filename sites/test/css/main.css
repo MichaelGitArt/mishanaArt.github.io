@@ -12,10 +12,12 @@
 		services_contentq - правая часть		
 
 	priceq - цены
+	contactsq - контакты
 
 	our-mainAdvantagesq Главные преимущества 
 
-
+	educationq Учебный центр
+ 
 
 
 */
@@ -952,7 +954,10 @@ p.stf-important{
 
 
 .baner{
-	background: #eaebed url(../img/baner_bg_1.jpg) right bottom no-repeat;
+	background-color: #eaebed;
+
+	background-position: center center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 30px 40px;
 	width: 100%;
@@ -1080,11 +1085,11 @@ p.stf-important{
 .reasons-tabs{
 	overflow: hidden;
 	max-height: 0px;
-	transition: all .5s;
+	transition: all .6s;
 }
 .reasons-tabs.on{
-	transition: all .8s .7s;
-	max-height: 400px;
+	transition: all 1s .7s;
+	max-height: 300px;
 }
 
 
@@ -1138,30 +1143,9 @@ p.stf-important{
 	text-transform: none;
 }
 
-.mainAdv-links{
-	margin: 0;
-	padding: 0;	
-	list-style-type: none;
-}
-
-.mainAdv-link{
-	background: #6c6666;
-	bottom: none;
-	font-size: 1.17em;
-	margin-bottom: 10px;
-
-}
-
-
-.mainAdv-link a{
-	display: block;
-	color: #fff;
-	padding: 8px 15px 8px 10px;
-	display: flex;
-	justify-content: space-between;
-}
-.mainAdv-link a span{
-	color: #ffe09f;
+.mainAdv .pr-sub-item{
+	border: none;
+	margin-bottom: 10px
 }
 
 
@@ -1206,6 +1190,11 @@ p.stf-important{
 /* Блок с примерами
 - pr-navq
 */
+
+.pr-nav-wrap{
+	margin-bottom: 30px
+}
+
 .pr-nav{
 	background-image: url(../img/pr-nav_bg.png);
 	background-repeat: no-repeat;
@@ -1241,7 +1230,11 @@ p.stf-important{
 
 .pr-example{
 	display: flex;
-	padding: 0 0 30px;
+	padding: 0 0 40px;
+}
+
+.pr-example-hidden{
+	display: none;
 }
 
 .example-images-wrapper{
@@ -1300,7 +1293,7 @@ p.stf-important{
 	margin-bottom: 25px;
 }
 
-.dark-button-wrap{
+.pr-button-more{
 	display: flex;
 	justify-content: center;
 }
@@ -1313,10 +1306,16 @@ p.stf-important{
 	padding: 9px 20px;
 	font-size: 1em;
 }
+.button.dark:hover{
 
+}
 
-
-
+.button.dark:active{
+	
+}
+.pr-button-more span.on{
+	display: none;
+} 
 
 
 
@@ -1324,6 +1323,18 @@ p.stf-important{
 /*Цены
 - priceq
 */
+
+.price-sect{
+	margin-bottom: 40px;
+}
+
+.red-star{
+	color: #cc3b34;
+}
+.price-sect > p{
+
+}
+
 
 .procedure_price{
 	padding: 80px 0 60px;
@@ -1375,13 +1386,42 @@ p.stf-important{
 	padding-left: 15px;
 }
 
+
 .price-sub .pr-sub-item:last-child{
 	border: none;
 	margin-bottom: 15px;
 }
 
-.pr-sub-item:nth-child(even){
+.price.even .pr-sub-item:nth-child(even){
 	background-color: #eeeeee;
+}
+
+.pr-sub-item.discount{
+	background-color: #ffe09f;
+}
+
+.pr-sub-item.discount .pr-sub-first-part:before{
+	content: 'Акция!';
+	display: inline-block;
+	text-transform: uppercase;
+	color: #cc3b34;
+	margin-right: 4px;
+}
+
+.old-price{
+	position: relative;
+	margin: 0 4px;
+	color: #6c6666;
+}
+.old-price:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	width: calc(100% + 6px);
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: 1px;
+	background: #cc3b34;
 }
 
 .pr-sub-item.pr-sub-main{
@@ -1410,6 +1450,187 @@ p.stf-important{
 	width: 130px;
 	text-align: center;
 	border-left: 1px solid #cbcccd;
+}
+
+
+/*Контакты
+- contactsq*/
+
+.contacts-sect h3{
+	text-transform: uppercase;
+	font-size: 1.27em;
+	font-weight: 900;
+}
+
+.contacts{
+	padding: 0;
+	margin-bottom: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+.contacts > li{
+	font-weight: 400;
+	width: 33%;
+	background-position: 0 50%;
+	padding-left: 24px;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+
+.contact-phone.viber{
+	background-image: url(../img/icons/viber.png);
+	padding-left: ;
+}
+.contact-phone{
+	background-image: url(../img/icons/phone_red.png);
+	padding-left: ;
+}
+.contact-mail{
+	background-image: url(../img/icons/mail_red.png);
+	padding-left: ;
+}
+.contact-address{
+	background-image: url(../img/icons/map_red.png);
+	padding-left: ;
+}
+.contact-schedule{
+	background-image: url(../img/icons/clock_red.png);
+	padding-left: ;
+}
+
+li.contact-social{
+	display: flex;
+	padding-left: 0;
+}
+.contact-social li{
+	padding-left: 5px;
+}
+
+/*Учебный центр
+- educationq
+*/
+
+.education .main-h{
+	margin-bottom: 15px;
+	text-transform: none;
+}
+
+.ed-articles{
+	display: flex;
+	flex-direction: column;	
+}
+
+
+.ed-article-item{
+	align-items: center;
+	display: flex;
+	padding: 35px 0;
+	border-bottom: 1px solid #dfdfdf;
+}
+.article-content{
+	margin-left: 25px;
+}
+
+.article-content h3{
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+
+
+
+.art-main-info{
+	border: 1px solid #cbcccd;
+	padding: 5px 10px;
+	line-height: 1.8em;
+	margin-bottom: 12px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.art-main-info > div{
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-left: 25px;
+}
+
+.art-main-info .lecturer{
+	background-image: url(../img/icons/lecturer.png);
+}
+
+.art-main-info .date{
+	background-image: url(../img/icons/date.png);
+}
+
+.education .button{
+	padding: 5px 20px;
+	border-radius: 3px;
+}
+
+
+.article-img-wrap{
+	width: 280px;
+	height: 220px;
+}
+
+.article-img{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.page-switch-wrap{
+	display: flex;
+	justify-content: center;
+	margin: 40px 0 60px;
+}
+
+.page-switch{
+	display: flex;
+}
+
+.page-switch-item{
+	transition: all .3s;
+	cursor: pointer;
+	margin: 0 3px;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35px;
+	width: 35px;
+	border: 1px solid #cbcccd;
+}
+
+.page-switch-item:hover{
+	border-color: #6c6666;
+}
+
+.page-switch-item.active{
+	color: #fff;
+	background-color: #6c6666;
+	border-color: #6c6666;
+}
+
+
+
+.last-events-sect{
+	margin-bottom: 100px;
+}
+
+.last-events{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.last-event-item{
+	margin: 10px;
+	max-width: 290px;
+}
+.last-event-item .art-main-info{
+	border: none;
 }
 
 

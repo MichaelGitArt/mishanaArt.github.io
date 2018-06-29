@@ -73,6 +73,10 @@ $('.pr-nav').on('click', 'a', function(){
     return false;
 });
 
+$('.pr-button-more button').click(function(){
+	$('.pr-example-hidden').slideToggle(800);
+	$(this).children('span').toggleClass('on')
+});
 
 
 
