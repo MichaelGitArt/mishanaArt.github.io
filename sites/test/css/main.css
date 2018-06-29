@@ -1720,8 +1720,15 @@ about_q
 	margin-bottom: 22px;
 }
 
-
-
+.video-responsive{
+	width: 100%;
+	max-width: 560px;
+	margin-bottom: 80px;
+	margin-top: 40px;
+}
+.video-responsive iframe{
+	width: 100%;
+}
 
 
 /*Заявка*/
