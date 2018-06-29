@@ -191,7 +191,8 @@ input:required:valid, textarea:required:valid{
   	position: relative;
   	margin: 0 10px;
   	box-shadow: 0 0 0 1px #cbcccd;
-  	margin: 9px 0 0 9px;
+  	margin-left: 9px;
+  	margin-bottom: 9px;
   }
   .block-shadow{
   	position: relative;
@@ -1588,7 +1589,7 @@ li.contact-social{
 
 .page-switch{
 	display: flex;
-}
+}f
 
 .page-switch-item{
 	transition: all .3s;
