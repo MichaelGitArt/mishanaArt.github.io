@@ -793,12 +793,13 @@ p.stf-important{
 .stf-sub p{
 	margin-bottom: 16px;
 }
-.skill{
+
+.stf-sub ul{
 	padding-left: 6px;
 	list-style-type: none;
 	margin-bottom: 15px;
 }
-.skill li{
+.stf-sub ul li{
 	background-image: url(../img/icons/checkMark.png);
 	background-repeat: no-repeat;
 	background-position: 0 50%;
@@ -1589,7 +1590,7 @@ li.contact-social{
 
 .page-switch{
 	display: flex;
-}f
+}
 
 .page-switch-item{
 	transition: all .3s;
@@ -1648,7 +1649,7 @@ li.contact-social{
 	margin-bottom: 24px;
 }
 
-.signUp-block p{
+.signUp-block > p{
 	text-align: center;
 	font-size: 1.285em;
 	color: #676767;
@@ -1673,30 +1674,52 @@ li.contact-social{
 }
 
 .signUp-form{
-	display: flex;	
 	margin-bottom: 20px;
 }
-.signUp-form input{
-	transition: all .3s;
-	flex-grow: 1;
-	margin-right: 24px;
+
+.signUp-form p{
+*/	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-.signUp-input[type='text']{
-	padding: 6px 0;
-	text-indent: 10px;
+
+.ajax-loader{
+	display: none;
+}
+
+.signUp-form p > span, .signUp-form p > input{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.signUp-form input{
+	margin: 0 10px;
+	font-size: .95rem;
+	transition: all .3s;
 	border-radius: 4px;
+	max-width: 235px;
+	flex-grow: 1;
+}
+
+
+
+
+
+
+.signUp-input[type='text']{
+	padding: 6px 5px 6px 10px;
 	border: 2px solid #e1e0e0;
 	color: #373737;
 }
+
+
 .signUp-input[type='text']:focus{
 	color: #202020;
 	border-color: #9c9c9c;
 }
 
 .signUp-input[type='submit']{
-	flex-grow: .4;
-	padding-left: 12px;
-	padding-right: 12px;
+	padding: 6px 8px;
 	border-radius: 4px;
 }
 
@@ -1724,7 +1747,7 @@ li.contact-social{
 	position: relative;
 	border: 4px solid #dddedb;
 	border-radius: 5px;
-	/*max-height: 228px;*/
+	max-height: 228px;
 	max-width: 160px;
 	overflow: hidden;
 }
@@ -1791,7 +1814,7 @@ li.contact-social{
 
 
 
-/*Карта*/
+/*Карта
 .googleMap{
 	width: 100%;
 	height: 420px;
