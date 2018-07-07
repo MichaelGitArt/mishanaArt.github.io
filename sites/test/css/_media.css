@@ -1,4 +1,179 @@
+@media only screen and (max-width: 1270px) {
 
-@media only screen and (max-width: 1000px) {
+	.slick-arrow-prev{
+		left: 10px;
+	}
 
+	.slick-arrow-next{
+		right: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 1199px) {
+	#toggle {
+		display: block;
+	}
+
+	.menu ul{
+		width: 290px;
+		position: absolute;
+		z-index: 2;
+		display: none;
+		flex-direction: column;
+		top: 40px;
+		/*left: 0;*/
+		background: #fff;
+		padding: 10px 0;
+	}
+	.menu li{
+		margin: 0;
+	}
+	.menu li a{
+		padding: 14px 14px;
+		color: #333;
+		border: none;
+		border-left: 3px solid #fff;
+	}
+	.menu li.active a, .menu li:hover a{
+		text-decoration: none;
+		border-left-color: #29b35b;
+		color: #333;
+		background-color: #eee;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.about-content{
+		padding-left: 35px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+
+	.pr-tabs{
+		border: none;
+		flex-wrap: wrap;
+	}
+	.pr-tabs li{
+		margin-bottom: 5px;
+	}
+	.pr-tabs a{
+		padding-left: 10px;
+		padding-right: 10px;
+		border-width: 3px;
+	}
+
+
+
+	.logo{
+		width: 140px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+
+
+	.about{
+		flex-direction: column;
+	}
+	.about-content{
+		width: 100%;
+	}
+	.about-img{
+		width: 100%;
+		height: 300px;
+		order: 2;
+	}
+
+
+	.logo{
+		margin: 0;
+		width: 120px;
+	}	
+	.header-phone{
+		align-items: center;
+	}
+	.header-phone{
+		align-items: center;
+	}
+	.menu{
+		width: 35px;
+		margin-left: auto;
+	}
+	.menu ul{
+		right: 0px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.pr-tabs{
+		flex-direction: column;
+	}
+
+
+	.sect-h{
+		font-size: 1.7em;
+	}	
+	.about-content{
+		padding: 40px 15px;
+	}
+
+	.header-phone{
+		margin-top: 20px;
+	}
+	.header-phone span{
+		font-size: 1.2em;
+		margin-bottom: 10px;
+	}
+	.menu{
+		margin-top: 20px;
+	}
+
+	.header-content{
+		margin-top: 40px;
+		margin-bottom: 50px;
+	}
+
+	.logo{
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+
+	.header-phone span{
+		font-size: 1em;
+	}
+	.header-phone a{
+		font-size: 1em;
+	}
+
+	.logo{
+		width: 80px;
+	}
+
+
+	.header-bottom{
+		flex-direction: column;
+	}
+	.header-bottom-item{
+		margin-bottom: 20px;
+	}
+	.mouse{
+		top: auto;
+		left: auto;
+		position: static;
+		transform: none;
+		order: -1;
+	}
+}
+
+
+
+
+@media only screen and (min-width: 1200px) {
+	.menu ul{
+		display: flex !important;
+	}
 }

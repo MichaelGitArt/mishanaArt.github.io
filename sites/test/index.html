@@ -12,378 +12,381 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
 	
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 	<link rel="stylesheet" href="css/main.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
-	<header class="header">
-		<div class="header-top">
-			<a href="#" class="logo">
-				<img src="img/logo.png" alt="GENEVA" >
-				<div class="logo-text">Клиника регенеративной стоматологии</div>
-			</a>
-			<div class="header-menu-container">
-				<ul class="header-menu menu">
-					<li class="active"><a href="#">О клинике</a></li>
-					<li><a href="#">услуги</a></li>
-					<li><a href="#">Наша команда</a></li>
-					<li><a href="#">Учебный центр</a></li>
-					<li><a href="#">Пациентам</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
+
+	<header style="background-image: url(img/header_bg.jpg)">
+		<ul class="flags">
+			<li><a href="#eng"><img src="img/flag_eng.png" alt="eng"></a></li>			
+			<li><a href="#esp"><img src="img/flag_esp.png" alt="esp"></a></li>			
+			<li><a href="#rus"><img src="img/flag_rus.png" alt="rus"></a></li>			
+			<li><a href="#ukr"><img src="img/flag_ukr.png" alt="ukr"></a></li>			
+		</ul>
+	<div class="container header-container">
+		<div class="row">
+			<div class="col-xl-5 col-md-4 col-2 order-2 order-md-0">
+				<nav class="menu">
+					<a href="#" id="toggle"><span></span></a>
+					<ul>
+						<li class="active"><a href="#about">О нас</a></li>
+						<li><a href="#products">Продукция</a></li>
+						<li><a href="#payment">Оплата и доставка</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+				</nav>
 			</div>
-		</div>
-		<div class="header-info-container">
-			<ul class="header-info info">
-
-				<li class="address">
-					<span>г.Одесса ул.Базарная 92, Украина</span>
-				</li>
-				<li class="mobile-number num">
-					<span><a href='tel:380503676969'>+38 (050) 367-69-69;</a></span>
-				</li>
-				<li class="mobile-number viber">
-					<span><a href='tel'>+38 (067) 696-80-96;</a></span>
-				</li>
-				<li class="schedule"><span class="">Пн.-Пт.: 9.00-18.00</span></li>
-				<li><div class="btn-form"><div class="btn-form-text">Записаться на прием</div></div></li>
-
-			</ul>
-		</div>
-	</header>
-
-	<div class="main-head">
-
-		<div>
-			<div class="head-slide-wrap">
-				<div class="head-slide">
-					<img src="img/head-slide_1.png" alt="slide">
-					<div class="sl-content">
-						<h1 class="sl-h">Инновационное отбеливание Beyond Polus.</h2>
-						<p class="sl-p">Беспрецендентное и безболезненное отбеливание до 15 тонов за 30 минут.</p>
-						<p class="sl-p">Лидер американское стоматологии.</p>
-						<a href="#" class="button">Подробнее</a>
-					</div>	
-				</div>
-			</div>
-		</div>
-
-		<div>
-			<div class="head-slide-wrap">
-				<div class="head-slide">
-					<img src="img/head-slide_2.png" alt="slide">
-					<div class="sl-content">
-						<h2 class="sl-h">Лечение зубов любого уровня сложности во сне.</h2>
-						<ul class="sl-list">
-							<li>Собственная операционная</li>
-							<li>Детский анестезиолог</li>
-							<li>Взрослый анестезиолог</li>
-						</ul>
-						<a href="#" class="button">Подробнее</a>
-					</div>		
-				</div>
-			</div>
-		</div>
-
-		<div>
-			<div class="head-slide-wrap">
-				<div class="head-slide">
-					<img src="img/head-slide_3.png" alt="slide">
-					<div class="sl-content">
-						<h2>Лечение каналов под микроскопом.</h2>
-						<ul>
-							<li>Высокая точность</li>
-							<li>Абсолютная стерильность</li>
-							<li>Гарантия качества</li>
-						</ul>
-						<a href="#" class="button">Подробнее</a>
-					</div>		
-				</div>
-			</div>
-		</div>
-
-		<div>
-			<div class="head-slide-wrap">
-				<div class="head-slide">
-					<img src="img/head-slide_4.png" alt="slide">
-					<div class="sl-content">
-						<h2 class="sl-h">При установке импланта – компьютерная томография в подарок.</h1>
-						<a href="#" class="button">Подробнее</a>
-					</div>		
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="sect-wrap popular-serv">
-		<h2 class="main-h">Популярные услуги</h2>
-		<div class="p-serv-container">
-
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-1.png" alt="serviese">
-				<div class="p-serv-desc">Имплантация</div>
-			</a>
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-2.png" alt="serviese">
-				<div class="p-serv-desc">Kечение десен <br> <span>Пародонтология</span></div>
-			</a>
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-3.png" alt="serviese">
-				<div class="p-serv-desc">Установка коронок <br><span>Протезирование</span></div>
-			</a>
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-4.png" alt="serviese">
-				<div class="p-serv-desc">Отбеливание зубов</div>
-			</a>
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-5.png" alt="serviese">
-				<div class="p-serv-desc">Детский стоматолог</div>
-			</a>
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-6.png" alt="serviese">
-				<div class="p-serv-desc">Установка брекетов <br><span>Ортодонтия</span></div>
-			</a>
-
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-7.png" alt="serviese">
-				<div class="p-serv-desc">Лечение зубов <br><span>Терапия</span></div>
-			</a>
-
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-8.png" alt="serviese">
-				<div class="p-serv-desc">Компьютерная томография</div>
-			</a>
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-9.png" alt="serviese">
-				<div class="p-serv-desc">Лечение зубов во сне</div>
-			</a>
-			<a href="#" class="p-serv-item">
-				<img src="img/icons/serv-icon-10.png" alt="serviese">
-				<div class="p-serv-desc">Лечение каналов под микроскопом</div>
-			</a>
-
-		</div>
-	</div>
-
-	<div class="about-wrap sect-wide">
-		<div class="sect-wrap about">
-			<h2 class="main-h"><span>GENEVA</span> - клиника европейского уровня </h2>
-			<p>Сегодня при обилии частных <a href="#" class="link">стоматологических</a> лечебных учреждений, безопасность- очень актуальная проблема. Не секрет, что растет уровень заболевания гепатитами, СПИДом, туберкулезом, венерическими болезнями. Статистика показывает, что наиболее часто пациенты заражаются ими у <a href="#" class="link">стоматолога</a>. Конечно, практически все специалисты используют карпульные шприцы для инъекций с одноразовыми расходными материалами. </p>
-			<a href="#" class="button">Подробнее</a>
-
-			<div class="advantages">
-				<div class="adv-item-wrap">
-					<div class="adv-item">
-						<img src="img/advatages-1.jpg" alt="advatages">
-						<div class="over-border"></div>
-						<div class="adv-desc">
-							Инфекционный контроль и 100% безопасность пациентов
-						</div>
-					</div>
-					<a href="#" class="adv-button">Подробнее</a>
-				</div>
-				<div class="adv-item-wrap">
-					<div class="adv-item">
-						<img src="img/advatages-2.jpg" alt="advatages">
-						<div class="over-border"></div>
-						<div class="adv-desc">
-							Инфекционный контроль и 100% безопасность пациентов
-						</div>
-					</div>
-					<a href="#" class="adv-button">Подробнее</a>
-				</div>
-				<div class="adv-item-wrap">
-					<div class="adv-item">
-						<img src="img/advatages-3.jpg" alt="advatages">
-						<div class="over-border"></div>
-						<div class="adv-desc">
-							Инфекционный контроль и 100% безопасность пациентов
-						</div>
-					</div>
-					<a href="#" class="adv-button">Подробнее</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="sect-wrap team">
-		<h2 class="main-h">Наши специалисты</h2>
-
-
-		<div class="main_staff staff">
-			<div class="staff-item staff-item-1">
-				<div class="stf-main">
-					<div class="stf-photo"></div>
-					<h4>Каминский Валерий Валерьевич</h4>
-					<p>Хирург-имплантолог, <br> Доцент. Кандидат медицинских наук</p>
-					<p class="stf-important">Врач высшей категории</p>
-					<div class="experience">Стаж работы: <span>20 лет</span></div>
-				</div>
-			</div>
-
-			<div class="staff-item staff-item-2">
-				<div class="stf-main">
-					<div class="stf-photo"></div>
-					<h4>Вигель Александр Олегович</h4>
-					<p>Хирург-имплантолог, <br> стоматолог-ортопед, эндодонтист</p>
-					<div class="experience">Стаж работы: <span>20 лет</span></div>
-				</div>
-			</div>
-
-			<div class="staff-item staff-item-3">
-				<div class="stf-main">
-					<div class="stf-photo"></div>
-					<h4>Теперев Олег Олегович</h4>
-					<p>Стоматолог-ортодонт, <br>Член Ассоциации ортодонтов Украины</p>
-					<div class="experience">Стаж работы: <span>20 лет</span></div>
-				</div>
-			</div>
-			<div class="staff-item staff-item-4">
-				<div class="stf-main">
-					<div class="stf-photo"></div>
-					<h4>Вишневская Анна Александровна</h4>
-					<p>Терапевт-пародонтолог, <br>кандидат медицинских наук. Член Ассоциации Лазерной Стоматологии Украины</p>
-					<div class="experience">Стаж работы: <span>20 лет</span></div>
-				</div>
-			</div>
-
-		</div>
-		<div class="rv-bottom-line"></div>
-	</div>
-
-	<div class="sect-wide signUp-block-wrap">
-		<div class="signUp-block sect-wrap">
-			<h2 class="main-h">Записаться на прием</h2>
-			<p>Инновационный центр стоматологической имплантации и эстетической медицины.</p>
-			<div class="phone"><span>(067) 696-80-96</span><span>(050) 367-69-69</span></div>
-			<form class="signUp-form">
-				<input class="signUp-input" type="text" name="name" placeholder="Имя" required>
-				<input class="signUp-input" type="text" name="phone" placeholder="Телефон" required>
-				<input class="signUp-input" type="text" name="email" placeholder="Email" required>
-				<input class="signUp-input button" type="submit" value="Записаться на прем">
-			</form>
-		</div>
-	</div>
-
-	<div class="sect-wide">
-		<div class="sect-wrap reviews">
-			<h2 class="main-h">Отзывы пациентов</h2>
-			<div class="reviews-container">
-
-				<div class="reviews-item">
-					<img class="reviews-img"src="img/reviews__1.jpg" alt="review">
-					<div class="zoom"><img src="img/zoom.png" alt="zoom"></div>
-				</div>
-				<div class="reviews-item">
-					<img class="reviews-img"src="img/reviews__2.jpg" alt="review">
-					<div class="zoom"><img src="img/zoom.png" alt="zoom"></div>
-				</div>
-				<div class="reviews-item">
-					<img class="reviews-img"src="img/reviews__3.jpg" alt="review">
-					<div class="zoom"><img src="img/zoom.png" alt="zoom"></div>
-				</div>
-				<div class="reviews-item">
-					<img class="reviews-img"src="img/reviews__4.jpg" alt="review">
-					<div class="zoom"><img src="img/zoom.png" alt="zoom"></div>
-				</div>
-				<div class="reviews-item">
-					<img class="reviews-img"src="img/reviews__5.jpg" alt="review">
-					<div class="zoom"><img src="img/zoom.png" alt="zoom"></div>
-				</div>
-				<div class="reviews-item">
-					<img class="reviews-img"src="img/reviews__5.jpg" alt="review">
-					<div class="zoom"><img src="img/zoom.png" alt="zoom"></div>
-				</div>			
-			</div>
-			<div class="rv-bottom-line"></div>
-		</div>
-	</div>
-
-	<div class="page_content main_sect-description">
-		<div class="sect-wrap description">
-			<h2 class="main-h">Стоматологическая клиника <span>geneva в Одессе</span></h2>
-			<p>Сегодня при обилии частных стоматологических лечебных учреждений, безопасность- очень актуальная проблема. Не секрет, что растет уровень заболевания гепатитами, СПИДом, туберкулезом, венерическими болезнями. Статистика показывает, что наиболее часто пациенты заражаются ими у стоматолога. Конечно, практически все специалисты используют карпульные шприцы для инъекций с одноразовыми расходными материалами. Однако, сам шприц не одноразовый. После каждого пациента шприц должен обрабатываться в специальных условиях около часа. Так сколько же шприцев должно быть в запасе у стоматолога? Во всяком случае, не один или два, как часто бывает. Неудачно полеченный зуб или неправильно поставленную коронку можно удалить и заменить на имплантат. </p>
-			<p>Именно поэтому в нашей клинике Geneva инфекционный контроль является приоритетным направлением. Стерилизационная комната нашей клиники оснащена по последнему слову техники, что позволяет нашему пациенту почувствовать себя в надёжных руках! Специалисты знают, насколько важна,  необходима и трудоёмка дезинфекция, предстерилизационная очистка и стерилизация инструментов в стоматологической практике.</p>
-		</div>
-	</div>
-
-	<div class="googleMap" id='map'></div>
-	<footer class="footer sect-wide">
-			<div class="footer-top sect-wrap">
-				<a href="#" class="logo">
-					<img src="img/logo_footer.png" alt="GENEVA" >
-					<div class="logo-text">Клиника регенеративной стоматологии</div>
+			<div class="col-xl-2 col-md-4 col-3">
+				<a href="#header" class="logo">
+					<img src="img/svg-images/logo_garlico.svg" alt="logo">
 				</a>
-				<div class="footer-menu-container">
-					<ul class="footer-info info">
-						<li class="mobile-number viber">
-							<span><a href='tel'>+38 (067) 696-80-96;</a></span>
-						</li>
-						<li class="mobile-number num">
-							<span><a href='tel:380503676969'>+38 (050) 367-69-69;</a></span>
-						</li>						
-						<li class="address">
-							<span>г.Одесса ул.Базарная 92</span>
-						</li>
-
-					</ul>
-					<ul class="footer-menu menu">
-
-						<li><a href="#">О клинике</a></li>
-						<li class="active"><a href="#">услуги</a></li>
-						<li><a href="#">Наша команда</a></li>
-						<li><a href="#">Учебный центр</a></li>
-						<li><a href="#">Пациентам</a></li>
-						<li><a href="#">Контакты</a></li>
-
-					</ul>
+			</div>
+			<div class="col-xl-5 col-md-4 col-7">
+				<div class="header-phone">
+					<span>+38 (097) 333-22-44</span>
+					<a href="#">Заказать дзвонок</a>
 				</div>
 			</div>
-			<div class="sect-wide footer-bottom-wrap">
-				<div class="sect-wrap footer-bottom">
-					<div class="rights">Все права защищены. 2018 <a href="www.genevaclinic.com.ua">www.genevaclinic.com.ua</a></div>
-					<ul class="social">
-						<li><a href="#"><img src="img/icons/facebook.png" alt=""></a></li>
-						<li><a href="#"><img src="img/icons/g+.png" alt=""></a></li>
-						<li><a href="#"><img src="img/icons/instagram.png" alt=""></a></li>
-					</ul>
-					<div class="btn-form"><div class="btn-form-text">Записаться на прием</div></div>
-				</div>
+		</div>
+		<div class="header-content">
+			<div class="text-logo"><img src="img/svg-images/garlico.svg" alt="garlico"></div>
+			<h1 class="header-title">Чесночная компания №1</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div class="header-bottom">
+			<a href="#" class="facebook header-bottom-item">
 
-			</div>
-	</footer>
+				<svg 
+					version="1.1"
+					xmlns="http://www.w3.org/2000/svg" 
+					xmlns:xlink="http://www.w3.org/1999/xlink" 
+					x="0px" 
+					y="0px"
+					viewBox="0 0 13 26" style="enable-background:new 0 0 13 26;" xml:space="preserve">
+					<style type="text/css">
+						.st0{fill:#FFFFFF;}
+					</style>
+					<path class="st0" d="M9.8,4.7c0.6,0,1.9,0,3.1,0c0-0.6,0-2.8,0-4.7c-1.6,0-3.4,0-4.2,0C2.8,0,2.9,4.6,2.9,5.2c0,0.7,0,3.7,0,3.7H0.2 v4.6h2.7V26h5.6V13.5h3.8c0,0,0.4-2.2,0.5-4.6c-0.5,0-4.3,0-4.3,0s0-2.6,0-3.1C8.5,5.4,9.2,4.7,9.8,4.7z"/>
+				</svg>
 
-	<div class="zoom-modal modal-wrap">
-		<div class="zoom-modal-wrap">
-			<img src="" alt="img">
-			<div class="close"><i class="far fa-times"></i></div>
+			</a>
+			<div class="mouse header-bottom-item"><img src="img/svg-images/ic_scroll_down.svg" alt="down"></div>
+			<a href="#" class="af header-bottom-item"><img src="img/svg-images/logo_af.svg" alt="af"></a>
 		</div>
 	</div>
-	<div class="team-modal">		
+	</header>
+	<div class="about section" id="about">
+		<div class="about-img" style=" background-image: url('img/about-img_bg.jpg');">			
+		</div>
+		<div class="about-content" style=" background-image: url('img/about-text_bg.jpg');">
+			<div class="about-text">
+				<h2 class="sect-h">О нашей компании</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			</div>
+		</div>	
+	</div>
+	<div class="products section" id="products">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="sect-h">Посмотрите ассортимент нашего чеснока:</h2>
+				</div>
+				<div class="col-12">
+					<ul class='pr-tabs'>
+						<li class="pr-tab active"><a href="#tab-1">Молодой</a></li>
+						<li class="pr-tab"><a href="#tab-2">Свежий</a></li>
+						<li class="pr-tab"><a href="#tab-3">Сушеный</a></li>
+						<li class="pr-tab"><a href="#tab-4">Консервированный</a></li>
+						<li class="pr-tab"><a href="#tab-5">Стрелка чеснока</a></li>
+						<li class="pr-tab"><a href="#tab-6">Посадочный материал</a></li>
+					</ul>
+				</div>
+				<div class="tabs-wrap">
+
+					<div class="tabs-box tabs-box_1">
+
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Молодой чеснок и долгая строка</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Молодой чеснок</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Молодой чеснок</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Молодой чеснок</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Молодой чеснок</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs-box tabs-box_2 hidden">
+
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Свежий</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Свежий</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Свежий</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Свежий</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs-box tabs-box_3 hidden">
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs-box tabs-box_4 hidden">
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="tabs-box tabs-box_5 hidden">
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs-box tabs-box_6 hidden">
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+						<div class="tab-item-wrap">
+							<div class="tab-item">
+								<div class="tab-title">Сушенный</div>
+								<div class="tab-image-wrap"><img class="tab-image" src="img/product-img_1.jpg" alt="product"></div>
+								<div class="tab-content">
+									<div class="price">95 грн/кг</div>
+									<button class="more">Подробнее</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
-	<div class="signUp-modal-wrap modal-wrap">
-		<form class="signUp-modal">
-			<div class="close_circle close"><i class="far fa-times"></i></div>
-			<h4>Записаться на прием</h4>
-			<input class="signUp-input" type="text" name="name" placeholder="Имя" required>
-			<input class="signUp-input" type="text" name="phone" placeholder="Телефон" required>
-			<input class="signUp-input button" type="submit" value="Записаться на прем">
-		</form>
+	<div id="payment" class="payment section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h2 class="sect-h">Оплата и доставка:</h2>
+				</div>
+			</div>
+		</div>
 	</div>
+
 
 	<script src="js/scripts.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNDwkQkpB-gchI52tnJvVsksEp5n5pf_M&callback=initMap" async defer></script>
 </body>
 </html>
