@@ -11,10 +11,13 @@
 }
 
 @media only screen and (max-width: 1199px) {
-	#toggle {
+	.fixed-menu .menu{
+		margin-top: 15px;
+	}
+	
+	.toggleMenu {
 		display: block;
 	}
-
 	.menu ul{
 		width: 290px;
 		position: absolute;
@@ -44,12 +47,23 @@
 }
 
 @media only screen and (max-width: 991px) {
+	.payment-item{
+		margin-bottom: 35px;
+	}
+
+	.circles{
+		display: none;
+	}
+
+	.payment{
+		background-position: left top, -4000px -4000px, center top;
+	}
+
 	.about-content{
 		padding-left: 35px;
 		padding-top: 60px;
 		padding-bottom: 60px;
 	}
-
 
 	.pr-tabs{
 		border: none;
@@ -65,14 +79,27 @@
 	}
 
 
-
 	.logo{
 		width: 140px;
 	}
 }
 
 @media only screen and (max-width: 767px) {
+	.payment h2{
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
 
+
+	.products-modal-content{
+		flex-direction: column;
+		align-items: center;
+		padding: 30px 5px 5px;
+	}
+	.products-modal .image{
+		padding: 0;
+		margin-bottom: 15px;
+	}
 
 	.about{
 		flex-direction: column;
@@ -86,6 +113,9 @@
 		order: 2;
 	}
 
+	.fixed-menu .header-phone{
+		align-items: flex-start;
+	}
 
 	.logo{
 		margin: 0;
@@ -107,6 +137,21 @@
 }
 
 @media only screen and (max-width: 575px) {
+	.attention{
+	 flex-direction: column;
+	 align-items: center;
+	 margin-top: 20px;
+	}
+
+	.attention-img{
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.attention-img img{
+		position: static;
+		transform: none;
+	}
+
 	.pr-tabs{
 		flex-direction: column;
 	}
@@ -126,6 +171,7 @@
 		font-size: 1.2em;
 		margin-bottom: 10px;
 	}
+
 	.menu{
 		margin-top: 20px;
 	}
@@ -163,10 +209,14 @@
 	.mouse{
 		top: auto;
 		left: auto;
-		position: static;
+		position: static;	
 		transform: none;
 		order: -1;
 	}
+	.mouse:hover{
+		transform: scale(1.1);
+	}
+
 }
 
 
