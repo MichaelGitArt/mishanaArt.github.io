@@ -1,0 +1,397 @@
+html, body, div{
+	padding: 0;
+	margin: 0;
+}
+body{
+	min-height: 100vh;
+	overflow-x: hidden; 
+	background: #212121;
+}
+@font-face {
+  font-family: "GothamProReg";
+  src: url("..//fonts/GothamProRegular.ttf");
+}
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../fonts/GothamProLight.ttf");
+}
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold.ttf");
+}
+/*Preloader*/
+.preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #1F1F1F;
+	z-index: 10;
+	transition: all 1s;
+	opacity: 1;
+	visibility: visible;
+}
+.loader{
+	border: 6px solid #941617;
+	background: #639910;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*animation: 1s spin infinite linear;*/
+}
+.inLoader{
+	animation: 3s spin infinite linear;
+	animation-duration: 4s .2s ;
+	border-top-color: #941617;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+*.done{
+	opacity: 0;
+	visibility: hidden;
+}
+@keyframes spin {
+	0%{
+		outline: 1;
+	}
+	
+	50%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*End Preloader*/
+
+/***************   Main   ***************/
+.wrapper{
+	justify-content: center;
+	width: 100%;
+	display: flex;
+	min-height: 100vh;
+/*	min-height: 900px;*/
+	background: linear-gradient(to right, #1C1C1C, #1C1C1C,  #921415, #921415);
+}
+
+
+.black-block, .green-block, .red-block{
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 456px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.black-block{
+  background: #1C1C1C;
+}
+.green-block{
+  background: linear-gradient(-47deg, #11721e, #7ba50d);
+}
+.red-block{
+	background: #921415;
+}
+
+
+
+
+
+/***************   End Main   ***************/
+/***************   Top block   ***************/
+.top-block{
+	transition: all 1.5s cubic-bezier(0,0,.3,1);
+	width: 100%;
+	height: 170px;
+	display: flex;
+	align-items: center;
+	transform: translate(0, -100%);
+}
+.top-block.show{
+	transform: translate(0, 0%);
+}
+
+/*black*/
+.black-top-menu{
+	margin: 0 50px 0 auto;
+	display: flex;
+}
+.t-menu-item{
+	margin: 0 0 0 10px;
+	cursor: pointer;
+	transition: all .3s ease-in;
+	padding: 10px;
+	color: #fff;
+	font: 14px GothamProReg,sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.t-menu-item:hover{
+	color: #f1515b;
+}
+/*gren*/
+.g-top-logo{
+	margin: 0 auto;
+}
+
+/*red*/
+
+.main-info{
+	color: #fff;
+	font-family: GothamProReg, sans-serif;
+	text-align: right;
+	margin: 0 100px 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-info p{
+	margin: 0;
+}
+.mobileNumber{
+	font-weight: 600;
+	font-size: 18px;
+}
+.address{
+	font-family: "GothamProReg", sans-serif;
+	font-size: 14px;
+}
+
+.social{
+	display: flex;
+	justify-content: flex-end;
+}
+.social > a{
+	transition: all .3s;
+	color: #fff;
+	padding: 10px;
+}
+.social > a:hover{
+	opacity: .7;
+}
+/**********  End Top block   **********/
+
+
+/***************   Images   ***************/
+.main-section{
+	position: relative;
+	width: 100%;
+	flex-grow: 1;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.logotype{
+	z-index: 3;
+	transition: all .7s ease-in;
+	text-align: center;
+	display: block;
+	margin: 60px auto 0;
+	opacity: 0;
+}
+.logotype.show{
+	opacity: 1;
+}
+
+.images{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	}
+
+.images > img:not(.going){
+	position: absolute;
+}
+/*Black images animations*/
+@import url('black-animation.css');
+@import url('green-animation.css');
+@import url('red-animation.css');
+/**********  End Images   **********/
+
+
+/***************   Bottom block   ***************/
+
+.b-bottom-block, .r-bottom-block{
+	padding: 0  25px	20px;
+	margin-top: 50px;
+}
+
+.b-bottom-block{
+	margin-right: auto;
+}
+.r-bottom-block{
+	margin-left: auto;
+	text-align: right;
+	font: 15px GothamProLight,sans-serif;
+	color: #fff;
+}
+.r-bottom-block a{
+	transition: all .3s;
+	color: rgba(172, 176, 189,.4)
+;
+	text-decoration: none;
+}
+.r-bottom-block:hover a{
+	text-decoration: underline;
+}
+
+
+
+
+.menu{
+	transition: all 1.5s;
+	text-transform: uppercase;
+	width: 100%;
+	opacity: 0;
+	font: 16px GothamProReg,sans-serif;
+	color: #fff;
+	z-index: 3;
+	text-align: center;
+	top: 250px;
+	display: flex;
+	flex-direction: column;
+	position: absolute;	
+}
+
+.menu a{
+	transition: all .5;
+	cursor: pointer;
+	line-height: 30px;
+	padding-bottom: 8px;
+}
+.menu a:hover{
+	color: #f7c549;
+}
+
+
+
+
+.full-active:hover .images > img:not(.smoke){
+	transition: all 1s;
+	opacity: .3 !important;
+}
+
+.full-active:hover .menu{
+	opacity: 1 !important;
+}
+.back ,.forward{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+.back ,.forward{
+	border-color: #fff;
+	border-style: solid;
+	cursor: pointer;
+	color: #fff;
+	justify-content: center;
+	font-size: 30px;
+	transition: all .5s;
+	z-index: 2;
+	display: flex;
+	align-items: center;	
+	top: 200px;
+	position: absolute;
+	width: 30px;
+	height: 200px;
+}
+.back:hover ,.forward:hover{
+	border-color: rgba(255,255,255,0);	
+	box-shadow: 0px 0px 5px rgba(0,0,0,.7);
+}
+
+.back{
+	border-width: 3px 3px 3px 0;
+	border-radius: 0  5px 5px 0;
+	left: 0px;
+}
+.forward{
+	border-width: 3px 0px 3px 3px;
+	border-radius: 5px 0 0 5px;
+	right: 0;
+}
+
+.back.hide{
+	transform: translate(	-100%, 0%);
+}
+.forward.hide{
+	transform: translate(	100%, 0%);
+}
+
+
+.wrapper{
+	transition: all 1s;
+	transform: translate(-50%, 0);
+	justify-content: flex-start;
+}
+
+.black-block, .green-block, .red-block{
+	min-width: 50%;
+	flex-direction: column;
+	min-height: 700px;
+}
+.main-section{
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.logotype{
+
+	margin: 40px auto 0;
+}
+.top-block{
+	height: 130px;
+}
+}
+
+@media screen and (max-width: 700px){
+
+.wrapper{
+	transition: all 1s;
+	transform: translate(0%, 0);
+	justify-content: flex-start;
+}
+
+.black-block, .green-block, .red-block{
+	min-width: 100%;
+	flex-direction: column;
+	min-height: 710px;
+}
+.main-section{
+	max-width: 420px;
+	margin: 0 auto;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,153 @@
+.meat{
+	width: 100%;
+	height: auto;
+	transform: translate(0, 300%);
+}
+.show.meat{
+	transition: all 1s cubic-bezier(0,0,.3,1);
+	transform: translate(0, 100px);
+}
+
+
+
+.bow{
+	top: 35px;
+	right: -40px;
+	opacity: 0;
+}
+.show .bow{
+	opacity: .2;
+}
+.go .bow {
+	transition: all 1.2s  cubic-bezier(0,0,.3,1);
+	opacity: 1;
+	top: 80px;
+}
+
+
+
+.spray{
+	opacity: 0;
+	top: -115px;
+	right: -120px;
+}
+.show .spray{
+	opacity: .2;
+}
+.go .spray{
+	opacity: 1;
+	top: -85px;
+	right: -135px;
+	transition: all 1.2s cubic-bezier(0,0,.3,1);
+}
+
+
+
+
+
+.pepper{
+	top: 150px;
+	left: 100px;
+	opacity: 0;
+}
+.show .pepper{
+	opacity: .2;
+}
+.go .pepper{
+	transition: all 1.2s cubic-bezier(0,0,.3,1);
+	opacity: 1;
+	top: 65px;
+	left: 45px;
+}
+
+
+
+.tomato1{
+	top: -10px;
+	right: 60px;
+	display: none;
+	opacity: 0;
+}
+.show .tomato1{
+	opacity: .3;
+}
+.go .tomato1{
+	transition: all 1.2s cubic-bezier(0,0,.3,1);
+	opacity: 1;
+	top: 25px;
+	right: 30px;
+}
+
+
+
+
+
+.tomato2{
+	top: -110px;
+	left: 130px;
+	opacity: 0;
+}
+.show .tomato2{
+	opacity: .2;
+}
+.go .tomato2{
+	transition: all 1.2s cubic-bezier(0,0,.3,1);
+	opacity: 1;
+	top: -180px;
+	left: 70px;
+}
+
+
+.broccoli1{
+	top: 180px;
+	right: 120px;
+	opacity: 0;
+
+}
+.show .broccoli1{
+	opacity: .3;
+}
+.go .broccoli1{
+	transition: all 1.2s cubic-bezier(0,0,.3,1);
+	top: 200px;
+	right: 90px;
+	opacity: 1;
+}
+
+
+.broccoli2{
+	top: 145px;
+	right: 150px;
+	opacity: 0;
+}
+
+.show .broccoli2{
+	opacity: .2;
+}
+.go .broccoli2{
+	top: 90px;
+	right: 135px;
+	opacity: 1;
+	transition: all 1.2s cubic-bezier(0,0,.3,1);
+}
+
+
+.black-smoke{
+	transition: all 2s cubic-bezier(0,0,.3,1);
+	opacity: 0;
+	top: -170px;
+	left: 10px;
+}
+.show.black-smoke{
+	z-index: 2;
+	opacity: .6;
+}
+.go.black-smoke{
+	opacity: .9;
+	top: -240px;
+}
+
+.show.black-smoke.unshow{
+	transition: all 1.5s cubic-bezier(0,0,.3,1);
+	opacity: 0;
+}
